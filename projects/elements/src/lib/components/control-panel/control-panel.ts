@@ -9,6 +9,7 @@ let panelInstances = 0;
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './control-panel.html',
+  styleUrl: './control-panel.scss',
 })
 export class Tba3ControlPanelComponent {
   // Mehrere Bedienfelder auf einer Seite brauchen eindeutige Label-Ids.

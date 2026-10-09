@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, input, linkedSignal } from '@angular/core';
 import { Tba3BookletSwitchComponent } from '../../components/booklet-switch/booklet-switch';
 import { createBookletState } from '../../components/booklet-switch/booklet-state';
+import { Tba3CardGridComponent } from '../../components/card-grid/card-grid';
 import { Tba3ControlPanelComponent } from '../../components/control-panel/control-panel';
 import {
   Tba3ComparisonsSlot,
@@ -8,7 +9,7 @@ import {
 } from '../../components/control-panel/control-panel-slots';
 import { Tba3AggregationValueComponent } from '../../components/aggregation-value/aggregation-value';
 import { Tba3DeltaComponent } from '../../components/delta/delta';
-import type { AggregationsValueGroup, Deviation, ValueLabels } from '../../model';
+import type { AggregationsValueGroup, Deviation, RelativeScale, ValueLabels } from '../../model';
 import {
   aggregationBlocks,
   aggregationValue,
@@ -18,6 +19,12 @@ import {
   percent,
   splitByRole,
 } from '../../model';
+
+/**
+ * Bezugssystem des Rankings: relativ nach Abweichung zu einer Vergleichsgruppe, absolut nach der
+ * Lösungsquote selbst. Absolut färbt das Ranking nichts ein und braucht daher keine Schwellen.
+ */
+export type RankingScale = RelativeScale | { readonly mode: 'absolute' };
 
 interface RankItem {
   key: string;
@@ -37,8 +44,9 @@ interface RankCard {
 
 interface Ranking {
   cards: RankCard[];
-  hasComparison: boolean;
   showBlock: boolean;
+  // Relativ und Hauptgruppe vorhanden, aber ohne Vergleichsgruppe: Hinweis statt Karten.
+  missingComparison: boolean;
 }
 
 interface ComparisonOption {
@@ -48,19 +56,21 @@ interface ComparisonOption {
 
 const EMPTY_RANKING: Ranking = {
   cards: [],
-  hasComparison: false,
   showBlock: false,
+  missingComparison: false,
 };
 
 /**
- * Zeigt die höchsten und niedrigsten Lösungsquoten einer Gruppe als zwei Karten, mit Vergleichsgruppe
- * die Werte mit der größten Abweichung nach oben und unten.
+ * Zeigt die stärksten und schwächsten Lösungsquoten einer Gruppe als zwei Karten. Das Bezugssystem
+ * bestimmt `scale`: relativ rankt nach der Abweichung zu einer Vergleichsgruppe, absolut nach der
+ * Lösungsquote selbst.
  */
 @Component({
   selector: 'tba3-solution-rates-ranking',
   standalone: true,
   imports: [
     Tba3BookletSwitchComponent,
+    Tba3CardGridComponent,
     Tba3ControlPanelComponent,
     Tba3FilterSlot,
     Tba3ComparisonsSlot,
@@ -74,17 +84,25 @@ export class SolutionRatesRankingComponent {
   /** Value-Groups eines `aggregations`-Endpunkts, die erste ist die Hauptgruppe. */
   readonly aggregations = input<AggregationsValueGroup[]>([]);
 
-  /** Anfangs gewählte Vergleichsgruppe als `typ:id`. */
+  /** Bezugssystem: relativ nach Abweichung zu einer Vergleichsgruppe, absolut nach Lösungsquote. */
+  readonly scale = input<RankingScale>({ mode: 'relative', threshold: 5 });
+
+  /** Anfangs gewählte Vergleichsgruppe für den relativen Modus als `typ:id`, sonst die erste. */
   readonly comparison = input<string | undefined>(undefined);
 
   /** Anzahl der Einträge je Karte. */
   readonly count = input<number>(3);
 
-  /** Abweichung in Prozentpunkten, ab der die Δ-Pille eingefärbt wird. */
-  readonly deviationThreshold = input(5);
-
   /** Anzeigetexte für Testhefte, Werte ohne `description` und Kompetenztypen. */
   readonly valueLabels = input<ValueLabels | undefined>(undefined);
+
+  private readonly isRelative = computed(() => this.scale().mode === 'relative');
+
+  // Prozentpunkte, ab denen die Δ-Pille einfärbt; absolut gibt es keine Pillen.
+  readonly threshold = computed(() => {
+    const scale = this.scale();
+    return scale.mode === 'relative' ? scale.threshold : 0;
+  });
 
   private readonly roles = computed(() => splitByRole(this.aggregations()));
 
@@ -105,12 +123,18 @@ export class SolutionRatesRankingComponent {
     this.availableComparisons().map((group) => ({ key: group.key, name: group.name })),
   );
 
+  // Wie beim Testheft-Umschalter: nur bei echter Wahl, also ab zwei Vergleichsgruppen.
+  readonly showComparisonSelector = computed(
+    () => this.isRelative() && this.availableComparisons().length > 1,
+  );
+
   // Input oder Heftwechsel setzen die Auswahl zurück, die Zeile „Vergleichswerte" überschreibt sie.
   readonly selectedComparisonKey = linkedSignal<string | undefined>(() => {
+    const available = this.availableComparisons();
+    if (available.length === 0) return undefined;
     const wanted = this.comparison();
-    if (!wanted) return undefined;
-    const match = this.availableComparisons().find((group) => group.key === wanted);
-    return match?.key;
+    const match = wanted ? available.find((group) => group.key === wanted) : undefined;
+    return (match ?? available[0]).key;
   });
 
   private readonly selectedComparison = computed(() => {
@@ -121,9 +145,7 @@ export class SolutionRatesRankingComponent {
 
   readonly hasComparison = computed(() => this.selectedComparison() !== undefined);
 
-  readonly hasControls = computed(
-    () => this.hasBookletSwitch() || this.comparisonOptions().length > 0,
-  );
+  readonly hasControls = computed(() => this.hasBookletSwitch() || this.showComparisonSelector());
 
   readonly ranking = computed<Ranking>(() => {
     const focus = this.roles().focus;
@@ -134,7 +156,14 @@ export class SolutionRatesRankingComponent {
     const focusBlocks = aggregationBlocks(forBooklet(focus.groups, booklet), labels);
     if (focusBlocks.length === 0) return EMPTY_RANKING;
 
-    const comparison = this.selectedComparison();
+    const relative = this.isRelative();
+    const comparison = relative ? this.selectedComparison() : undefined;
+
+    // Relativ ohne Vergleichsgruppe (auch nach Heftwechsel): kein Fehler, nur der Hinweis.
+    if (relative && !comparison) {
+      return { cards: [], showBlock: false, missingComparison: true };
+    }
+
     const comparisonBlocks = comparison
       ? aggregationBlocks(forBooklet(comparison.groups, booklet), labels)
       : [];
@@ -185,10 +214,9 @@ export class SolutionRatesRankingComponent {
 
     if (items.length === 0) return EMPTY_RANKING;
 
-    const hasComparison = comparison !== undefined;
     const count = Math.max(0, this.count());
     const rankValue = (item: RankItem): number =>
-      hasComparison ? item.focusPercent - (item.comparisonPercent as number) : item.focusPercent;
+      comparison ? item.focusPercent - (item.comparisonPercent as number) : item.focusPercent;
 
     const byStrength = [...items].sort((a, b) => rankValue(b) - rankValue(a));
     const byWeakness = [...items].sort((a, b) => rankValue(a) - rankValue(b));
@@ -202,18 +230,18 @@ export class SolutionRatesRankingComponent {
     return {
       cards: [
         {
-          title: hasComparison ? 'Stärken' : 'Höchste Lösungsquoten',
+          title: comparison ? 'Stärken' : 'Höchste Lösungsquoten',
           subtitle,
           items: strengthItems,
         },
         {
-          title: hasComparison ? 'Schwächen' : 'Niedrigste Lösungsquoten',
+          title: comparison ? 'Schwächen' : 'Niedrigste Lösungsquoten',
           subtitle,
           items: weaknessItems,
         },
       ],
-      hasComparison,
       showBlock: focusBlocks.length > 1,
+      missingComparison: false,
     };
   });
 

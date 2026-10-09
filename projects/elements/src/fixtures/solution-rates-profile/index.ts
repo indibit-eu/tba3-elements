@@ -23,11 +23,12 @@ export const FIXTURE_SOLUTION_RATES_PROFILE_READING_STYLES =
 /** Hauptgruppe ohne Aggregationen. */
 export const FIXTURE_SOLUTION_RATES_PROFILE_EMPTY = empty as AggregationsValueGroup[];
 
-/** Schule und Klassen als Hauptspalten, Vergleichsschulen als Vergleichsspalte. */
+/** Schule und Klassen als Hauptspalten, Landesmittelwert als Bezug, Vergleichsschulen als weiterer Vergleich. */
 export const EXAMPLE_PROFILE_COLUMNS_SCHOOL: ProfileColumn[] = [
   { key: 'school:school-birkenmoor', role: 'main' },
   { key: 'group:group-8a', role: 'main' },
   { key: 'group:group-8b', role: 'main' },
   { key: 'group:group-8c', role: 'main' },
+  { key: 'state:state-average', role: 'comparison' },
   { key: 'school:school-faircomparison', role: 'comparison' },
 ];

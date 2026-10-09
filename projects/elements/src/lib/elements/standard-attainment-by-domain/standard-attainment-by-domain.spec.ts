@@ -242,7 +242,7 @@ describe('StandardAttainmentByDomainComponent', () => {
   it('rendert keine Karten bei leerem Array und Leer-Fixture', () => {
     const empty = render([]);
     expect(empty.cards.length).toBe(0);
-    expect(empty.root.querySelector('.row')).toBeNull();
+    expect(empty.root.querySelector('tba3-card-grid')).toBeNull();
     expect(render(FIXTURE_STANDARD_ATTAINMENT_BY_DOMAIN_EMPTY).cards.length).toBe(0);
   });
 

@@ -7,6 +7,8 @@ zum Standard, darüber die übergeordneten Gruppen als feste Zeilen.
 
 Nimmt beliebige Value-Groups der `aggregations`-Endpunkte. Genutzt werden `type`, `id`, `name`,
 die Aggregation `minimumClassification` des ersten Fachs und die Kopfzahlen zur Zusammensetzung.
+Als Merkmale zeigt die Tabelle nur Geschlecht und Sprache zu Hause, die Sprache zusammengefasst zu
+Deutsch und „andere“.
 
 ## Verwendung
 

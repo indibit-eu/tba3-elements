@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import { Tba3CardGridComponent } from '../../components/card-grid/card-grid';
 import {
   Tba3StatCardComponent,
   type StatCardComparison,
@@ -35,7 +36,7 @@ interface SubjectBlock {
 @Component({
   selector: 'tba3-standard-attainment-summary',
   standalone: true,
-  imports: [Tba3StatCardComponent],
+  imports: [Tba3CardGridComponent, Tba3StatCardComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './standard-attainment-summary.html',
 })

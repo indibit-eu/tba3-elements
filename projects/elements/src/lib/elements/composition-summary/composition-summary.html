@@ -1,9 +1,9 @@
 <ng-content select="[tba3Header]" />
 
 @if (hasContent()) {
-  <div class="row g-3">
+  <tba3-card-grid minWidth="14rem">
     @if (registrations().length > 0) {
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div>
         <div class="card h-100">
           <div class="card-body d-flex flex-column align-items-center text-center">
             <h4 class="card-title h6">Anmeldungen</h4>
@@ -25,7 +25,7 @@
     }
 
     @for (donut of donuts(); track donut.title) {
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div>
         <div class="card h-100">
           <div class="card-body d-flex flex-column align-items-center text-center">
             <h4 class="card-title h6">{{ donut.title }}</h4>
@@ -47,7 +47,7 @@
     }
 
     @if (subjectMinimums().length > 0) {
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div>
         <div class="card h-100">
           <div class="card-body d-flex flex-column align-items-center text-center">
             <h4 class="card-title h6">Mindeststandard erreicht</h4>
@@ -70,7 +70,7 @@
         </div>
       </div>
     }
-  </div>
+  </tba3-card-grid>
 } @else {
   <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
 }

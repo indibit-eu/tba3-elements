@@ -3,6 +3,21 @@ export type ScaleLevel = 'low' | 'mid-low' | 'mid' | 'high';
 /** Drei Grenzen, die Prozentwerte in vier Stufen einer Farbskala teilen. */
 export type ScaleThresholds = readonly [number, number, number];
 
+/** Absolute Skala für Lösungsquoten: drei Grenzen in Prozent. */
+export interface AbsoluteScale {
+  readonly mode: 'absolute';
+  readonly thresholds: ScaleThresholds;
+}
+
+/** Relative Skala: Abweichung vom Bezug, ab `threshold` Prozentpunkten darüber oder darunter. */
+export interface RelativeScale {
+  readonly mode: 'relative';
+  readonly threshold: number;
+}
+
+/** Bezugssystem für Lösungsquoten, fest gewählt statt im UI umschaltbar. */
+export type SolutionRatesScale = RelativeScale | AbsoluteScale;
+
 export function sortThresholds(thresholds: ScaleThresholds): ScaleThresholds {
   const [a, b, c] = [...thresholds].sort((x, y) => x - y);
   return [a, b, c];

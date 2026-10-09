@@ -89,10 +89,16 @@ describe('SubgroupsTableComponent', () => {
     const { component, root } = render(FIXTURE_SUBGROUPS_TABLE_AUTHORITY);
 
     expect(component.unitColumns().map((column) => column.label)).toEqual(['Klassen']);
+    // SES liefert die Fixture mit, die Tabelle zeigt es bewusst nicht.
     expect(component.characteristicColumns().map((column) => column.label)).toEqual([
       'Geschlecht',
       'Sprache zu Hause',
-      'Sozioökonomischer Status',
+    ]);
+    const language = component.characteristicColumns()[1];
+    expect(language.legend.map((item) => item.text)).toEqual([
+      'Sprache zu Hause',
+      'Deutsch',
+      'andere',
     ]);
     expect(headText(root)).toEqual([
       'Name',
@@ -100,7 +106,6 @@ describe('SubgroupsTableComponent', () => {
       'Personen',
       'Geschlecht',
       'Sprache zu Hause',
-      'Sozioökonomischer Status',
       'Mindeststandard erreicht',
     ]);
     const panel = root.querySelector('tba3-control-panel');
@@ -297,7 +302,6 @@ describe('SubgroupsTableComponent', () => {
       'männlich',
       'weiblich',
       'divers',
-      'ohne Angabe',
     ]);
     expect(gender.legend.slice(1, 4).map((item) => item.color)).toEqual([
       'var(--tba3-category-1)',

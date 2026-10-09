@@ -1,12 +1,16 @@
-Zeigt je Person und Teilkompetenz die Lösungsquote oder ihre Differenz zu einer Vergleichsgruppe.
+Zeigt je Person und Teilkompetenz die Lösungsquote. Das Bezugssystem legt `scale` fest: relativ als
+Differenz zu einer Vergleichsgruppe (Standard) oder absolut auf einer Prozentskala.
 
 {{ NgDocActions.demo("SolutionRatesHeatmapDemoComponent") }}
+
+{{ NgDocActions.demo("SolutionRatesHeatmapAbsoluteDemoComponent") }}
 
 ## Daten
 
 Nimmt beliebige Value-Groups der `aggregations`-Endpunkte. Genutzt werden `type`, `id`, `name` und
 je Aggregation `type`, `value`, `description` und `descriptiveStatistics.mean`. Value-Groups mit
-feinerem Typ als die Hauptgruppe werden Personenzeilen, solche mit gröberem Vergleichsgruppen.
+feinerem Typ als die Hauptgruppe werden Personenzeilen, solche mit gröberem Vergleichsgruppen. In
+der absoluten Darstellung bleiben die Vergleichsgruppen ungenutzt.
 
 ## Verwendung
 
@@ -14,8 +18,7 @@ feinerem Typ als die Hauptgruppe werden Personenzeilen, solche mit gröberem Ver
 {% raw %}
 <tba3-solution-rates-heatmap
   [aggregations]="valueGroups"
-  [absoluteThresholds]="[40, 55, 70]"
-  [relativeThresholds]="[-10, -5, 5]"
+  [scale]="{ mode: 'relative', thresholds: [-10, -5, 5] }"
   cellValues="all"
   [valueLabels]="{ 'competence.1.1.2': { label: 'Grundrechenarten' } }"
   [links]="{ 'competence.1.1.2': 'https://example.org/aufgaben/1.1.2' }"
@@ -26,10 +29,8 @@ feinerem Typ als die Hauptgruppe werden Personenzeilen, solche mit gröberem Ver
 ```
 
 - `aggregations: AggregationsValueGroup[]`: Value-Groups, die erste ist die Hauptgruppe
-- `absoluteThresholds:` [`ScaleThresholds`](/api/type-aliases/tba3-elements/ScaleThresholds):
-  Stufengrenzen in Prozent ohne Vergleich, Standard `[40, 55, 70]`
-- `relativeThresholds:` [`ScaleThresholds`](/api/type-aliases/tba3-elements/ScaleThresholds):
-  Stufengrenzen in Prozentpunkten zur Vergleichsgruppe, Standard `[-10, -5, 5]`
+- `scale:` [`HeatmapScale`](/api/type-aliases/tba3-elements/HeatmapScale): Bezugssystem relativ oder
+  absolut, Standard `{ mode: 'relative', thresholds: [-10, -5, 5] }`
 - `cellValues: 'none' | 'reference' | 'all'`: Zellen mit Zahl, Standard Vergleich und Klassenmittel
 - `valueLabels:` [`ValueLabels`](/api/type-aliases/tba3-elements/ValueLabels): Spaltentitel für
   Teilkompetenzen ohne `description`

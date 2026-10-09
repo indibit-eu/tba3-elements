@@ -14,6 +14,8 @@ import {
   FIXTURE_SCENARIO_STATES_COMPETENCE,
 } from '../../../fixtures/scenario';
 
+const ABSOLUTE = { mode: 'absolute' } as const;
+
 function create(data: unknown, inputs: Record<string, unknown> = {}) {
   const fixture = TestBed.createComponent(SolutionRatesRankingComponent);
   fixture.componentRef.setInput('aggregations', data);
@@ -37,11 +39,10 @@ function cardSubtitles(element: HTMLElement): string[] {
 }
 
 describe('SolutionRatesRankingComponent', () => {
-  it('rankt ohne Vergleich domänenübergreifend nach Lösungsquote', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES);
+  it('rankt absolut domänenübergreifend nach Lösungsquote', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES, { scale: ABSOLUTE });
     const ranking = fixture.componentInstance.ranking();
 
-    expect(ranking.hasComparison).toBe(false);
     expect(ranking.showBlock).toBe(true);
     expect(ranking.cards.map((card) => card.title)).toEqual([
       'Höchste Lösungsquoten',
@@ -55,13 +56,16 @@ describe('SolutionRatesRankingComponent', () => {
       'Höchste Lösungsquoten',
       'Niedrigste Lösungsquoten',
     ]);
+    // Absolut zeigt keine Vergleichsauswahl und keine Δ-Pillen.
+    expect(fixture.nativeElement.querySelector('[tba3Comparisons]')).toBeNull();
+    expect(fixture.nativeElement.querySelectorAll('.badge.rounded-pill').length).toBe(0);
   });
 
-  it('rankt mit Vergleich nach Δ und zeigt beide Quoten', () => {
+  it('rankt relativ nach Δ und zeigt beide Quoten', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES, { comparison: 'state:state-average' });
     const ranking = fixture.componentInstance.ranking();
 
-    expect(ranking.hasComparison).toBe(true);
+    expect(fixture.componentInstance.hasComparison()).toBe(true);
     expect(ranking.cards.map((card) => card.title)).toEqual(['Stärken', 'Schwächen']);
     expect(ranking.cards.map((card) => card.subtitle)).toEqual([
       'gegenüber Landesmittelwert',
@@ -92,6 +96,18 @@ describe('SolutionRatesRankingComponent', () => {
     expect(fixture.nativeElement.textContent).not.toContain('ggü.');
   });
 
+  it('wählt relativ ohne comparison-Input die erste Vergleichsgruppe', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES);
+    const component = fixture.componentInstance;
+
+    expect(component.hasComparison()).toBe(true);
+    expect(component.selectedComparisonKey()).toBe('school:school-average');
+    expect(component.ranking().cards.map((card) => card.subtitle)).toEqual([
+      'gegenüber Schule',
+      'gegenüber Schule',
+    ]);
+  });
+
   it('setzt das aria-label der Δ-Pille auf den Bezug', () => {
     const ranking = create(FIXTURE_SOLUTION_RATES, {
       comparison: 'state:state-average',
@@ -101,23 +117,43 @@ describe('SolutionRatesRankingComponent', () => {
     );
   });
 
-  it('wechselt über die Zeile Vergleichswerte zurück auf „ohne Vergleich"', () => {
+  it('wechselt über die Vergleichsauswahl den Bezug', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES, { comparison: 'state:state-average' });
     const component = fixture.componentInstance;
-    expect(component.hasComparison()).toBe(true);
+    expect(component.ranking().cards[0].subtitle).toBe('gegenüber Landesmittelwert');
 
-    component.selectComparison(undefined);
+    component.selectComparison('school:school-average');
     fixture.detectChanges();
 
-    expect(component.hasComparison()).toBe(false);
-    expect(component.ranking().cards[0].title).toBe('Höchste Lösungsquoten');
-    expect(component.ranking().cards[0].items.map((item) => item.focusPercent)).toEqual([
-      81, 72, 69,
-    ]);
+    expect(component.hasComparison()).toBe(true);
+    expect(component.ranking().cards[0].subtitle).toBe('gegenüber Schule');
   });
 
-  it('bietet einen Testheft-Umschalter und rankt je Heft neu', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES_TWO_BOOKLETS);
+  it('zeigt den Hinweis, wenn relativ keine Vergleichsgruppe vorliegt', () => {
+    // Nur die Hauptgruppe, keine Vergleichsgruppe: kein Fehler, nur der Hinweis statt der Karten.
+    const focusOnly = FIXTURE_SOLUTION_RATES.filter((group) => group.type === 'group');
+    const fixture = create(focusOnly);
+    const component = fixture.componentInstance;
+
+    expect(component.hasContent()).toBe(false);
+    expect(component.ranking().missingComparison).toBe(true);
+    expect(fixture.nativeElement.querySelector('.card')).toBeNull();
+    const hint = fixture.nativeElement.querySelector('p.text-secondary.mb-0');
+    expect(hint?.textContent?.trim()).toBe('Keine Vergleichsgruppe für die relative Darstellung.');
+  });
+
+  it('zeigt im absoluten Modus Daten, auch wenn keine Vergleichsgruppe vorliegt', () => {
+    const focusOnly = FIXTURE_SOLUTION_RATES.filter((group) => group.type === 'group');
+    const fixture = create(focusOnly, { scale: ABSOLUTE });
+    const component = fixture.componentInstance;
+
+    expect(component.hasContent()).toBe(true);
+    expect(component.ranking().missingComparison).toBe(false);
+    expect(fixture.nativeElement.querySelectorAll('.card').length).toBe(2);
+  });
+
+  it('bietet in beiden Modi einen Testheft-Umschalter und rankt je Heft neu', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES_TWO_BOOKLETS, { scale: ABSOLUTE });
     const component = fixture.componentInstance;
 
     expect(component.hasBookletSwitch()).toBe(true);
@@ -131,10 +167,14 @@ describe('SolutionRatesRankingComponent', () => {
     expect(component.ranking().cards[0].items.map((item) => item.focusPercent)).toEqual([
       65, 55, 50,
     ]);
+
+    // Auch relativ bleibt der Umschalter.
+    const relative = create(FIXTURE_SOLUTION_RATES_TWO_BOOKLETS);
+    expect(relative.componentInstance.hasBookletSwitch()).toBe(true);
   });
 
   it('begrenzt jede Karte auf count', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES, { count: 2 });
+    const fixture = create(FIXTURE_SOLUTION_RATES, { scale: ABSOLUTE, count: 2 });
     const ranking = fixture.componentInstance.ranking();
 
     expect(ranking.cards[0].items.length).toBe(2);
@@ -145,7 +185,7 @@ describe('SolutionRatesRankingComponent', () => {
 
   it('zeigt keinen Wert in beiden Karten, wenn weniger als zweimal count Werte vorliegen', () => {
     // Acht Werte, count 5: die Stärken-Karte nimmt fünf, die Schwächen-Karte nur die übrigen drei.
-    const fixture = create(FIXTURE_SOLUTION_RATES, { count: 5 });
+    const fixture = create(FIXTURE_SOLUTION_RATES, { scale: ABSOLUTE, count: 5 });
     const ranking = fixture.componentInstance.ranking();
 
     const strengthKeys = ranking.cards[0].items.map((item) => item.key);
@@ -163,16 +203,16 @@ describe('SolutionRatesRankingComponent', () => {
     expect(create(FIXTURE_SOLUTION_RATES_EMPTY).componentInstance.hasContent()).toBe(false);
   });
 
-  it('setzt Schulsicht und Landesvergleich zusammen und rankt je Heft über alle Kompetenztypen', () => {
+  it('setzt Schulsicht und Landesvergleich zusammen und rankt absolut je Heft über alle Kompetenztypen', () => {
     const school = FIXTURE_SCENARIO_SCHOOL_COMPETENCE.filter((group) => group.type === 'school');
     const state = FIXTURE_SCENARIO_STATES_COMPETENCE.filter((group) => group.type === 'state');
-    const fixture = create([...school, ...state]);
+    const fixture = create([...school, ...state], { scale: ABSOLUTE });
     const component = fixture.componentInstance;
 
     expect(component.hasBookletSwitch()).toBe(true);
     expect(component.bookletList()).toEqual(['DE-HSA', 'DE-MSA', 'MA-MSA']);
 
-    // DE-HSA ohne Vergleich: Kompetenz- und Domänen-Einträge konkurrieren in einer Rangfolge.
+    // DE-HSA absolut: Kompetenz- und Domänen-Einträge konkurrieren in einer Rangfolge.
     let ranking = component.ranking();
     expect(ranking.showBlock).toBe(true);
     expect(ranking.cards[0].items.map((item) => item.name)).toEqual(['Lesen', 'Orthografie', 'D1']);
@@ -203,7 +243,7 @@ describe('SolutionRatesRankingComponent', () => {
     const fixture = create([...school, ...state], { comparison: 'state:7' });
     const ranking = fixture.componentInstance.ranking();
 
-    expect(ranking.hasComparison).toBe(true);
+    expect(fixture.componentInstance.hasComparison()).toBe(true);
     expect(ranking.cards.map((card) => card.title)).toEqual(['Stärken', 'Schwächen']);
     expect(ranking.cards.map((card) => card.subtitle)).toEqual([
       'gegenüber Beispielland',
@@ -217,7 +257,7 @@ describe('SolutionRatesRankingComponent', () => {
   });
 
   it('hält denselben Code in zwei Kompetenztypen getrennt, ohne Track-Kollision', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES_READING_STYLES);
+    const fixture = create(FIXTURE_SOLUTION_RATES_READING_STYLES, { scale: ABSOLUTE });
     const ranking = fixture.componentInstance.ranking();
 
     expect(ranking.showBlock).toBe(true);
@@ -263,13 +303,16 @@ describe('SolutionRatesRankingComponent', () => {
       'Schulamt Nordmark gegenüber Beispielland',
     );
 
-    // Der bloße Name trifft keine Gruppe, nur der Schlüssel typ:id.
+    // Ein Name trifft keinen Schlüssel typ:id und fällt auf die erste Vergleichsgruppe zurück.
     const byName = create([...authority, ...state], { comparison: 'Beispielland' });
-    expect(byName.componentInstance.hasComparison()).toBe(false);
+    expect(byName.componentInstance.hasComparison()).toBe(true);
+    expect(byName.componentInstance.selectedComparisonKey()).toBe(
+      component.availableComparisons()[0].key,
+    );
   });
 
   it('zeigt zwei schlichte Karten ohne Farbrand, Schatten und Icon', () => {
-    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES).nativeElement;
+    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES, { scale: ABSOLUTE }).nativeElement;
 
     const cards = element.querySelectorAll('.card');
     expect(cards.length).toBe(2);
@@ -283,13 +326,13 @@ describe('SolutionRatesRankingComponent', () => {
       element.querySelectorAll('.card .fa-circle-check, .card .fa-triangle-exclamation').length,
     ).toBe(0);
     expect(element.querySelectorAll('.card-title i').length).toBe(0);
-    // Titel als card-title, kein Untertitel ohne Vergleich.
+    // Titel als card-title, kein Untertitel im absoluten Modus.
     expect(cardTitles(element)).toEqual(['Höchste Lösungsquoten', 'Niedrigste Lösungsquoten']);
     expect(element.querySelectorAll('.card-subtitle').length).toBe(0);
   });
 
   it('setzt die Listenzeilen ohne Trennlinie wie die Lösungsquoten', () => {
-    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES).nativeElement;
+    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES, { scale: ABSOLUTE }).nativeElement;
     const items = element.querySelectorAll('.card li');
     expect(items.length).toBeGreaterThan(0);
     for (const item of Array.from(items)) {
@@ -297,8 +340,8 @@ describe('SolutionRatesRankingComponent', () => {
     }
   });
 
-  it('zeigt die Quoten als Text ohne Pille ohne Vergleich', () => {
-    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES).nativeElement;
+  it('zeigt die Quoten absolut als Text ohne Pille', () => {
+    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES, { scale: ABSOLUTE }).nativeElement;
     expect(element.querySelectorAll('.badge.rounded-pill').length).toBe(0);
 
     const cards = element.querySelectorAll('.card');
@@ -309,7 +352,7 @@ describe('SolutionRatesRankingComponent', () => {
   });
 
   it('nutzt den Baustein aggregation-value: Kennung fett, Name nicht small', () => {
-    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES).nativeElement;
+    const element: HTMLElement = create(FIXTURE_SOLUTION_RATES, { scale: ABSOLUTE }).nativeElement;
     const values = element.querySelectorAll('tba3-aggregation-value');
     expect(values.length).toBe(6);
     // Domäne wird bei zwei Domänen als Sekundärinfo angezeigt.
@@ -353,28 +396,24 @@ describe('SolutionRatesRankingComponent', () => {
     expect(firstWeakness?.style.color).toBe('var(--tba3-deviation-worse)');
   });
 
-  it('färbt bei deviationThreshold 0 jede Abweichung', () => {
+  it('färbt bei Schwelle 0 jede Abweichung', () => {
     const element: HTMLElement = create(FIXTURE_SOLUTION_RATES, {
       comparison: 'state:state-average',
-      deviationThreshold: 0,
+      scale: { mode: 'relative', threshold: 0 },
     }).nativeElement;
     const firstStrength = element.querySelector<HTMLElement>('.card .badge.rounded-pill');
     expect(firstStrength?.textContent?.trim()).toContain('+4 Pp');
     expect(firstStrength?.style.color).toBe('var(--tba3-deviation-better)');
   });
 
-  it('bietet die Vergleichswerte als segmentierte Einfachauswahl mit aria-pressed', () => {
+  it('bietet die Vergleichswerte ohne „Ohne Vergleich" als Einfachauswahl mit aria-pressed', () => {
     const element: HTMLElement = create(FIXTURE_SOLUTION_RATES).nativeElement;
     const group = element.querySelector('[tba3Comparisons].btn-group');
     expect(group).not.toBeNull();
 
     const buttons = Array.from(group!.querySelectorAll('button'));
-    expect(buttons.map((b) => b.textContent?.trim())).toEqual([
-      'Ohne Vergleich',
-      'Schule',
-      'Landesmittelwert',
-    ]);
-    // „Ohne Vergleich" ist aktiv und gedrückt.
+    expect(buttons.map((b) => b.textContent?.trim())).toEqual(['Schule', 'Landesmittelwert']);
+    // Die erste Vergleichsgruppe ist aktiv und gedrückt.
     expect(buttons[0].classList.contains('active')).toBe(true);
     expect(buttons[0].getAttribute('aria-pressed')).toBe('true');
     expect(buttons[1].getAttribute('aria-pressed')).toBe('false');
@@ -393,7 +432,7 @@ describe('SolutionRatesRankingComponent', () => {
     ).toBe(0);
   });
 
-  it('zeigt die Filterzeile nur bei mehreren Heften, nicht bei einem', () => {
+  it('zeigt die Testheft-Zeile nur bei mehreren Heften, nicht bei einem', () => {
     // Ein Heft: kein Umschalter, keine Testheft-Zeile im Bedienfeld.
     const single: HTMLElement = create(FIXTURE_SOLUTION_RATES).nativeElement;
     expect(single.querySelector('tba3-booklet-switch')).toBeNull();
@@ -428,7 +467,7 @@ describe('SolutionRatesRankingComponent', () => {
     const nodes = Array.from(root.children) as HTMLElement[];
     const headerIndex = nodes.findIndex((node) => node.getAttribute('data-role') === 'header');
     const footerIndex = nodes.findIndex((node) => node.getAttribute('data-role') === 'footer');
-    const rowIndex = nodes.findIndex((node) => node.classList.contains('row'));
+    const rowIndex = nodes.findIndex((node) => node.tagName === 'TBA3-CARD-GRID');
     expect(rowIndex).toBeGreaterThanOrEqual(0);
     expect(headerIndex).toBeLessThan(rowIndex);
     expect(footerIndex).toBeGreaterThan(rowIndex);

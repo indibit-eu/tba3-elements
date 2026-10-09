@@ -70,8 +70,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 880,
-          "frequency": 414,
-          "mean": 0.47045454545454546,
+          "frequency": 427,
+          "mean": 0.48522727272727273,
           "standardDeviation": 0
         }
       },
@@ -80,24 +80,14 @@
         "value": "female",
         "descriptiveStatistics": {
           "total": 880,
-          "frequency": 414,
-          "mean": 0.47045454545454546,
+          "frequency": 427,
+          "mean": 0.48522727272727273,
           "standardDeviation": 0
         }
       },
       {
         "type": "gender",
         "value": "diverse",
-        "descriptiveStatistics": {
-          "total": 880,
-          "frequency": 26,
-          "mean": 0.029545454545454545,
-          "standardDeviation": 0
-        }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
         "descriptiveStatistics": {
           "total": 880,
           "frequency": 26,
@@ -288,8 +278,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 5200,
-          "frequency": 2444,
-          "mean": 0.47,
+          "frequency": 2522,
+          "mean": 0.485,
           "standardDeviation": 0
         }
       },
@@ -298,24 +288,14 @@
         "value": "female",
         "descriptiveStatistics": {
           "total": 5200,
-          "frequency": 2444,
-          "mean": 0.47,
+          "frequency": 2522,
+          "mean": 0.485,
           "standardDeviation": 0
         }
       },
       {
         "type": "gender",
         "value": "diverse",
-        "descriptiveStatistics": {
-          "total": 5200,
-          "frequency": 156,
-          "mean": 0.03,
-          "standardDeviation": 0
-        }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
         "descriptiveStatistics": {
           "total": 5200,
           "frequency": 156,
@@ -506,8 +486,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 200,
-          "frequency": 94,
-          "mean": 0.47,
+          "frequency": 97,
+          "mean": 0.485,
           "standardDeviation": 0
         }
       },
@@ -516,24 +496,14 @@
         "value": "female",
         "descriptiveStatistics": {
           "total": 200,
-          "frequency": 94,
-          "mean": 0.47,
+          "frequency": 97,
+          "mean": 0.485,
           "standardDeviation": 0
         }
       },
       {
         "type": "gender",
         "value": "diverse",
-        "descriptiveStatistics": {
-          "total": 200,
-          "frequency": 6,
-          "mean": 0.03,
-          "standardDeviation": 0
-        }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
         "descriptiveStatistics": {
           "total": 200,
           "frequency": 6,
@@ -724,8 +694,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 210,
-          "frequency": 99,
-          "mean": 0.4714285714285714,
+          "frequency": 102,
+          "mean": 0.4857142857142857,
           "standardDeviation": 0
         }
       },
@@ -734,24 +704,14 @@
         "value": "female",
         "descriptiveStatistics": {
           "total": 210,
-          "frequency": 99,
-          "mean": 0.4714285714285714,
+          "frequency": 102,
+          "mean": 0.4857142857142857,
           "standardDeviation": 0
         }
       },
       {
         "type": "gender",
         "value": "diverse",
-        "descriptiveStatistics": {
-          "total": 210,
-          "frequency": 6,
-          "mean": 0.02857142857142857,
-          "standardDeviation": 0
-        }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
         "descriptiveStatistics": {
           "total": 210,
           "frequency": 6,
@@ -942,8 +902,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 160,
-          "frequency": 75,
-          "mean": 0.46875,
+          "frequency": 78,
+          "mean": 0.4875,
           "standardDeviation": 0
         }
       },
@@ -952,24 +912,14 @@
         "value": "female",
         "descriptiveStatistics": {
           "total": 160,
-          "frequency": 75,
-          "mean": 0.46875,
+          "frequency": 77,
+          "mean": 0.48125,
           "standardDeviation": 0
         }
       },
       {
         "type": "gender",
         "value": "diverse",
-        "descriptiveStatistics": {
-          "total": 160,
-          "frequency": 5,
-          "mean": 0.03125,
-          "standardDeviation": 0
-        }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
         "descriptiveStatistics": {
           "total": 160,
           "frequency": 5,
@@ -1160,8 +1110,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 140,
-          "frequency": 66,
-          "mean": 0.4714285714285714,
+          "frequency": 68,
+          "mean": 0.4857142857142857,
           "standardDeviation": 0
         }
       },
@@ -1170,24 +1120,14 @@
         "value": "female",
         "descriptiveStatistics": {
           "total": 140,
-          "frequency": 66,
-          "mean": 0.4714285714285714,
+          "frequency": 68,
+          "mean": 0.4857142857142857,
           "standardDeviation": 0
         }
       },
       {
         "type": "gender",
         "value": "diverse",
-        "descriptiveStatistics": {
-          "total": 140,
-          "frequency": 4,
-          "mean": 0.02857142857142857,
-          "standardDeviation": 0
-        }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
         "descriptiveStatistics": {
           "total": 140,
           "frequency": 4,
@@ -1277,8 +1217,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 190,
-          "frequency": 89,
-          "mean": 0.46842105263157896,
+          "frequency": 92,
+          "mean": 0.4842105263157895,
           "standardDeviation": 0
         }
       },
@@ -1287,24 +1227,14 @@
         "value": "female",
         "descriptiveStatistics": {
           "total": 190,
-          "frequency": 89,
-          "mean": 0.46842105263157896,
+          "frequency": 92,
+          "mean": 0.4842105263157895,
           "standardDeviation": 0
         }
       },
       {
         "type": "gender",
         "value": "diverse",
-        "descriptiveStatistics": {
-          "total": 190,
-          "frequency": 6,
-          "mean": 0.031578947368421054,
-          "standardDeviation": 0
-        }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
         "descriptiveStatistics": {
           "total": 190,
           "frequency": 6,

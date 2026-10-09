@@ -75,7 +75,7 @@ describe('SolutionRatesProfileComponent', () => {
     expect(html).not.toContain('table-light');
   });
 
-  it('startet in der relativen Ansicht und färbt die Zellen nach dem Bezug', () => {
+  it('färbt in der relativen Ansicht die Zellen nach dem Bezug', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE);
     const component = fixture.componentInstance;
     expect(component.isRelative()).toBe(true);
@@ -124,7 +124,7 @@ describe('SolutionRatesProfileComponent', () => {
     expect(component.relativeLegend()[2].color).toBe('var(--tba3-deviation-worse)');
 
     // Schwelle 0: jede Abweichung farbig, Texte nennen nur die Richtung.
-    fixture.componentRef.setInput('deviationThreshold', 0);
+    fixture.componentRef.setInput('scale', { mode: 'relative', threshold: 0 });
     fixture.detectChanges();
     expect(component.relativeLegend().map((item) => item.text)).toEqual([
       'darüber',
@@ -151,22 +151,28 @@ describe('SolutionRatesProfileComponent', () => {
     expect(referenceCell.textContent?.trim()).toBe('70 %');
   });
 
-  it('beachtet deviationThreshold für die Färbung der relativen Zellen', () => {
+  it('beachtet die relative Schwelle für die Färbung der Zellen', () => {
     // Schwelle 0: jede Abweichung ist farbig. 73 % gegen 70 % → +3 → better.
-    const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE, { deviationThreshold: 0 });
+    const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE, {
+      scale: { mode: 'relative', threshold: 0 },
+    });
     const main = fixture.componentInstance.blocks()[0].rows[0].cells[0].relative!;
     expect(main.color).toBe('var(--tba3-deviation-better)');
 
     // Große Schwelle: dieselbe Abweichung bleibt neutral, Pfeil und aria bleiben.
-    const high = create(FIXTURE_SOLUTION_RATES_PROFILE, { deviationThreshold: 10 });
+    const high = create(FIXTURE_SOLUTION_RATES_PROFILE, {
+      scale: { mode: 'relative', threshold: 10 },
+    });
     const stillNeutral = high.componentInstance.blocks()[0].rows[0].cells[0].relative!;
     expect(stillNeutral.color).toBe('var(--tba3-deviation-neutral)');
     expect(stillNeutral.icon).toBe('fa-arrow-up');
     expect(stillNeutral.ariaLabel).toBe('73 %, 3 Prozentpunkte über Landesmittelwert');
   });
 
-  it('schaltet auf die absolute Ansicht mit Skala-Legende und fa-circle-dot', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE, { scale: 'absolute' });
+  it('zeigt in der absoluten Ansicht die Skala-Legende mit fa-circle-dot', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE, {
+      scale: { mode: 'absolute', thresholds: [40, 55, 70] },
+    });
     const component = fixture.componentInstance;
     expect(component.isRelative()).toBe(false);
 
@@ -184,15 +190,34 @@ describe('SolutionRatesProfileComponent', () => {
     expect(mid.level).toBe('mid');
     expect(fixture.nativeElement.querySelector('tbody i.fa-circle-dot')).not.toBeNull();
 
-    // Umschalten zurück auf relativ tauscht die Skala-Legende gegen die Δ-Legende.
-    component.setScale('relative');
-    fixture.detectChanges();
-    expect(fixture.nativeElement.querySelector('ul[aria-label="Skala Lösungsquoten"]')).toBeNull();
-    expect(fixture.nativeElement.querySelector('ul[aria-label="Skala Abweichung"]')).not.toBeNull();
+    // Die relative Darstellung wird in diesem Modus nicht gebaut.
+    expect(mid.level).toBe('mid');
+    expect(component.blocks()[0].rows[1].cells[0].relative).toBeUndefined();
+  });
+
+  it('wählt den Modus über den scale-Input, nicht über einen Umschalter', () => {
+    const relative = create(FIXTURE_SOLUTION_RATES_PROFILE);
+    expect(relative.componentInstance.isRelative()).toBe(true);
+    expect(
+      relative.nativeElement.querySelector('ul[aria-label="Skala Abweichung"]'),
+    ).not.toBeNull();
+    // Kein Bezug-Umschalter im Bedienfeld.
+    expect(relative.nativeElement.querySelector('[aria-label="Bezug"]')).toBeNull();
+
+    const absolute = create(FIXTURE_SOLUTION_RATES_PROFILE, {
+      scale: { mode: 'absolute', thresholds: [40, 55, 70] },
+    });
+    expect(absolute.componentInstance.isRelative()).toBe(false);
+    expect(
+      absolute.nativeElement.querySelector('ul[aria-label="Skala Lösungsquoten"]'),
+    ).not.toBeNull();
+    expect(absolute.nativeElement.querySelector('[aria-label="Bezug"]')).toBeNull();
   });
 
   it('ordnet Werte über die absolute Skala den vier Stufen zu', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE, { scale: 'absolute' });
+    const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE, {
+      scale: { mode: 'absolute', thresholds: [40, 55, 70] },
+    });
     const component = fixture.componentInstance;
     const lesen = component.blocks()[0].rows;
     const ortho = component.blocks()[1].rows;
@@ -228,8 +253,7 @@ describe('SolutionRatesProfileComponent', () => {
 
   it('bildet die Skala-Legende aus den thresholds', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE, {
-      scale: 'absolute',
-      thresholds: [50, 65, 80],
+      scale: { mode: 'absolute', thresholds: [50, 65, 80] },
     });
     const legendList = fixture.nativeElement.querySelector('ul[aria-label="Skala Lösungsquoten"]');
     expect(legendList).not.toBeNull();
@@ -244,15 +268,18 @@ describe('SolutionRatesProfileComponent', () => {
 
   it('setzt border-start an der ersten Vergleichsspalte', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE_SCHOOL, {
-      scale: 'absolute',
+      scale: { mode: 'absolute', thresholds: [40, 55, 70] },
       columns: EXAMPLE_PROFILE_COLUMNS_SCHOOL,
     });
     const component = fixture.componentInstance;
 
+    // Schule und drei Klassen als Hauptspalten, Landesmittelwert und Vergleichsschulen als Vergleiche.
     const columns = component.columnViews();
     expect(columns.filter((column) => column.role === 'main').length).toBe(4);
-    expect(columns.filter((column) => column.role === 'comparison').length).toBe(1);
+    expect(columns.filter((column) => column.role === 'comparison').length).toBe(2);
+    // Nur die erste Vergleichsspalte (Landesmittelwert) trägt die Trennlinie.
     expect(columns[4].firstComparison).toBe(true);
+    expect(columns[5].firstComparison).toBe(false);
     expect(columns[0].firstComparison).toBe(false);
 
     const html = fixture.nativeElement.innerHTML as string;
@@ -373,36 +400,29 @@ describe('SolutionRatesProfileComponent', () => {
     ]);
   });
 
-  it('bietet das Bedienfeld mit der Zeile „Ansicht" und beiden Umschaltern', () => {
+  it('bietet das Bedienfeld mit der Zeile „Ansicht" und dem Gliederungsumschalter', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE);
     const panel = fixture.nativeElement.querySelector('tba3-control-panel') as HTMLElement;
     expect(panel).not.toBeNull();
     expect(panel.textContent).toContain('Ansicht');
     // Ein Heft: keine Filterzeile, kein leeres „Testheft"-Label.
     expect(panel.textContent).not.toContain('Testheft');
+    // Kein Bezug-Umschalter mehr; der Modus ist ein fester Input.
+    expect(panel.querySelector('[aria-label="Bezug"]')).toBeNull();
 
-    const scaleButtons = panel.querySelectorAll('[aria-label="Bezug"] button');
-    expect([...scaleButtons].map((button) => button.textContent?.trim())).toEqual([
-      'Relativ',
-      'Absolut',
-    ]);
-    expect((scaleButtons[0] as HTMLButtonElement).classList).toContain('active');
-
-    const viewButtons = panel.querySelectorAll('[aria-label="Gliederung"] button');
+    const viewGroup = panel.querySelector('[aria-label="Gliederung"]') as HTMLElement;
+    expect(viewGroup).not.toBeNull();
+    const viewButtons = viewGroup.querySelectorAll('button');
     expect([...viewButtons].map((button) => button.textContent?.trim())).toEqual([
       'Nach Domäne',
       'Flach',
     ]);
     expect((viewButtons[0] as HTMLButtonElement).classList).toContain('active');
 
-    // Die Zeile „Ansicht" benennt die umschließende Gruppe über aria-labelledby.
-    const viewRow = panel.querySelector('div.d-flex.flex-wrap.gap-2[role="group"]') as HTMLElement;
-    expect(viewRow).not.toBeNull();
-    expect(viewRow.getAttribute('aria-label')).toBeNull();
-    const labelId = viewRow.getAttribute('aria-labelledby');
+    // Die Zeile „Ansicht" benennt die Gruppe über aria-labelledby.
+    const labelId = viewGroup.getAttribute('aria-labelledby');
     expect(labelId).toBeTruthy();
     expect(panel.querySelector(`#${labelId}`)?.textContent?.trim()).toBe('Ansicht');
-    expect(viewRow.querySelectorAll('.btn-group').length).toBe(2);
   });
 
   it('rendert die Zeilen über tba3-aggregation-value mit Klickziel', () => {
@@ -463,6 +483,23 @@ describe('SolutionRatesProfileComponent', () => {
     const withoutAggregations = create(FIXTURE_SOLUTION_RATES_PROFILE_EMPTY);
     expect(withoutAggregations.componentInstance.blocks().length).toBe(0);
     expect(withoutAggregations.nativeElement.querySelector('table')).toBeNull();
+  });
+
+  it('weist in der relativen Ansicht ohne Vergleichsspalte auf den fehlenden Bezug hin', () => {
+    // Die Lerngruppe trägt keinen Vergleich: relativ fehlt der Bezug für die Abweichung.
+    const fixture = create(FIXTURE_SOLUTION_RATES_PROFILE_READING_STYLES);
+    const component = fixture.componentInstance;
+    expect(component.missingReference()).toBe(true);
+    expect(fixture.nativeElement.querySelector('table')).toBeNull();
+    expect(fixture.nativeElement.querySelector('tba3-control-panel')).toBeNull();
+    const hint = fixture.nativeElement.querySelector('p.text-secondary.mb-0') as HTMLElement;
+    expect(hint?.textContent?.trim()).toBe('Keine Vergleichsgruppe für die relative Darstellung.');
+
+    // Als absolute Skala braucht es keinen Bezug: die Tabelle erscheint.
+    fixture.componentRef.setInput('scale', { mode: 'absolute', thresholds: [40, 55, 70] });
+    fixture.detectChanges();
+    expect(component.missingReference()).toBe(false);
+    expect(fixture.nativeElement.querySelector('table')).not.toBeNull();
   });
 
   it('bildet aus der Lieferform ohne Domäne Blöcke je Kompetenztyp mit Landesvergleich', () => {

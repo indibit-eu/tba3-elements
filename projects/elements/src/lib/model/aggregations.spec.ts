@@ -404,6 +404,36 @@ describe('compositionEntries', () => {
     ];
     expect(compositionEntries(entries)).toEqual(entries);
   });
+
+  it('fasst bei der Sprache zu Hause alles außer Deutsch zu „andere“ zusammen', () => {
+    const mapped = compositionEntries([
+      entry('languageAtHome', 'german', 144, 200),
+      entry('languageAtHome', 'english', 6, 200),
+      entry('languageAtHome', 'french', 4, 200),
+      entry('languageAtHome', 'other', 46, 200),
+    ]);
+    expect(
+      mapped.map((item) => [
+        item.type,
+        item.value,
+        item.descriptiveStatistics.frequency,
+        item.descriptiveStatistics.total,
+        item.descriptiveStatistics.mean,
+      ]),
+    ).toEqual([
+      ['students-by-languageAtHome', 'german', 144, 200, 0],
+      ['students-by-languageAtHome', 'other', 56, 200, 0.28],
+    ]);
+  });
+
+  it('lässt die übrigen Merkmale an ihrer Stelle, wenn es nur Deutsch gibt', () => {
+    const mapped = compositionEntries([
+      entry('gender', 'male', 12, 24),
+      entry('languageAtHome', 'german', 24, 24),
+      entry('SES', 'A', 3, 24),
+    ]);
+    expect(mapped.map((item) => item.value)).toEqual(['male', 'german', 'A']);
+  });
 });
 
 describe('characteristicTypes', () => {

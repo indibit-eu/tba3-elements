@@ -35,3 +35,9 @@
 .tba3-pinned-rows {
   --bs-table-striped-bg: transparent;
 }
+
+// Neben .table-responsive: overflow-x: auto erzwingt auch vertikales Scrollen, und die halbe
+// Rahmenlinie einer border-collapse-Tabelle ragt sonst als 1 px Überlauf mit Scrollbar heraus.
+.tba3-table-scroll {
+  overflow-y: hidden;
+}

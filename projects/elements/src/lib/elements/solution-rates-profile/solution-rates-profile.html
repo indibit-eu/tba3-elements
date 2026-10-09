@@ -1,39 +1,23 @@
 <ng-content select="[tba3Header]" />
 
-@if (hasRows()) {
-  <tba3-control-panel class="d-block mb-3" filterLabel="Testheft">
-    @if (hasBookletSwitch()) {
-      <tba3-booklet-switch
-        tba3Filter
-        [booklets]="bookletList()"
-        [active]="activeBooklet()"
-        [valueLabels]="valueLabels()"
-        (activeChange)="setBooklet($event)"
-      />
-    }
-    <div tba3View class="d-flex flex-wrap gap-2" role="group">
-      <div class="btn-group btn-group-sm" role="group" aria-label="Bezug">
-        <button
-          type="button"
-          class="btn btn-outline-secondary"
-          [class.active]="isRelative()"
-          [attr.aria-pressed]="isRelative()"
-          (click)="setScale('relative')"
-        >
-          Relativ
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-secondary"
-          [class.active]="!isRelative()"
-          [attr.aria-pressed]="!isRelative()"
-          (click)="setScale('absolute')"
-        >
-          Absolut
-        </button>
-      </div>
+@if (!hasRows()) {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+} @else if (missingReference()) {
+  <p class="text-secondary mb-0">Keine Vergleichsgruppe für die relative Darstellung.</p>
+} @else {
+  @if (hasBookletSwitch() || hasViewSwitch()) {
+    <tba3-control-panel class="d-block mb-3" filterLabel="Testheft">
+      @if (hasBookletSwitch()) {
+        <tba3-booklet-switch
+          tba3Filter
+          [booklets]="bookletList()"
+          [active]="activeBooklet()"
+          [valueLabels]="valueLabels()"
+          (activeChange)="setBooklet($event)"
+        />
+      }
       @if (hasViewSwitch()) {
-        <div class="btn-group btn-group-sm" role="group" aria-label="Gliederung">
+        <div tba3View class="btn-group btn-group-sm" role="group" aria-label="Gliederung">
           <button
             type="button"
             class="btn btn-outline-secondary"
@@ -54,8 +38,8 @@
           </button>
         </div>
       }
-    </div>
-  </tba3-control-panel>
+    </tba3-control-panel>
+  }
 
   @if (isRelative()) {
     <ul class="list-inline small mb-3" aria-label="Skala Abweichung">
@@ -78,7 +62,7 @@
   } @else {
     <tba3-scale-legend
       class="d-block mb-3"
-      [thresholds]="thresholds()"
+      [thresholds]="absoluteThresholds()"
       ariaLabel="Skala Lösungsquoten"
     />
   }
@@ -95,7 +79,7 @@
       </h4>
     }
 
-    <div class="table-responsive">
+    <div class="table-responsive tba3-table-scroll">
       <table class="table table-sm table-striped align-middle mb-0">
         <caption class="visually-hidden">
           {{
@@ -195,8 +179,6 @@
       <hr class="my-4" />
     }
   }
-} @else {
-  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
 }
 
 <ng-content select="[tba3Footer]" />

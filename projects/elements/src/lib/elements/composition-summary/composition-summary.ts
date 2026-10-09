@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import { Tba3CardGridComponent } from '../../components/card-grid/card-grid';
 import { Tba3AggregationValueComponent } from '../../components/aggregation-value/aggregation-value';
 import {
   type DonutSegment,
@@ -51,7 +52,7 @@ interface SubjectMinimum {
 @Component({
   selector: 'tba3-composition-summary',
   standalone: true,
-  imports: [Tba3DonutChartComponent, Tba3AggregationValueComponent],
+  imports: [Tba3CardGridComponent, Tba3DonutChartComponent, Tba3AggregationValueComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './composition-summary.html',
   styleUrl: './composition-summary.scss',

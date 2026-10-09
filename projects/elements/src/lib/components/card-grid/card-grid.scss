@@ -1,0 +1,6 @@
+// min() hält eine einzelne Karte auch dann im Element, wenn es schmaler als die Mindestbreite ist.
+:host {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--tba3-card-min), 100%), 1fr));
+  gap: 1rem;
+}

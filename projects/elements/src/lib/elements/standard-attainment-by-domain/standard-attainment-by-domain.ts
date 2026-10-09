@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import { Tba3CardGridComponent } from '../../components/card-grid/card-grid';
 import {
   type DonutSegment,
   Tba3DonutChartComponent,
@@ -44,7 +45,7 @@ interface Subject {
 @Component({
   selector: 'tba3-standard-attainment-by-domain',
   standalone: true,
-  imports: [Tba3DonutChartComponent],
+  imports: [Tba3CardGridComponent, Tba3DonutChartComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './standard-attainment-by-domain.html',
   styleUrl: './standard-attainment-by-domain.scss',

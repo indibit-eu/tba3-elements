@@ -38,13 +38,14 @@ import {
   categoryVariable,
   characteristicOf,
   characteristicTotal,
-  characteristicTypes,
   CLASSIFICATION_BANDS,
   classificationBands,
   compositionEntries,
+  GENDER_AGGREGATION,
   groupById,
   hasClassifications,
   labeledDeviation,
+  LANGUAGE_AT_HOME_AGGREGATION,
   minimumClassificationDistribution,
   nonMinimumClassificationEntries,
   PARTICIPATION_AGGREGATION,
@@ -154,6 +155,9 @@ const METRIC_OPTIONS: readonly { key: SubgroupsMetric; label: string }[] = [
 ];
 
 const UNIT_SORT_PREFIX = 'unit:';
+
+// Weitere Merkmale wie SES zeigt die Tabelle bewusst nicht, auch wenn die Antwort sie trägt.
+const CHARACTERISTIC_TYPES: readonly string[] = [GENDER_AGGREGATION, LANGUAGE_AT_HOME_AGGREGATION];
 
 /**
  * Zeigt die Teilgruppen einer Ebene als sortierbare Tabelle mit Zusammensetzung und einer Kennzahl
@@ -284,7 +288,7 @@ export class SubgroupsTableComponent {
     const labels = this.valueLabels();
     const rows = this.rowData();
     const slots = new Map<string, Map<string, ValueSlot>>();
-    for (const type of characteristicTypes(rows.flatMap((row) => [...row.byType.keys()]))) {
+    for (const type of CHARACTERISTIC_TYPES) {
       const values = new Map<string, ValueSlot>();
       for (const row of rows) {
         for (const entry of row.byType.get(type) ?? []) {

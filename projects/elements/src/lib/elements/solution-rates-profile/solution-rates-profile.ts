@@ -22,6 +22,7 @@ import type {
   GroupedValueGroups,
   ScaleLevel,
   ScaleThresholds,
+  SolutionRatesScale,
   SortCriterion,
   SortDirection,
   ValueLabels,
@@ -51,11 +52,11 @@ import {
 /** Anordnung der Tabelle: in Blöcke gegliedert oder flach über alle Blöcke. */
 export type ProfileView = 'byDomain' | 'flat';
 
-/** Bezugssystem der Zellen: Abweichung vom Bezug oder absolute Skala. */
-export type ProfileScale = 'relative' | 'absolute';
-
 // Kein Spaltenindex, damit der Schlüssel nicht mit den Wertspalten kollidiert.
 const LABEL_COLUMN = 'label';
+
+// Rückfallgrenzen der absoluten Skala; in der relativen Ansicht ungenutzt.
+const DEFAULT_THRESHOLDS: ScaleThresholds = [40, 55, 70];
 
 /** Eine Gruppe der Antwort als Haupt- oder Vergleichsspalte des Teilkompetenzen-Profils. */
 export interface ProfileColumn {
@@ -157,14 +158,8 @@ export class SolutionRatesProfileComponent {
   /** Spalten mit Rolle; ohne Angabe Hauptgruppe, Teilgruppen und Vergleiche der Antwort. */
   readonly columns = input<readonly ProfileColumn[] | undefined>(undefined);
 
-  /** Drei Grenzen der absoluten Skala in Prozent. */
-  readonly thresholds = input<ScaleThresholds>([40, 55, 70]);
-
-  /** Anfängliches Bezugssystem, umschaltbar. */
-  readonly scale = input<ProfileScale>('relative');
-
-  /** Prozentpunkte, ab denen eine Zelle der relativen Ansicht farbig wird. */
-  readonly deviationThreshold = input<number>(5);
+  /** Bezugssystem, vom Host gewählt: relativ zum Bezug oder absolute Skala. Standard relativ, ab 5 Pp. */
+  readonly scale = input<SolutionRatesScale>({ mode: 'relative', threshold: 5 });
 
   /** Anfängliche Anordnung, umschaltbar. */
   readonly view = input<ProfileView>('byDomain');
@@ -182,9 +177,16 @@ export class SolutionRatesProfileComponent {
 
   private readonly allGroups = computed(() => groupById(this.aggregations()));
 
-  private readonly sortedThresholds = computed<ScaleThresholds>(() =>
-    sortThresholds(this.thresholds()),
-  );
+  /** Grenzen der absoluten Skala; nur in der absoluten Ansicht ausgewertet. */
+  readonly absoluteThresholds = computed<ScaleThresholds>(() => {
+    const scale = this.scale();
+    return scale.mode === 'absolute' ? sortThresholds(scale.thresholds) : DEFAULT_THRESHOLDS;
+  });
+
+  private readonly relativeThreshold = computed(() => {
+    const scale = this.scale();
+    return scale.mode === 'relative' ? scale.threshold : 0;
+  });
 
   private readonly bookletState = createBookletState(() => this.roles().focus?.groups ?? []);
 
@@ -220,9 +222,7 @@ export class SolutionRatesProfileComponent {
 
   readonly isFlat = computed(() => this.activeView() === 'flat');
 
-  readonly activeScale = linkedSignal<ProfileScale>(() => this.scale());
-
-  readonly isRelative = computed(() => this.activeScale() === 'relative');
+  readonly isRelative = computed(() => this.scale().mode === 'relative');
 
   private readonly sortCriteria = linkedSignal<SortCriterion<string>[]>(() => {
     const initial = this.defaultSort();
@@ -235,7 +235,7 @@ export class SolutionRatesProfileComponent {
   });
 
   readonly relativeLegend = computed(() => {
-    const threshold = this.deviationThreshold();
+    const threshold = this.relativeThreshold();
     const build = (direction: DeviationDirection, icon: string, text: string) => ({
       direction,
       icon,
@@ -307,6 +307,12 @@ export class SolutionRatesProfileComponent {
       firstComparison: column.index === firstComparisonIndex,
     }));
   });
+
+  /** Relative Ansicht ohne Vergleichsspalte: es fehlt der Bezug für die Abweichung. */
+  readonly missingReference = computed(
+    () =>
+      this.isRelative() && !this.resolvedColumns().some((column) => column.role === 'comparison'),
+  );
 
   readonly blocks = computed<ProfileBlock[]>(() => {
     const focusBlocks = this.focusBlocks();
@@ -382,10 +388,6 @@ export class SolutionRatesProfileComponent {
 
   setView(view: ProfileView): void {
     this.activeView.set(view);
-  }
-
-  setScale(scale: ProfileScale): void {
-    this.activeScale.set(scale);
   }
 
   readonly labelColumn = LABEL_COLUMN;
@@ -469,6 +471,15 @@ export class SolutionRatesProfileComponent {
     referenceName: string,
   ): ProfileCell {
     if (value === null) return emptyCell(column.name);
+    if (this.isRelative()) {
+      return {
+        text: `${value} %`,
+        sortValue: value,
+        emptyAriaLabel: '',
+        absolute: undefined,
+        relative: this.buildRelative(value, isReference, referencePercent, referenceName),
+      };
+    }
     const level = this.levelOf(value);
     return {
       text: `${value} %`,
@@ -477,9 +488,9 @@ export class SolutionRatesProfileComponent {
       absolute: {
         level,
         emphasis,
-        ariaLabel: `${column.name}: ${value} %, ${scaleRangeLabel(level, this.sortedThresholds())}`,
+        ariaLabel: `${column.name}: ${value} %, ${scaleRangeLabel(level, this.absoluteThresholds())}`,
       },
-      relative: this.buildRelative(value, isReference, referencePercent, referenceName),
+      relative: undefined,
     };
   }
 
@@ -499,7 +510,7 @@ export class SolutionRatesProfileComponent {
       };
     }
     const dev = deviation(value, referencePercent, true);
-    const belowThreshold = Math.abs(dev.diff) < this.deviationThreshold();
+    const belowThreshold = Math.abs(dev.diff) < this.relativeThreshold();
     const direction = belowThreshold ? 'neutral' : dev.direction;
     const icon = dev.diff > 0 ? 'fa-arrow-up' : dev.diff < 0 ? 'fa-arrow-down' : 'fa-circle-dot';
     return {
@@ -519,7 +530,7 @@ export class SolutionRatesProfileComponent {
   }
 
   private levelOf(value: number): ScaleLevel {
-    return scaleLevel(value, this.sortedThresholds());
+    return scaleLevel(value, this.absoluteThresholds());
   }
 
   private cellPercent(

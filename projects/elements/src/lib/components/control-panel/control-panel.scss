@@ -1,0 +1,5 @@
+// Feste Breite statt col-sm-2, weil sich Bootstraps Spalten nach dem Fenster richten. Passen die
+// Bedienelemente nicht daneben, rücken sie unter das Label.
+.tba3-control-label {
+  flex: 0 0 8rem;
+}

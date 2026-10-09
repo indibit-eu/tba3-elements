@@ -36,7 +36,7 @@ function render(setup: Partial<HostComponent> = {}) {
 }
 
 function labels(fixture: { nativeElement: HTMLElement }): string[] {
-  return Array.from(fixture.nativeElement.querySelectorAll('.row > .small')).map(
+  return Array.from(fixture.nativeElement.querySelectorAll('.tba3-control-label')).map(
     (element) => element.textContent?.trim() ?? '',
   );
 }
@@ -58,7 +58,7 @@ describe('Tba3ControlPanelComponent', () => {
   it('zeigt keine Zeile ohne projizierten Umschalter', () => {
     const fixture = render();
     expect(labels(fixture)).toEqual([]);
-    expect(fixture.nativeElement.querySelector('.row')).toBeNull();
+    expect(fixture.nativeElement.querySelector('.tba3-control-label')).toBeNull();
   });
 
   it('verbindet jeden Umschalter über aria-labelledby mit der id seines Zeilenlabels', () => {

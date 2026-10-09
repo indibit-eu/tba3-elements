@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { describe, expect, it } from 'vitest';
-import { SolutionRatesHeatmapComponent } from './solution-rates-heatmap';
+import { SolutionRatesHeatmapComponent, type HeatmapScale } from './solution-rates-heatmap';
 import type { AggregationsValueGroup } from '../../model';
 import {
   FIXTURE_SOLUTION_RATES_HEATMAP,
@@ -17,6 +17,8 @@ const WITHOUT_SCHOOL_COMPARISON: AggregationsValueGroup[] = FIXTURE_SOLUTION_RAT
 const WITHOUT_ANY_COMPARISON: AggregationsValueGroup[] = FIXTURE_SOLUTION_RATES_HEATMAP.filter(
   (group) => group.type !== 'school' && group.type !== 'state',
 );
+
+const ABSOLUTE: HeatmapScale = { mode: 'absolute', thresholds: [40, 55, 70] };
 
 function create(data: unknown, inputs: Record<string, unknown> = {}) {
   const fixture = TestBed.createComponent(SolutionRatesHeatmapComponent);
@@ -48,12 +50,9 @@ describe('SolutionRatesHeatmapComponent', () => {
     expect(columns.map((column) => column.level)).toEqual(['low', 'mid-low', 'mid', 'mid', 'high']);
   });
 
-  it('sortiert dieselben Spalten nach dem Klassenmittel in der absoluten Ansicht („keine")', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP);
+  it('sortiert dieselben Spalten nach dem Klassenmittel in der absoluten Ansicht (scale)', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP, { scale: ABSOLUTE });
     const component = fixture.componentInstance;
-
-    component.setComparison(undefined);
-    fixture.detectChanges();
     expect(component.isAbsolute()).toBe(true);
     expect(component.referenceRow()).toBeUndefined();
 
@@ -91,12 +90,9 @@ describe('SolutionRatesHeatmapComponent', () => {
     expect(rows.map((row) => row.mean)).toEqual([-14, -11, -2, 2, 2, 6]);
   });
 
-  it('färbt die Zellen in der absoluten Ansicht nach der Lösungsquote (Default-Grenzen)', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP);
+  it('färbt die Zellen in der absoluten Ansicht nach der Lösungsquote (scale-Grenzen)', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP, { scale: ABSOLUTE });
     const component = fixture.componentInstance;
-
-    component.setComparison(undefined);
-    fixture.detectChanges();
     expect(component.isAbsolute()).toBe(true);
 
     const ida = component.rows().find((row) => row.name === 'Ida Haselbeck')!;
@@ -122,6 +118,25 @@ describe('SolutionRatesHeatmapComponent', () => {
       'low',
     ]);
     expect(ben.cells[0].text).toContain('22 Prozentpunkte unter der Vergleichsgruppe');
+  });
+
+  it('respektiert eigene relative Grenzen über scale.thresholds', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP, {
+      scale: { mode: 'relative', thresholds: [-20, -10, 0] } satisfies HeatmapScale,
+    });
+    const component = fixture.componentInstance;
+    expect(component.isAbsolute()).toBe(false);
+
+    const ben = component.rows().find((row) => row.name === 'Ben Ulmer')!;
+    // −22 liegt jetzt unter −20 (low), −9 zwischen −10 und 0 (mid), −6 ebenso (mid).
+    expect(ben.cells.map((cell) => cell.value)).toEqual([-22, -9, -20, -6, -12]);
+    expect(ben.cells.map((cell) => cell.level)).toEqual([
+      'low',
+      'mid',
+      'mid-low',
+      'mid',
+      'mid-low',
+    ]);
   });
 
   it('zeigt eine fehlende Zelle ungefärbt und mit „ohne Wert"', () => {
@@ -243,7 +258,9 @@ describe('SolutionRatesHeatmapComponent', () => {
 
   it('beschriftet die Filterzeile mit „Klassenmittel" statt „Kategorie"', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP);
-    const labels = [...fixture.nativeElement.querySelectorAll('tba3-control-panel .row .col-12')];
+    const labels = [
+      ...fixture.nativeElement.querySelectorAll('tba3-control-panel .tba3-control-label'),
+    ];
     expect(labels.some((element) => element.textContent?.trim() === 'Klassenmittel')).toBe(true);
     expect(labels.some((element) => element.textContent?.trim() === 'Kategorie')).toBe(false);
   });
@@ -267,14 +284,13 @@ describe('SolutionRatesHeatmapComponent', () => {
     expect(cells.every((cell) => cell.style.backgroundColor === '')).toBe(true);
   });
 
-  it('blendet die Vergleichszeile in der absoluten Ansicht („keine") aus', () => {
-    const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP);
+  it('blendet Vergleichszeile und -umschalter in der absoluten Ansicht aus', () => {
+    const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP, { scale: ABSOLUTE });
     const component = fixture.componentInstance;
-
-    component.setComparison(undefined);
-    fixture.detectChanges();
     expect(component.referenceRow()).toBeUndefined();
-    // Der Umschalter nennt „Schulmittelwert" weiter, die Tabelle nicht.
+    expect(component.hasComparisonSwitch()).toBe(false);
+    expect(fixture.nativeElement.querySelector('[aria-label="Vergleich"]')).toBeNull();
+    // Die Vergleichsgruppen der Daten tauchen in der Tabelle nicht auf.
     const bodyRows = [...fixture.nativeElement.querySelectorAll('tbody tr')];
     expect(bodyRows.some((row: HTMLElement) => row.textContent?.includes('Schulmittelwert'))).toBe(
       false,
@@ -308,26 +324,10 @@ describe('SolutionRatesHeatmapComponent', () => {
     expect(visibleValue(findRow('Ben Ulmer'))).toBe('−22 Pp');
   });
 
-  it('bietet den Umschalter „Vergleich" ab einer Vergleichsgruppe, „keine" als letzte Option', () => {
-    const none = create(WITHOUT_ANY_COMPARISON);
-    expect(none.componentInstance.hasComparisonSwitch()).toBe(false);
-    expect(none.componentInstance.isAbsolute()).toBe(true);
-    expect(none.nativeElement.querySelector('[aria-label="Vergleich"]')).toBeNull();
-
-    const single = create(WITHOUT_SCHOOL_COMPARISON);
-    const singleComponent = single.componentInstance;
-    expect(singleComponent.hasComparisonSwitch()).toBe(true);
-    expect(singleComponent.comparisonOptions().map((option) => option.name)).toEqual([
-      'Landesmittelwert',
-    ]);
-    expect(singleComponent.referenceRow()?.name).toBe('Landesmittelwert');
-    const singleButtons = [
-      ...single.nativeElement.querySelectorAll('[aria-label="Vergleich"] button'),
-    ].map((button) => button.textContent?.trim());
-    expect(singleButtons).toEqual(['Landesmittelwert', 'keine']);
-
+  it('wählt die Vergleichsgruppe nur ab zwei Gruppen, ohne Option „keine"', () => {
     const fixture = create(FIXTURE_SOLUTION_RATES_HEATMAP);
     const component = fixture.componentInstance;
+    expect(component.hasComparisonSwitch()).toBe(true);
     expect(component.comparisonOptions().map((option) => option.name)).toEqual([
       'Schulmittelwert',
       'Landesmittelwert',
@@ -335,15 +335,43 @@ describe('SolutionRatesHeatmapComponent', () => {
     // Startauswahl ist die erste Vergleichsgruppe der Antwort.
     expect(component.referenceRow()?.name).toBe('Schulmittelwert');
 
+    const buttons = [
+      ...fixture.nativeElement.querySelectorAll('[aria-label="Vergleich"] button'),
+    ].map((button) => button.textContent?.trim());
+    expect(buttons).toEqual(['Schulmittelwert', 'Landesmittelwert']);
+
     component.setComparison('state:state-average');
     fixture.detectChanges();
     expect(component.referenceRow()?.name).toBe('Landesmittelwert');
-    expect(component.isAbsolute()).toBe(false);
+  });
 
-    component.setComparison(undefined);
-    fixture.detectChanges();
+  it('nutzt die einzige Vergleichsgruppe ohne Umschalter', () => {
+    const single = create(WITHOUT_SCHOOL_COMPARISON);
+    const component = single.componentInstance;
+    expect(component.isAbsolute()).toBe(false);
+    expect(component.hasComparisonSwitch()).toBe(false);
+    expect(component.referenceRow()?.name).toBe('Landesmittelwert');
+    expect(single.nativeElement.querySelector('[aria-label="Vergleich"]')).toBeNull();
+  });
+
+  it('zeigt relativ ohne Vergleichsgruppe nur den Hinweis statt der Heatmap', () => {
+    const fixture = create(WITHOUT_ANY_COMPARISON);
+    const component = fixture.componentInstance;
+    expect(component.isAbsolute()).toBe(false);
+    expect(component.needsComparison()).toBe(true);
+    expect(fixture.nativeElement.querySelector('table')).toBeNull();
+    expect(fixture.nativeElement.querySelector('tba3-control-panel')).toBeNull();
+    expect(fixture.nativeElement.querySelector('p.text-secondary')?.textContent?.trim()).toBe(
+      'Keine Vergleichsgruppe für die relative Darstellung.',
+    );
+  });
+
+  it('zeigt dieselben Daten absolut ohne den Vergleichs-Hinweis', () => {
+    const fixture = create(WITHOUT_ANY_COMPARISON, { scale: ABSOLUTE });
+    const component = fixture.componentInstance;
+    expect(component.needsComparison()).toBe(false);
+    expect(fixture.nativeElement.querySelector('table')).not.toBeNull();
     expect(component.referenceRow()).toBeUndefined();
-    expect(component.isAbsolute()).toBe(true);
   });
 
   it('rendert im Leerzustand nur den Hinweis (leeres Array und Hauptgruppe ohne Aggregationen)', () => {

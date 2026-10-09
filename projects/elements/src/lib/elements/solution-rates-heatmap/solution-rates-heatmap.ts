@@ -20,6 +20,7 @@ import {
   type PillFilterOption,
 } from '../../components/pill-filter/pill-filter';
 import type {
+  AbsoluteScale,
   AggregationsValueGroup,
   GroupedValueGroups,
   ScaleLevel,
@@ -36,6 +37,15 @@ import {
   sortThresholds,
   splitByRole,
 } from '../../model';
+
+/** Relative Heatmap-Skala: drei Grenzen in Prozentpunkten für die Differenz zur Vergleichsgruppe. */
+export interface HeatmapRelativeScale {
+  readonly mode: 'relative';
+  readonly thresholds: ScaleThresholds;
+}
+
+/** Bezugssystem der Heatmap, fest gewählt statt im UI umschaltbar. */
+export type HeatmapScale = HeatmapRelativeScale | AbsoluteScale;
 
 /** Welche Zellen neben der Farbe eine Zahl zeigen: keine, Vergleich und Klassenmittel, alle. */
 export type HeatmapCellValues = 'none' | 'reference' | 'all';
@@ -120,8 +130,9 @@ function deltaText(diff: number): string {
 let instances = 0;
 
 /**
- * Zeigt die Lösungsquoten aller Personen einer Gruppe je Teilkompetenz als Heatmap, standardmäßig
- * als Differenz zu einer wählbaren Vergleichsgruppe.
+ * Zeigt die Lösungsquoten aller Personen einer Gruppe je Teilkompetenz als Heatmap. Das
+ * Bezugssystem relativ (Differenz zu einer wählbaren Vergleichsgruppe) oder absolut legt der
+ * `scale`-Input fest.
  */
 @Component({
   selector: 'tba3-solution-rates-heatmap',
@@ -142,11 +153,8 @@ export class SolutionRatesHeatmapComponent {
   /** Value-Groups eines `aggregations`-Endpunkts, die erste ist die Hauptgruppe. */
   readonly aggregations = input<AggregationsValueGroup[]>([]);
 
-  /** Drei aufsteigende Prozentgrenzen der absoluten Ansicht. */
-  readonly absoluteThresholds = input<ScaleThresholds>([40, 55, 70]);
-
-  /** Drei aufsteigende Grenzen in Prozentpunkten für die Differenz zur Vergleichsgruppe. */
-  readonly relativeThresholds = input<ScaleThresholds>([-10, -5, 5]);
+  /** Bezugssystem der Zellen: relativ zur Vergleichsgruppe (Standard) oder absolut in Prozent. */
+  readonly scale = input<HeatmapScale>({ mode: 'relative', thresholds: [-10, -5, 5] });
 
   /** Welche Zellen anfangs neben der Farbe eine Zahl zeigen. */
   readonly cellValues = input<HeatmapCellValues>('reference');
@@ -166,19 +174,17 @@ export class SolutionRatesHeatmapComponent {
 
   protected readonly idPrefix = `tba3-heatmap-${instances++}`;
 
+  readonly isAbsolute = computed(() => this.scale().mode === 'absolute');
+
+  private readonly sortedThresholds = computed<ScaleThresholds>(() =>
+    sortThresholds(this.scale().thresholds),
+  );
+
   private readonly roles = computed(() => splitByRole(this.aggregations()));
 
   private readonly aggregationType = computed(() => aggregationTypeOf(this.roles().focus));
 
   private readonly students = computed(() => this.roles().parts);
-
-  private readonly sortedAbsoluteThresholds = computed<ScaleThresholds>(() =>
-    sortThresholds(this.absoluteThresholds()),
-  );
-
-  private readonly sortedRelativeThresholds = computed<ScaleThresholds>(() =>
-    sortThresholds(this.relativeThresholds()),
-  );
 
   private readonly comparisonGroups = computed<GroupedValueGroups<AggregationsValueGroup>[]>(
     () => this.roles().comparisons,
@@ -188,17 +194,25 @@ export class SolutionRatesHeatmapComponent {
     this.comparisonGroups().map((group) => ({ key: group.key, name: group.name })),
   );
 
-  readonly hasComparisonSwitch = computed(() => this.comparisonGroups().length > 0);
+  // Eine einzige Vergleichsgruppe bietet keine echte Wahl, deshalb erst ab zwei ein Umschalter.
+  readonly hasComparisonSwitch = computed(
+    () => !this.isAbsolute() && this.comparisonOptions().length > 1,
+  );
+
+  // Relativ ohne jede Vergleichsgruppe: Hinweis statt Heatmap, kein Fehler.
+  readonly needsComparison = computed(
+    () => !this.isAbsolute() && this.comparisonGroups().length === 0,
+  );
 
   private readonly selectedComparisonKey = linkedSignal<string | undefined>(
     () => this.comparisonGroups()[0]?.key,
   );
 
-  private readonly activeComparisonGroup = computed(() =>
-    this.comparisonGroups().find((group) => group.key === this.selectedComparisonKey()),
-  );
-
-  readonly isAbsolute = computed(() => this.activeComparisonGroup() === undefined);
+  private readonly activeComparisonGroup = computed(() => {
+    if (this.isAbsolute()) return undefined;
+    const key = this.selectedComparisonKey();
+    return this.comparisonGroups().find((group) => group.key === key);
+  });
 
   readonly activeCellValues = linkedSignal<HeatmapCellValues>(() => this.cellValues());
 
@@ -222,8 +236,8 @@ export class SolutionRatesHeatmapComponent {
 
     const labels = this.valueLabels();
     const links = this.links();
-    const absoluteThresholds = this.sortedAbsoluteThresholds();
-    const relativeThresholds = this.sortedRelativeThresholds();
+    const isAbsolute = this.isAbsolute();
+    const thresholds = this.sortedThresholds();
     const group = this.activeComparisonGroup();
     const groupEntries = group ? entriesOfType(group.groups, aggregationType) : [];
 
@@ -242,18 +256,18 @@ export class SolutionRatesHeatmapComponent {
       let meanValue: number | undefined;
       let level: HeatmapLevel | undefined;
       let meanText: string;
-      if (group) {
+      if (isAbsolute) {
+        meanValue = classMeanPercent;
+        level = scaleLevel(classMeanPercent, thresholds);
+        meanText = `${resolved.name}: Klassenmittel ${classMeanPercent} %, ${absoluteRangeText(level, thresholds)}`;
+      } else {
         meanValue =
           referencePercent !== undefined ? classMeanPercent - referencePercent : undefined;
-        level = meanValue !== undefined ? scaleLevel(meanValue, relativeThresholds) : undefined;
+        level = meanValue !== undefined ? scaleLevel(meanValue, thresholds) : undefined;
         meanText =
           meanValue !== undefined
             ? `${resolved.name}: Klassenmittel ${classMeanPercent} %, ${deltaText(meanValue)}`
             : `${resolved.name}: Klassenmittel ${classMeanPercent} %, ohne Vergleichswert`;
-      } else {
-        meanValue = classMeanPercent;
-        level = scaleLevel(classMeanPercent, absoluteThresholds);
-        meanText = `${resolved.name}: Klassenmittel ${classMeanPercent} %, ${absoluteRangeText(level, absoluteThresholds)}`;
       }
 
       columns.push({
@@ -267,7 +281,7 @@ export class SolutionRatesHeatmapComponent {
         level,
         meanText,
         meanValueText:
-          meanValue === undefined ? undefined : group ? pp(meanValue) : `${meanValue} %`,
+          meanValue === undefined ? undefined : isAbsolute ? `${meanValue} %` : pp(meanValue),
       });
     }
     return columns.sort((a, b) => {
@@ -279,8 +293,8 @@ export class SolutionRatesHeatmapComponent {
   });
 
   readonly filterOptions = computed<PillFilterOption[]>(() => {
+    const [t1, t2, t3] = this.sortedThresholds();
     if (this.isAbsolute()) {
-      const [t1, t2, t3] = this.sortedAbsoluteThresholds();
       return [
         { value: 'low', label: `< ${t1} %`, color: levelColor('low') },
         { value: 'mid-low', label: `${t1}–${t2} %`, color: levelColor('mid-low') },
@@ -288,7 +302,6 @@ export class SolutionRatesHeatmapComponent {
         { value: 'high', label: `≥ ${t3} %`, color: levelColor('high') },
       ];
     }
-    const [t1, t2, t3] = this.sortedRelativeThresholds();
     return [
       { value: 'low', label: `< ${pp(t1)}`, color: levelColor('low') },
       { value: 'mid-low', label: `${pp(t1)} bis ${pp(t2)}`, color: levelColor('mid-low') },
@@ -310,9 +323,8 @@ export class SolutionRatesHeatmapComponent {
     if (!aggregationType) return [];
     // Der Filter engt nur die Spalten ein, Personen bleiben auch ohne sichtbare Spalte.
     const columns = this.columns();
-    const absoluteThresholds = this.sortedAbsoluteThresholds();
-    const relativeThresholds = this.sortedRelativeThresholds();
     const isAbsolute = this.isAbsolute();
+    const thresholds = this.sortedThresholds();
 
     const rows = this.students().map((student) => {
       const entries = entriesOfType(student.groups, aggregationType);
@@ -329,13 +341,13 @@ export class SolutionRatesHeatmapComponent {
         }
         const percentValue = percent(entry.descriptiveStatistics.mean);
         if (isAbsolute) {
-          const level = scaleLevel(percentValue, absoluteThresholds);
+          const level = scaleLevel(percentValue, thresholds);
           return {
             key: column.value,
             value: percentValue,
             level,
             valueText: `${percentValue} %`,
-            text: `${column.name}: ${percentValue} %, ${absoluteRangeText(level, absoluteThresholds)}`,
+            text: `${column.name}: ${percentValue} %, ${absoluteRangeText(level, thresholds)}`,
           };
         }
         if (column.referencePercent === undefined) {
@@ -348,7 +360,7 @@ export class SolutionRatesHeatmapComponent {
           };
         }
         const delta = percentValue - column.referencePercent;
-        const level = scaleLevel(delta, relativeThresholds);
+        const level = scaleLevel(delta, thresholds);
         return {
           key: column.value,
           value: delta,
@@ -432,11 +444,11 @@ export class SolutionRatesHeatmapComponent {
     this.activeCellValues.set(value);
   }
 
-  setComparison(key: string | undefined): void {
+  setComparison(key: string): void {
     this.selectedComparisonKey.set(key);
   }
 
-  isComparisonSelected(key: string | undefined): boolean {
+  isComparisonSelected(key: string): boolean {
     return this.selectedComparisonKey() === key;
   }
 
@@ -445,8 +457,8 @@ export class SolutionRatesHeatmapComponent {
   }
 
   readonly legend = computed<Tba3LegendItem[]>(() => {
+    const [t1, t2, t3] = this.sortedThresholds();
     if (this.isAbsolute()) {
-      const [t1, t2, t3] = this.sortedAbsoluteThresholds();
       return [
         { color: levelColor('low'), text: `< ${t1} %` },
         { color: levelColor('mid-low'), text: `${t1}–${t2} %` },
@@ -454,7 +466,6 @@ export class SolutionRatesHeatmapComponent {
         { color: levelColor('high'), text: `≥ ${t3} %` },
       ];
     }
-    const [t1, t2, t3] = this.sortedRelativeThresholds();
     return [
       { color: levelColor('low'), text: `< ${pp(t1)}` },
       { color: levelColor('mid-low'), text: `${pp(t1)} bis ${pp(t2)}` },

@@ -14,20 +14,18 @@
         </h4>
       }
 
-      <div class="row g-3">
+      <tba3-card-grid minWidth="15rem">
         @for (card of block.cards; track card.title) {
-          <div class="col-12 col-lg-4">
-            <tba3-stat-card
-              [title]="card.title"
-              [subtitle]="card.subtitle"
-              [value]="card.value"
-              [comparisons]="card.comparisons"
-              [higherIsBetter]="card.higherIsBetter"
-              [deviationThreshold]="deviationThreshold()"
-            />
-          </div>
+          <tba3-stat-card
+            [title]="card.title"
+            [subtitle]="card.subtitle"
+            [value]="card.value"
+            [comparisons]="card.comparisons"
+            [higherIsBetter]="card.higherIsBetter"
+            [deviationThreshold]="deviationThreshold()"
+          />
         }
-      </div>
+      </tba3-card-grid>
     </section>
 
     @if (!last) {

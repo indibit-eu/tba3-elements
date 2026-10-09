@@ -169,7 +169,7 @@ describe('StandardAttainmentSummaryComponent', () => {
   it('rendert bei leerem Array keine Karten', () => {
     const { root } = render([]);
     expect(root.querySelectorAll('tba3-stat-card').length).toBe(0);
-    expect(root.querySelector('.row')).toBeNull();
+    expect(root.querySelector('tba3-card-grid')).toBeNull();
   });
 
   it('zeigt bei leerer Verteilung Karten ohne Wert und ohne Vergleiche', () => {
@@ -202,7 +202,7 @@ describe('StandardAttainmentSummaryComponent', () => {
     const fixture = TestBed.createComponent(SlotHost);
     fixture.componentInstance.data = [];
     fixture.detectChanges();
-    expect(fixture.nativeElement.querySelector('.row')).toBeNull();
+    expect(fixture.nativeElement.querySelector('tba3-card-grid')).toBeNull();
     expect(fixture.nativeElement.querySelector('[data-role="header"]')?.textContent).toContain(
       'Titel',
     );

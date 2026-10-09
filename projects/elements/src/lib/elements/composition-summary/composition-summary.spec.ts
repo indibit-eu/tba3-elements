@@ -113,9 +113,8 @@ describe('CompositionSummaryComponent', () => {
     expect(donuts[0].centerLabel).toBe('');
     expect(donuts[1].centerLabel).toBe('');
 
-    const row = root.querySelector('.row');
-    expect(row?.classList.contains('g-3')).toBe(true);
-    expect(row?.classList.contains('justify-content-center')).toBe(false);
+    const grid = root.querySelector('tba3-card-grid');
+    expect(grid).not.toBeNull();
     const cards = Array.from(root.querySelectorAll('.card'));
     expect(cards.length).toBeGreaterThan(0);
     for (const card of cards) {
@@ -127,10 +126,10 @@ describe('CompositionSummaryComponent', () => {
     expect(root.querySelector('.text-uppercase')).toBeNull();
     expect(root.querySelector('.fw-bold')).toBeNull();
 
-    const cells = Array.from(row?.children ?? []);
+    const cells = Array.from(grid?.children ?? []);
     expect(cells.length).toBeGreaterThan(0);
     for (const cell of cells) {
-      expect(cell.classList.contains('col-lg-4')).toBe(true);
+      expect(cell.querySelector('.card')).not.toBeNull();
     }
 
     const titles = Array.from(root.querySelectorAll('h4.card-title.h6'));
@@ -253,11 +252,7 @@ describe('CompositionSummaryComponent', () => {
       'Sozioökonomischer Status',
     ]);
     // `diverse` mit Häufigkeit 0 fehlt.
-    expect(donuts[0].segments.map((segment) => segment.label)).toEqual([
-      'männlich',
-      'weiblich',
-      'ohne Angabe',
-    ]);
+    expect(donuts[0].segments.map((segment) => segment.label)).toEqual(['männlich', 'weiblich']);
     // Median ohne `unknown`.
     expect(donuts[2].median).toEqual({ code: 'C', name: 'mittel' });
 
@@ -389,7 +384,7 @@ describe('CompositionSummaryComponent', () => {
 
   it('rendert nichts bei leeren Inputs und bei der Leer-Fixture', () => {
     expect(render({ aggregations: [] }).instance.hasContent()).toBe(false);
-    expect(render({ aggregations: [] }).root.querySelector('.row')).toBeNull();
+    expect(render({ aggregations: [] }).root.querySelector('tba3-card-grid')).toBeNull();
     expect(render({ aggregations: FIXTURE_COMPOSITION_SUMMARY_EMPTY }).instance.hasContent()).toBe(
       false,
     );
@@ -400,7 +395,7 @@ describe('CompositionSummaryComponent', () => {
     fixture.componentInstance.data = [];
     fixture.detectChanges();
 
-    expect(fixture.nativeElement.querySelector('.row')).toBeNull();
+    expect(fixture.nativeElement.querySelector('tba3-card-grid')).toBeNull();
     const header = fixture.nativeElement.querySelector('[data-role="header"]');
     const footer = fixture.nativeElement.querySelector('[data-role="footer"]');
     expect(header?.textContent).toContain('Zusammensetzung');
@@ -416,7 +411,7 @@ describe('CompositionSummaryComponent', () => {
     const nodes = Array.from(root.children) as HTMLElement[];
     const headerIndex = nodes.findIndex((node) => node.getAttribute('data-role') === 'header');
     const footerIndex = nodes.findIndex((node) => node.getAttribute('data-role') === 'footer');
-    const rowIndex = nodes.findIndex((node) => node.classList.contains('row'));
+    const rowIndex = nodes.findIndex((node) => node.tagName === 'TBA3-CARD-GRID');
     expect(rowIndex).toBeGreaterThanOrEqual(0);
     expect(headerIndex).toBeLessThan(rowIndex);
     expect(footerIndex).toBeGreaterThan(rowIndex);

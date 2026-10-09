@@ -9,8 +9,8 @@
         "value": "male",
         "descriptiveStatistics": {
           "total": 80,
-          "frequency": 41,
-          "mean": 0.5125,
+          "frequency": 42,
+          "mean": 0.525,
           "standardDeviation": 0
         }
       },
@@ -28,16 +28,6 @@
         "type": "gender",
         "value": "diverse",
         "descriptiveStatistics": { "total": 80, "frequency": 0, "mean": 0, "standardDeviation": 0 }
-      },
-      {
-        "type": "gender",
-        "value": "unknown",
-        "descriptiveStatistics": {
-          "total": 80,
-          "frequency": 1,
-          "mean": 0.0125,
-          "standardDeviation": 0
-        }
       },
       {
         "type": "languageAtHome",

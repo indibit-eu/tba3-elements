@@ -82,15 +82,46 @@ const COMPOSITION_TYPE_ALIASES: ReadonlyMap<string, string> = new Map([
 
 const CLASS_COUNT_TYPE = 'classcount';
 
-/** Bildet Kopfzahlen ohne Präfix (`gender`, `SES`, `classCount`) auf die Präfix-Form ab. */
+/**
+ * Bildet Kopfzahlen ohne Präfix (`gender`, `SES`, `classCount`) auf die Präfix-Form ab und fasst
+ * die Sprache zu Hause zu Deutsch und „andere“ zusammen.
+ */
 export function compositionEntries(entries: readonly AggregationEntry[]): AggregationEntry[] {
-  return entries.map((entry) => {
+  const mapped = entries.map((entry) => {
     const key = entry.type.toLowerCase();
     if (key === CLASS_COUNT_TYPE) {
       return { ...entry, type: GROUPS_PARTICIPATION_AGGREGATION, value: 'participated' };
     }
     const alias = COMPOSITION_TYPE_ALIASES.get(key);
     return alias ? { ...entry, type: alias } : entry;
+  });
+  return mergeOtherLanguages(mapped);
+}
+
+const GERMAN_LANGUAGE = 'german';
+const OTHER_LANGUAGE = 'other';
+
+// Für die Berichte zählt nur, ob zu Hause Deutsch gesprochen wird; einzelne Sprachen wären zu klein.
+function mergeOtherLanguages(entries: AggregationEntry[]): AggregationEntry[] {
+  const others = entries.filter(
+    (entry) => entry.type === LANGUAGE_AT_HOME_AGGREGATION && entry.value !== GERMAN_LANGUAGE,
+  );
+  if (others.length === 0) return entries;
+  const [first] = others;
+  const { total } = first.descriptiveStatistics;
+  const frequency = others.reduce((sum, entry) => sum + entry.descriptiveStatistics.frequency, 0);
+  const merged: AggregationEntry = {
+    type: LANGUAGE_AT_HOME_AGGREGATION,
+    value: OTHER_LANGUAGE,
+    descriptiveStatistics: {
+      ...first.descriptiveStatistics,
+      frequency,
+      mean: total > 0 ? frequency / total : 0,
+    },
+  };
+  return entries.flatMap((entry) => {
+    if (entry === first) return [merged];
+    return others.includes(entry) ? [] : [entry];
   });
 }
 
