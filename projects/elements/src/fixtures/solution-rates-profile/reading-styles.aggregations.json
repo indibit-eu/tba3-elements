@@ -1,0 +1,62 @@
+[
+  {
+    "id": "201",
+    "type": "group",
+    "name": "8a Englisch",
+    "subject": {
+      "name": "Englisch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "EN-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "24"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "Lesestil",
+        "value": "detailliert",
+        "descriptiveStatistics": {
+          "total": 240,
+          "frequency": 149,
+          "mean": 0.62,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Lesestil",
+        "value": "suchend",
+        "descriptiveStatistics": {
+          "total": 240,
+          "frequency": 170,
+          "mean": 0.71,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Hörstil",
+        "value": "detailliert",
+        "descriptiveStatistics": {
+          "total": 192,
+          "frequency": 106,
+          "mean": 0.55,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Hörstil",
+        "value": "selektiv",
+        "descriptiveStatistics": {
+          "total": 192,
+          "frequency": 123,
+          "mean": 0.64,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

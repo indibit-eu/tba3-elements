@@ -1,0 +1,242 @@
+[
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.16,
+          "frequency": 16,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.2,
+          "frequency": 20,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.34,
+          "frequency": 34,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.2,
+          "frequency": 20,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.1,
+          "frequency": 10,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.1,
+          "frequency": 10,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.25,
+          "frequency": 25,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.4,
+          "frequency": 40,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.15,
+          "frequency": 15,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.1,
+          "frequency": 10,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.18,
+          "frequency": 1440,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.22,
+          "frequency": 1760,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.33,
+          "frequency": 2640,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.18,
+          "frequency": 1440,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.09,
+          "frequency": 720,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.15,
+          "frequency": 1200,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.225,
+          "frequency": 1800,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.36,
+          "frequency": 2880,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.165,
+          "frequency": 1320,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "mean": 0.1,
+          "frequency": 800,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

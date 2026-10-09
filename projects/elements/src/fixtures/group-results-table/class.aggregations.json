@@ -1,0 +1,232 @@
+[
+  {
+    "id": "student-1",
+    "type": "student",
+    "name": "Mira Brandhauer",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.6,
+          "frequency": 12,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "domain",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18,
+          "mean": 0.5556,
+          "frequency": 10,
+          "standardDeviation": 0.497
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-2",
+    "type": "student",
+    "name": "Jonas Wellmann",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.75,
+          "frequency": 15,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "domain",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18,
+          "mean": 0.6111,
+          "frequency": 11,
+          "standardDeviation": 0.488
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-3",
+    "type": "student",
+    "name": "Lea Steinfurth",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.5,
+          "frequency": 10,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "domain",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18,
+          "mean": 0.4444,
+          "frequency": 8,
+          "standardDeviation": 0.497
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-4",
+    "type": "student",
+    "name": "Elias Kranich",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.3,
+          "frequency": 6,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "domain",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18,
+          "mean": 0.3889,
+          "frequency": 7,
+          "standardDeviation": 0.488
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-5",
+    "type": "student",
+    "name": "Nora Nesselrode",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.9,
+          "frequency": 18,
+          "standardDeviation": 0.3
+        }
+      },
+      {
+        "type": "domain",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18,
+          "mean": 0.9444,
+          "frequency": 17,
+          "standardDeviation": 0.229
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-6",
+    "type": "student",
+    "name": "Finn Falkenau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.65,
+          "frequency": 13,
+          "standardDeviation": 0.477
+        }
+      },
+      {
+        "type": "domain",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18,
+          "mean": 0.7222,
+          "frequency": 13,
+          "standardDeviation": 0.448
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-7",
+    "type": "student",
+    "name": "Ida Haselbeck",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.6,
+          "frequency": 12,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-8",
+    "type": "student",
+    "name": "Levi Mühlenrath",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "domain",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.45,
+          "frequency": 9,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "domain",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18,
+          "mean": 0.5556,
+          "frequency": 10,
+          "standardDeviation": 0.497
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,1291 @@
+[
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.1304,
+          "frequency": 3
+        },
+        "id": "300",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "301",
+        "name": "Ib",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3478,
+          "frequency": 8
+        },
+        "id": "302",
+        "name": "II",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7
+        },
+        "id": "303",
+        "name": "III",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "304",
+        "name": "IV",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "domain": {
+      "name": "Lesen",
+      "id": "11"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe HSA"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.4091,
+          "frequency": 9
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.4091,
+          "frequency": 9
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "domain": {
+      "name": "Lesen",
+      "id": "11"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.1304,
+          "frequency": 3
+        },
+        "id": "300",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "301",
+        "name": "Ib",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.4348,
+          "frequency": 10
+        },
+        "id": "302",
+        "name": "II",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.1739,
+          "frequency": 4
+        },
+        "id": "303",
+        "name": "III",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0435,
+          "frequency": 1
+        },
+        "id": "304",
+        "name": "IV",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "domain": {
+      "name": "Orthografie",
+      "id": "12"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe HSA"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.3182,
+          "frequency": 7
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.3636,
+          "frequency": 8
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.1364,
+          "frequency": 3
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "domain": {
+      "name": "Orthografie",
+      "id": "12"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2609,
+          "frequency": 6
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "domain": {
+      "name": "Mathematik",
+      "id": "21"
+    },
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "Vergleichsschulen",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.0375,
+          "frequency": 6
+        },
+        "id": "300",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.1875,
+          "frequency": 30
+        },
+        "id": "301",
+        "name": "Ib",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.4188,
+          "frequency": 67
+        },
+        "id": "302",
+        "name": "II",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.275,
+          "frequency": 44
+        },
+        "id": "303",
+        "name": "III",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.0813,
+          "frequency": 13
+        },
+        "id": "304",
+        "name": "IV",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "type": "comparisonSchool",
+    "domain": {
+      "name": "Lesen",
+      "id": "11"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe HSA"
+      }
+    ]
+  },
+  {
+    "name": "Vergleichsschulen",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0125,
+          "frequency": 3
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0875,
+          "frequency": 21
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.2625,
+          "frequency": 63
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.4292,
+          "frequency": 103
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.175,
+          "frequency": 42
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0333,
+          "frequency": 8
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "type": "comparisonSchool",
+    "domain": {
+      "name": "Lesen",
+      "id": "11"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "Vergleichsschulen",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.0187,
+          "frequency": 3
+        },
+        "id": "300",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.2,
+          "frequency": 32
+        },
+        "id": "301",
+        "name": "Ib",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.4813,
+          "frequency": 77
+        },
+        "id": "302",
+        "name": "II",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.2062,
+          "frequency": 33
+        },
+        "id": "303",
+        "name": "III",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 160,
+          "mean": 0.0938,
+          "frequency": 15
+        },
+        "id": "304",
+        "name": "IV",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "type": "comparisonSchool",
+    "domain": {
+      "name": "Orthografie",
+      "id": "12"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe HSA"
+      }
+    ]
+  },
+  {
+    "name": "Vergleichsschulen",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0125,
+          "frequency": 3
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0667,
+          "frequency": 16
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.2625,
+          "frequency": 63
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.4208,
+          "frequency": 101
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1958,
+          "frequency": 47
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0417,
+          "frequency": 10
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "type": "comparisonSchool",
+    "domain": {
+      "name": "Orthografie",
+      "id": "12"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "Vergleichsschulen",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.0053,
+          "frequency": 1
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.0789,
+          "frequency": 15
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.3368,
+          "frequency": 64
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.3895,
+          "frequency": 74
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.1789,
+          "frequency": 34
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.0105,
+          "frequency": 2
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "type": "comparisonSchool",
+    "domain": {
+      "name": "Mathematik",
+      "id": "21"
+    },
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "8a Deutsch",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.1304,
+          "frequency": 3
+        },
+        "id": "300",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "301",
+        "name": "Ib",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3478,
+          "frequency": 8
+        },
+        "id": "302",
+        "name": "II",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7
+        },
+        "id": "303",
+        "name": "III",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "304",
+        "name": "IV",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "101",
+    "type": "group",
+    "domain": {
+      "name": "Lesen",
+      "id": "11"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe HSA"
+      }
+    ]
+  },
+  {
+    "name": "8a Deutsch",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.1304,
+          "frequency": 3
+        },
+        "id": "300",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "301",
+        "name": "Ib",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.4348,
+          "frequency": 10
+        },
+        "id": "302",
+        "name": "II",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.1739,
+          "frequency": 4
+        },
+        "id": "303",
+        "name": "III",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0435,
+          "frequency": 1
+        },
+        "id": "304",
+        "name": "IV",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "101",
+    "type": "group",
+    "domain": {
+      "name": "Orthografie",
+      "id": "12"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe HSA"
+      }
+    ]
+  },
+  {
+    "name": "8b Deutsch",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.4091,
+          "frequency": 9
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.4091,
+          "frequency": 9
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "102",
+    "type": "group",
+    "domain": {
+      "name": "Lesen",
+      "id": "11"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "8b Deutsch",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.3182,
+          "frequency": 7
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.3636,
+          "frequency": 8
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.1364,
+          "frequency": 3
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "102",
+    "type": "group",
+    "domain": {
+      "name": "Orthografie",
+      "id": "12"
+    },
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  },
+  {
+    "name": "8a Mathematik",
+    "competenceLevels": [
+      {
+        "nameShort": "Ia",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "305",
+        "name": "Ia",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "Ib",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "306",
+        "name": "Ib",
+        "classification": "unter Mindeststandard"
+      },
+      {
+        "nameShort": "II",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7
+        },
+        "id": "307",
+        "name": "II",
+        "classification": "Mindeststandard"
+      },
+      {
+        "nameShort": "III",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2609,
+          "frequency": 6
+        },
+        "id": "308",
+        "name": "III",
+        "classification": "Regelstandard"
+      },
+      {
+        "nameShort": "IV",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5
+        },
+        "id": "309",
+        "name": "IV",
+        "classification": "Regelstandard plus"
+      },
+      {
+        "nameShort": "V",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.0,
+          "frequency": 0
+        },
+        "id": "310",
+        "name": "V",
+        "classification": "Optimalstandard"
+      }
+    ],
+    "id": "103",
+    "type": "group",
+    "domain": {
+      "name": "Mathematik",
+      "id": "21"
+    },
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ]
+  }
+]

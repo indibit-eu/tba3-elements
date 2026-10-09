@@ -1,0 +1,137 @@
+# Vorgeschlagene Ergänzungen zur TBA-III-Spezifikation (tba3-spec.yml).
+# `npm run generate:model` legt sie über die Basis. Fließen sie upstream zurück, schrumpft diese Datei.
+components:
+  parameters:
+    filter:
+      in: query
+      name: filter
+      explode: false
+      schema:
+        type: string
+      description: "Einschränkung der Antwort ohne neuen Pfad, kommasepariert. Vorgeschlagene Schlüssel: `authority:<id>`, `school:<id>` (auf /states), `student-<id>` (auf /groups), `run:<kennung>` (Durchgang). Nicht unterstützte Filter beantwortet ein Backend mit 501."
+      examples:
+        Schulamt:
+          value: authority:a-1
+          description: Nur Werte des Schulamts a-1 (auf /states)
+        Person:
+          value: student-4711
+          description: Nur die Person 4711 (auf /groups)
+        Durchgang:
+          value: run:2026-1
+          description: Nur der Durchgang 2026-1
+    aggregation:
+      description: Aggregationsarten, die berechnet werden sollen. Lösungsquoten laufen unter den Merkmalsnamen (`competence`, `exercise`, `domain`, `gender`, `languageAtHome`, `ses`), Kopfzahlen (Zusammensetzung) unter `<gezählte Einheit>-by-<Merkmal>` (`students-by-gender`, `students-by-languageAtHome`, `students-by-ses`, `students-by-participation`; Einheiten-Kopfzahlen `groups-by-participation`, `schools-by-participation`, `authorities-by-participation`).
+      examples:
+        Aufgaben:
+          value: exercise
+          description: Aggregiert Leistungsdaten je Aufgabe (Lösungsquote).
+        Domäne:
+          value: domain
+          description: Aggregiert Leistungsdaten je Domäne (Lösungsquote).
+        Herkunftssprache:
+          value: languageAtHome
+          description: Aggregiert Leistungsdaten nach Sprache zu Hause (Lösungsquote).
+        SES:
+          value: ses
+          description: Aggregiert Leistungsdaten nach sozioökonomischem Status (Lösungsquote).
+        Zusammensetzung nach Geschlecht:
+          value: students-by-gender
+          description: Kopfzahl der Schüler:innen je Geschlecht; `frequency` = Personen der Ausprägung, `mean` = Anteil an der Bezugsgruppe (`total`).
+        Zusammensetzung nach Herkunftssprache:
+          value: students-by-languageAtHome
+          description: Kopfzahl der Schüler:innen je Sprache zu Hause.
+        Zusammensetzung nach SES:
+          value: students-by-ses
+          description: Kopfzahl der Schüler:innen je SES-Kategorie.
+        Teilnahme:
+          value: students-by-participation
+          description: "Ein Eintrag `participated`: `total` = angemeldete, `frequency` = teilgenommene Personen, `mean` = Teilnahmequote. `total` ist die Bezugsgröße der Stammdaten-Kopfzahlen."
+        Beteiligte Klassen:
+          value: groups-by-participation
+          description: "Ein Eintrag `participated`: `total` = angemeldete Klassen, `frequency` = Klassen mit mindestens einer teilnehmenden Person, `mean` = `frequency/total`."
+        Beteiligte Schulen:
+          value: schools-by-participation
+          description: "Ein Eintrag `participated`: `total` = angemeldete Schulen, `frequency` = Schulen mit mindestens einer teilnehmenden Person, `mean` = `frequency/total`."
+        Beteiligte Schulämter:
+          value: authorities-by-participation
+          description: "Ein Eintrag `participated`: `total` = angemeldete Schulämter, `frequency` = Schulämter mit mindestens einer teilnehmenden Person, `mean` = `frequency/total`."
+    type:
+      examples:
+        Schüler:
+          value: student
+          description: Liefert Leistungsdaten auf Schülerebene.
+        Lerngruppe und Schüler:
+          value: group,student
+          description: Liefert Leistungsdaten auf Gruppen- und Schülerebene.
+        Land und Schulämter:
+          value: state,authority
+          description: Liefert Leistungsdaten für Landes- und Schulamtsebene (nur für /states Endpunkte).
+  schemas:
+    aggregation:
+      properties:
+        type:
+          examples:
+            - domain
+            - languageAtHome
+            - ses
+            - students-by-gender
+            - students-by-languageAtHome
+            - students-by-ses
+            - students-by-participation
+            - groups-by-participation
+            - schools-by-participation
+            - authorities-by-participation
+        description:
+          type: string
+          description: Klartext zur aggregierten Gruppe, z.B. die Beschreibung der Teilkompetenz oder die Bezeichnung einer Merkmalsausprägung.
+          examples:
+            - Richtig schreiben
+            - weiblich
+    competence-level:
+      properties:
+        classification:
+          type: string
+          description: Zuordnung der Kompetenzstufe zu einem Bildungsstandard. Über Stufensets (z.B. HSA und MSA) hinweg vergleichbar, während die Stufen selbst es nicht sind.
+          enum:
+            - unter Mindeststandard
+            - Mindeststandard
+            - Regelstandard
+            - Regelstandard plus
+            - Optimalstandard
+paths:
+  /groups/{id}/competence-levels:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /groups/{id}/items:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /groups/{id}/aggregations:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /schools/{id}/competence-levels:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /schools/{id}/items:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /schools/{id}/aggregations:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /states/{id}/competence-levels:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /states/{id}/items:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"
+  /states/{id}/aggregations:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/filter"

@@ -1,0 +1,37 @@
+// Was Bootstrap für Tabellen und Balken nicht als Utility mitbringt.
+
+// 5.5 rem trägt „100 %" und die Δ-Pille „−12 Pp".
+.tba3-col-narrow {
+  width: 5.5rem;
+}
+
+// Gleich breite Ziffern, damit Zahlen in einer Spalte bündig stehen.
+.tba3-num {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.tba3-bar {
+  height: var(--tba3-bar-height, 0.5rem);
+}
+
+// Gleich breite Pillen, damit die Prozentzahlen einer Spalte fluchten.
+.tba3-rate-pill {
+  min-width: 3rem;
+}
+
+// Feste Breite, damit die Balken mehrerer Zeilen bündig beginnen; lange Namen brechen um.
+.tba3-bar-label {
+  flex: 0 0 7.5rem;
+  overflow-wrap: anywhere;
+}
+
+// Damit ein Balken in einer schmalen Tabelle nicht auf null schrumpft.
+.tba3-col-bar {
+  min-width: 7rem;
+}
+
+// Feste Zeilen einer Hierarchie-Tabelle ohne Zebrastreifen; Bootstrap kann das nicht je tbody.
+.tba3-pinned-rows {
+  --bs-table-striped-bg: transparent;
+}

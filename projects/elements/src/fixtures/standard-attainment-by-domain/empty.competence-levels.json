@@ -1,0 +1,14 @@
+[
+  {
+    "id": "school-gymnasium-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "competenceLevels": []
+  }
+]

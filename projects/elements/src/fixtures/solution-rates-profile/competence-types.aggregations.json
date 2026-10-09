@@ -1,0 +1,162 @@
+[
+  {
+    "id": "4711",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "22"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 132,
+          "frequency": 69,
+          "mean": 0.5227,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 132,
+          "frequency": 73,
+          "mean": 0.553,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 132,
+          "frequency": 71,
+          "mean": 0.5379,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D4",
+        "descriptiveStatistics": {
+          "total": 132,
+          "frequency": 72,
+          "mean": 0.5455,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 264,
+          "frequency": 157,
+          "mean": 0.5947,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 264,
+          "frequency": 140,
+          "mean": 0.5303,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "1580"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "frequency": 5629,
+          "mean": 0.5938,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "frequency": 5692,
+          "mean": 0.6004,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "frequency": 5613,
+          "mean": 0.5921,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D4",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "frequency": 5672,
+          "mean": 0.5983,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 18960,
+          "frequency": 11221,
+          "mean": 0.5918,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18960,
+          "frequency": 11301,
+          "mean": 0.596,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

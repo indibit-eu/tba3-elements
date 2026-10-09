@@ -1,0 +1,144 @@
+<ng-content select="[tba3Header]" />
+
+@if (hasRows()) {
+  @if (hasBookletSwitch() || hasViewSwitch()) {
+    <tba3-control-panel class="d-block mb-3" filterLabel="Testheft">
+      @if (hasBookletSwitch()) {
+        <tba3-booklet-switch
+          tba3Filter
+          [booklets]="bookletList()"
+          [active]="activeBooklet()"
+          [valueLabels]="valueLabels()"
+          (activeChange)="setBooklet($event)"
+        />
+      }
+      @if (hasViewSwitch()) {
+        <div tba3View class="btn-group btn-group-sm" role="group" aria-label="Ansicht wählen">
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            [class.active]="activeView() === 'byDomain'"
+            [attr.aria-pressed]="activeView() === 'byDomain'"
+            (click)="setView('byDomain')"
+          >
+            {{ groupedViewLabel() }}
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            [class.active]="activeView() === 'flat'"
+            [attr.aria-pressed]="activeView() === 'flat'"
+            (click)="setView('flat')"
+          >
+            Flach
+          </button>
+        </div>
+      }
+    </tba3-control-panel>
+  }
+
+  @for (block of blocks(); track block.key; let last = $last) {
+    @if (block.label.length) {
+      <h4 class="h5 fw-semibold mb-3">
+        @for (part of block.label; track $index; let first = $first) {
+          @if (!first) {
+            <span class="text-secondary fw-normal" aria-hidden="true">·</span>
+          }
+          {{ part }}
+        }
+      </h4>
+    }
+
+    <div class="table-responsive">
+      <table class="table table-sm table-striped align-middle">
+        <caption class="visually-hidden">
+          {{
+            block.caption
+          }}
+        </caption>
+        <thead>
+          <tr class="small text-secondary align-bottom">
+            <th scope="col" [attr.aria-sort]="ariaSort(competenceColumn)">
+              <tba3-sort-header
+                label="Teilkompetenz"
+                [direction]="sortDirection(competenceColumn)"
+                [priority]="sortPriority(competenceColumn)"
+                (toggle)="sort(competenceColumn)"
+              />
+            </th>
+            @for (column of valueColumnViews(); track column.key) {
+              <th
+                scope="col"
+                class="text-end text-nowrap tba3-col-narrow"
+                [attr.aria-sort]="ariaSort(column.key)"
+              >
+                <tba3-sort-header
+                  [label]="column.name"
+                  [direction]="sortDirection(column.key)"
+                  [priority]="sortPriority(column.key)"
+                  (toggle)="sort(column.key)"
+                />
+              </th>
+            }
+            @for (column of deltaColumnViews(); track column.key) {
+              <th
+                scope="col"
+                class="text-end text-nowrap tba3-col-narrow"
+                [attr.aria-sort]="ariaSort(column.key)"
+              >
+                <tba3-sort-header
+                  [label]="column.header"
+                  [direction]="sortDirection(column.key)"
+                  [priority]="sortPriority(column.key)"
+                  (toggle)="sort(column.key)"
+                />
+              </th>
+            }
+          </tr>
+        </thead>
+
+        <tbody class="table-group-divider">
+          @for (row of block.rows; track row.rowKey) {
+            <tr>
+              <th scope="row" class="fw-normal">
+                <tba3-aggregation-value
+                  [code]="row.code"
+                  [name]="row.name"
+                  [domain]="row.secondary"
+                  [clickable]="true"
+                  (selected)="rowSelected.emit(row.rowKey)"
+                />
+              </th>
+              @for (cell of row.valueCells; track $index) {
+                <td class="text-end text-nowrap tba3-num" [class.fw-semibold]="cell.isMain">
+                  @if (cell.emptyLabel) {
+                    <span class="text-secondary" [attr.aria-label]="cell.emptyLabel">–</span>
+                  } @else {
+                    {{ cell.text }}
+                  }
+                </td>
+              }
+              @for (cell of row.deltaCells; track $index) {
+                <td class="text-end text-nowrap">
+                  @if (cell.deviation; as dev) {
+                    <tba3-delta [delta]="dev" [threshold]="deviationThreshold()" />
+                  } @else {
+                    <span class="text-secondary" [attr.aria-label]="cell.emptyLabel">–</span>
+                  }
+                </td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    @if (!last) {
+      <hr class="my-4" />
+    }
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

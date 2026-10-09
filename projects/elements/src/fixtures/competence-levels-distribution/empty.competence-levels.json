@@ -1,0 +1,14 @@
+[
+  {
+    "id": "group-8b",
+    "type": "group",
+    "name": "8b",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "competenceLevels": []
+  }
+]

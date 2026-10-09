@@ -1,0 +1,5 @@
+// Ein Host kann die Theme-Variablen nach diesen @use überschreiben.
+@use 'bootstrap/scss/bootstrap';
+@use '../../elements/src/styles/theme';
+@use '../../elements/src/styles/tables';
+@use '../../elements/src/styles/charts';

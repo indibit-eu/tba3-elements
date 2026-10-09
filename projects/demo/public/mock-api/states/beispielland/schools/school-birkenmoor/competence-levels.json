@@ -1,0 +1,1599 @@
+[
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.1111,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.0952,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.1746,
+          "frequency": 11
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.254,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.254,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.1111,
+          "frequency": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.0952,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.1587,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.254,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.3175,
+          "frequency": 20
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.1111,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 63,
+          "mean": 0.0635,
+          "frequency": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "MA-MSA-NG"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0952,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.1429,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.2857,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.1905,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.2381,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0476,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "EN-MSA-NG"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.2,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.15,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.15,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.15,
+          "frequency": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "EN-MSA-NG"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.35,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.2,
+          "frequency": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.1429,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0952,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.2381,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.3333,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0952,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0952,
+          "frequency": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0952,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.1905,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.2381,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.381,
+          "frequency": 8
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0476,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0476,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0952,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.1429,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.2857,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.1905,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.2381,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 21,
+          "mean": 0.0476,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8b",
+    "type": "group",
+    "name": "8b",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.3,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.25,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.15,
+          "frequency": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8b",
+    "type": "group",
+    "name": "8b",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.3,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.3,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8b",
+    "type": "group",
+    "name": "8b",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.2,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.15,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.15,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.15,
+          "frequency": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8b",
+    "type": "group",
+    "name": "8b",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.05,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.35,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.1,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 20,
+          "mean": 0.2,
+          "frequency": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8c",
+    "type": "group",
+    "name": "8c",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.1818,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.1364,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.4091,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8c",
+    "type": "group",
+    "name": "8c",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0909,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.1818,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.2273,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.2727,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.1818,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.0455,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1039,
+          "frequency": 32
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1364,
+          "frequency": 42
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1786,
+          "frequency": 55
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.2175,
+          "frequency": 67
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1753,
+          "frequency": 54
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1883,
+          "frequency": 58
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1364,
+          "frequency": 42
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.2013,
+          "frequency": 62
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.2045,
+          "frequency": 63
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.2078,
+          "frequency": 64
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1429,
+          "frequency": 44
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 308,
+          "mean": 0.1071,
+          "frequency": 33
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 192,
+          "mean": 0.0521,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 192,
+          "mean": 0.1042,
+          "frequency": 20
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 192,
+          "mean": 0.25,
+          "frequency": 48
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 192,
+          "mean": 0.1875,
+          "frequency": 36
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 192,
+          "mean": 0.1667,
+          "frequency": 32
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 192,
+          "mean": 0.2396,
+          "frequency": 46
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0718,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0552,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0939,
+          "frequency": 17
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0884,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.1326,
+          "frequency": 24
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.1105,
+          "frequency": 20
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.1326,
+          "frequency": 24
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0773,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.2376,
+          "frequency": 43
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0939,
+          "frequency": 17
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0663,
+          "frequency": 12
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.105,
+          "frequency": 19
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.105,
+          "frequency": 19
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0718,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.1657,
+          "frequency": 30
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.1271,
+          "frequency": 23
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.0829,
+          "frequency": 15
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 181,
+          "mean": 0.1823,
+          "frequency": 33
+        }
+      }
+    ]
+  }
+]

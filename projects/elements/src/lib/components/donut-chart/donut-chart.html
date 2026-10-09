@@ -1,0 +1,43 @@
+<div class="d-inline-flex flex-column align-items-center gap-2">
+  <figure
+    class="m-0"
+    role="figure"
+    aria-roledescription="Diagramm"
+    [attr.aria-label]="description()"
+  >
+    <div
+      echarts
+      [options]="chartOptions()"
+      class="tba3-donut"
+      [class.tba3-donut-small]="size() === 'small'"
+      aria-hidden="true"
+    ></div>
+    <div class="visually-hidden">
+      <table>
+        <caption>
+          {{
+            title() || 'Diagramm'
+          }}
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Kategorie</th>
+            <th scope="col">Anzahl</th>
+            <th scope="col">Anteil</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of tableRows(); track row.label) {
+            <tr>
+              <th scope="row">{{ row.label }}</th>
+              <td>{{ row.value }}</td>
+              <td>{{ row.percent }} %</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </figure>
+
+  <tba3-legend [items]="legendItems()" />
+</div>

@@ -1,0 +1,160 @@
+[
+  {
+    "id": "7",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.05,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.1,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.3,
+          "frequency": 30
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.35,
+          "frequency": 35
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.15,
+          "frequency": 15
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 100,
+          "mean": 0.05,
+          "frequency": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "Sekundarstufe MSA"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "mean": 0.02,
+          "frequency": 20
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "mean": 0.08,
+          "frequency": 80
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "mean": 0.3,
+          "frequency": 300
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "mean": 0.35,
+          "frequency": 350
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "mean": 0.2,
+          "frequency": 200
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "mean": 0.05,
+          "frequency": 50
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+@if (display() === 'text') {
+  <span
+    class="fw-bold d-inline-block text-center tba3-level-badge tba3-level-badge-text"
+    [style.border-bottom-color]="backgroundColor()"
+    [attr.title]="title() || null"
+    >{{ nameShort() }}</span
+  >
+} @else {
+  <span
+    class="badge tba3-level-badge"
+    [style.background-color]="backgroundColor()"
+    [style.color]="textColor()"
+    [attr.title]="title() || null"
+    >{{ nameShort() }}</span
+  >
+}

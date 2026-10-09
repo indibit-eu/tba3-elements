@@ -1,0 +1,9 @@
+// Hält die Stufenkürzel in Tabellenspalten gleich breit.
+.tba3-level-badge {
+  min-width: 2rem;
+}
+
+// Eigenes CSS, weil Bootstraps border-Utilities die Farbe per !important überschreiben.
+.tba3-level-badge-text {
+  border-bottom: 3px solid;
+}

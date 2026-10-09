@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": []
+  }
+]

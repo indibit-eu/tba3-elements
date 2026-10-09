@@ -1,0 +1,340 @@
+<ng-template #cells let-row="row">
+  <th scope="row" [class.fw-normal]="!row.selected">
+    @if (clickable) {
+      <button
+        type="button"
+        class="btn btn-link p-0 text-start link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+        [class.fw-bold]="row.selected"
+        [attr.aria-label]="'Details zu ' + row.name + ' öffnen'"
+        (click)="rowSelected.emit(row.id)"
+      >
+        {{ row.name }}
+      </button>
+    } @else {
+      {{ row.name }}
+    }
+  </th>
+  @for (unit of unitColumns(); track unit.type) {
+    <td class="text-end text-nowrap tba3-num">
+      @if (row.units[unit.type] !== undefined) {
+        {{ row.units[unit.type] }}
+      } @else {
+        <span class="text-secondary" [attr.aria-label]="unit.label + ' ' + row.name + ': ohne Wert'"
+          >–</span
+        >
+      }
+    </td>
+  }
+  @if (hasParticipation()) {
+    <td class="text-end text-nowrap tba3-num">
+      @if (row.participated !== undefined) {
+        {{ row.participated }}
+      } @else {
+        <span class="text-secondary" [attr.aria-label]="'Teilnehmende ' + row.name + ': ohne Wert'"
+          >–</span
+        >
+      }
+    </td>
+    <td
+      class="text-end text-nowrap tba3-num"
+      [class.text-secondary]="row.participationRate === undefined"
+    >
+      {{ row.participationText }}
+    </td>
+  }
+  @if (showStudents()) {
+    <td class="text-end text-nowrap tba3-num">
+      @if (row.students !== undefined) {
+        {{ row.students }}
+      } @else {
+        <span class="text-secondary" [attr.aria-label]="'Personen ' + row.name + ': ohne Wert'"
+          >–</span
+        >
+      }
+    </td>
+  }
+  @for (column of characteristicColumns(); track column.type) {
+    <td class="tba3-col-bar">
+      @if (row.characteristics[column.type]; as cell) {
+        <div
+          class="progress-stacked tba3-bar"
+          aria-hidden="true"
+          [title]="column.label + ': ' + cell.text"
+        >
+          @for (segment of cell.segments; track segment.value) {
+            <div class="progress tba3-bar" [style.width.%]="segment.width">
+              <div class="progress-bar" [style.background-color]="segment.color"></div>
+            </div>
+          }
+        </div>
+        <span class="visually-hidden">{{ column.label }}: {{ cell.text }}</span>
+      } @else {
+        <span
+          class="text-secondary"
+          [attr.aria-label]="column.label + ' ' + row.name + ': ohne Wert'"
+          >–</span
+        >
+      }
+    </td>
+  }
+  @if (hasDistribution()) {
+    <td class="tba3-col-bar">
+      @if (row.metric; as cell) {
+        @if (cell.bands; as bands) {
+          <div
+            class="progress-stacked tba3-bar"
+            aria-hidden="true"
+            [title]="metricLabel() + ': ' + cell.bandsText"
+          >
+            @for (band of bands; track band.value) {
+              <div class="progress tba3-bar" [style.width.%]="band.width">
+                <div class="progress-bar" [style.background-color]="band.color"></div>
+              </div>
+            }
+          </div>
+          <span class="visually-hidden">{{ metricLabel() }}: {{ cell.bandsText }}</span>
+        } @else {
+          <div class="d-flex align-items-center gap-2">
+            <div class="progress tba3-bar flex-grow-1" aria-hidden="true">
+              <div
+                class="progress-bar"
+                [style.width.%]="cell.value"
+                [style.background-color]="cell.barColor"
+              ></div>
+            </div>
+            @if (cell.scale; as scale) {
+              <tba3-scale-pill
+                [level]="scale.level"
+                [text]="cell.value + ' %'"
+                [ariaLabel]="scale.ariaLabel"
+              />
+            } @else {
+              <span class="tba3-num">{{ cell.value }} %</span>
+            }
+          </div>
+        }
+      } @else {
+        <span
+          class="text-secondary"
+          [attr.aria-label]="metricLabel() + ' ' + row.name + ': ohne Wert'"
+          >–</span
+        >
+      }
+    </td>
+  }
+  @if (showDelta()) {
+    <td class="text-end">
+      @if (row.metric?.delta; as delta) {
+        <tba3-delta [delta]="delta" [threshold]="deviationThreshold()" />
+      } @else if (row.selected) {
+        <span
+          class="text-secondary"
+          [attr.aria-label]="'Δ ' + selectedComparison()?.name + ': Bezugszeile'"
+          >–</span
+        >
+      } @else {
+        <span
+          class="text-secondary"
+          [attr.aria-label]="'Δ ' + selectedComparison()?.name + ': ohne Wert'"
+          >–</span
+        >
+      }
+    </td>
+  }
+</ng-template>
+
+<ng-content select="[tba3Header]" />
+
+@if (hasContent()) {
+  @if (hasDistribution()) {
+    <tba3-control-panel filterLabel="Kennzahl" comparisonsLabel="Vergleich" class="d-block mb-3">
+      <div tba3Filter class="btn-group btn-group-sm" role="group" aria-label="Kennzahl wählen">
+        @for (option of metricOptions; track option.key) {
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            [class.active]="activeMetric() === option.key"
+            [attr.aria-pressed]="activeMetric() === option.key"
+            (click)="setMetric(option.key)"
+          >
+            {{ option.label }}
+          </button>
+        }
+      </div>
+      <div
+        tba3Comparisons
+        class="btn-group btn-group-sm"
+        role="group"
+        aria-label="Vergleich wählen"
+      >
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          [class.active]="activeComparison() === undefined"
+          [attr.aria-pressed]="activeComparison() === undefined"
+          [disabled]="isDistribution()"
+          (click)="setComparison(undefined)"
+        >
+          keiner
+        </button>
+        @for (option of comparisonOptions(); track option.id) {
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            [class.active]="activeComparison() === option.id"
+            [attr.aria-pressed]="activeComparison() === option.id"
+            [disabled]="isDistribution()"
+            (click)="setComparison(option.id)"
+          >
+            {{ option.name }}
+          </button>
+        }
+      </div>
+    </tba3-control-panel>
+  }
+
+  @if (hasLegend()) {
+    <div class="d-flex flex-wrap align-items-center gap-3 mb-2">
+      @if (showScale()) {
+        <tba3-scale-legend
+          [thresholds]="activeThresholds()!"
+          [ariaLabel]="'Skala ' + metricLabel()"
+        />
+      }
+      @if (showBands()) {
+        <tba3-legend [items]="bandLegend()" />
+      }
+      @for (column of characteristicColumns(); track column.type) {
+        <tba3-legend [items]="column.legend" />
+      }
+    </div>
+  }
+
+  <div class="table-responsive">
+    <table class="table table-sm table-striped align-middle">
+      <caption class="visually-hidden">
+        Teilgruppen mit Zusammensetzung und
+        {{
+          metricLabel()
+        }},
+        {{
+          rowCount()
+        }}
+        Zeilen, Teilgruppen sortierbar.
+      </caption>
+      <thead>
+        <tr class="small text-secondary align-bottom">
+          <th scope="col" [attr.aria-sort]="ariaSort('name')">
+            <tba3-sort-header
+              label="Name"
+              [direction]="sortDirection('name')"
+              [priority]="sortPriority('name')"
+              (toggle)="sort('name')"
+            />
+          </th>
+          @for (unit of unitColumns(); track unit.type) {
+            <th scope="col" class="text-end text-nowrap" [attr.aria-sort]="ariaSort(unit.sortKey)">
+              <tba3-sort-header
+                [label]="unit.label"
+                [direction]="sortDirection(unit.sortKey)"
+                [priority]="sortPriority(unit.sortKey)"
+                (toggle)="sort(unit.sortKey)"
+              />
+            </th>
+          }
+          @if (hasParticipation()) {
+            <th
+              scope="col"
+              class="text-end text-nowrap"
+              [attr.aria-sort]="ariaSort('participated')"
+            >
+              <tba3-sort-header
+                label="Teilnehmende"
+                [direction]="sortDirection('participated')"
+                [priority]="sortPriority('participated')"
+                (toggle)="sort('participated')"
+              />
+            </th>
+            <th
+              scope="col"
+              class="text-end text-nowrap"
+              [attr.aria-sort]="ariaSort('participation')"
+            >
+              <tba3-sort-header
+                label="Teilnahmequote"
+                [direction]="sortDirection('participation')"
+                [priority]="sortPriority('participation')"
+                (toggle)="sort('participation')"
+              />
+            </th>
+          }
+          @if (showStudents()) {
+            <th scope="col" class="text-end text-nowrap" [attr.aria-sort]="ariaSort('students')">
+              <tba3-sort-header
+                label="Personen"
+                [direction]="sortDirection('students')"
+                [priority]="sortPriority('students')"
+                (toggle)="sort('students')"
+              />
+            </th>
+          }
+          @for (column of characteristicColumns(); track column.type) {
+            <th scope="col" class="tba3-col-bar fw-semibold">{{ column.label }}</th>
+          }
+          @if (hasDistribution()) {
+            <th scope="col" class="tba3-col-bar" [attr.aria-sort]="ariaSort('metric')">
+              <tba3-sort-header
+                [label]="metricLabel()"
+                [direction]="sortDirection('metric')"
+                [priority]="sortPriority('metric')"
+                (toggle)="sort('metric')"
+              />
+            </th>
+          }
+          @if (showDelta()) {
+            <th scope="col" class="text-end text-nowrap" [attr.aria-sort]="ariaSort('delta')">
+              <tba3-sort-header
+                [label]="'Δ ' + selectedComparison()?.name"
+                [direction]="sortDirection('delta')"
+                [priority]="sortPriority('delta')"
+                (toggle)="sort('delta')"
+              />
+            </th>
+          }
+        </tr>
+      </thead>
+      <tbody class="table-group-divider tba3-pinned-rows">
+        @for (row of pinnedRows(); track row.id) {
+          <tr [class.table-active]="row.selected" [class.fw-bold]="row.selected">
+            <ng-container [ngTemplateOutlet]="cells" [ngTemplateOutletContext]="{ row: row }" />
+          </tr>
+        }
+      </tbody>
+      <tbody class="table-group-divider">
+        @for (row of partRows(); track row.id) {
+          <tr>
+            <ng-container [ngTemplateOutlet]="cells" [ngTemplateOutletContext]="{ row: row }" />
+          </tr>
+        }
+        @if (!hasParts()) {
+          <tr>
+            <td [attr.colspan]="columnCount()" class="text-secondary">
+              Keine Teilgruppen in der Antwort.
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (spread(); as spread) {
+    <p class="small mt-2 mb-0 d-flex flex-wrap align-items-center gap-2">
+      <span class="badge bg-light text-dark border">Spannweite {{ spread.range }} Pp</span>
+      <span class="text-secondary">Teilgruppen: {{ spread.min }} % bis {{ spread.max }} %</span>
+    </p>
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

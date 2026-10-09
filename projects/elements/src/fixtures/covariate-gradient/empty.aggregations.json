@@ -1,0 +1,17 @@
+[
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": []
+  }
+]

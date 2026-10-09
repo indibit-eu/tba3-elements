@@ -1,0 +1,16 @@
+<button
+  type="button"
+  class="btn btn-sm btn-link p-0 text-decoration-none text-reset fw-semibold text-nowrap"
+  (click)="toggle.emit()"
+>
+  <ng-content />{{ label() }}
+  <i
+    class="fa-solid fa-fw text-secondary"
+    [class.ms-1]="!!label()"
+    [class]="iconClass()"
+    aria-hidden="true"
+  ></i>
+  @if (priority(); as priorityValue) {
+    <span class="badge rounded-pill text-bg-secondary ms-1">{{ priorityValue }}</span>
+  }
+</button>

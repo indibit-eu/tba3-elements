@@ -1,0 +1,36 @@
+[
+  {
+    "id": "student-7",
+    "type": "student",
+    "name": "Jonas Feldhusen",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      { "type": "gender", "label": "Geschlecht", "value": "male" },
+      { "type": "languageAtHome", "label": "Sprache zu Hause", "value": "german" },
+      { "type": "ses", "label": "Sozioökonomischer Status", "value": "B" }
+    ],
+    "competenceLevels": []
+  },
+  {
+    "id": "student-7",
+    "type": "student",
+    "name": "Jonas Feldhusen",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      { "type": "gender", "label": "Geschlecht", "value": "male" },
+      { "type": "languageAtHome", "label": "Sprache zu Hause", "value": "german" },
+      { "type": "ses", "label": "Sozioökonomischer Status", "value": "B" }
+    ],
+    "competenceLevels": []
+  }
+]

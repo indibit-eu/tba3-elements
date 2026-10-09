@@ -1,0 +1,36 @@
+<span>
+  @if (code(); as code) {
+    @if (clickable()) {
+      <button
+        type="button"
+        class="btn btn-link p-0 align-baseline fw-semibold text-nowrap link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+        [attr.aria-label]="ariaLabel()"
+        (click)="selected.emit()"
+      >
+        {{ code }}
+      </button>
+    } @else {
+      <span class="fw-semibold text-nowrap">{{ code }}</span>
+    }
+    <span>&ngsp;{{ name() }}</span>
+  } @else {
+    @if (clickable()) {
+      <button
+        type="button"
+        class="btn btn-link p-0 align-baseline fw-semibold text-nowrap link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+        [attr.aria-label]="ariaLabel()"
+        (click)="selected.emit()"
+      >
+        {{ name() }}
+      </button>
+    } @else {
+      <span>{{ name() }}</span>
+    }
+  }
+  @if (domain(); as domain) {
+    &ngsp;<span class="text-secondary fw-normal" aria-hidden="true">·</span>&ngsp;<span
+      class="small text-body-secondary"
+      >{{ domain }}</span
+    >
+  }
+</span>

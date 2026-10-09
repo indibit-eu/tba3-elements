@@ -1,0 +1,17 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": []
+  }
+]

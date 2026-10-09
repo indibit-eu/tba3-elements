@@ -1,0 +1,14 @@
+<span
+  class="tba3-rate-pill tba3-num badge rounded-pill d-inline-flex align-items-baseline gap-1 fw-medium"
+  [class.fw-bold]="emphasis()"
+  [style.background-color]="background()"
+  [style.color]="color()"
+  [attr.aria-label]="ariaLabel() || null"
+>
+  @if (indicator().icon) {
+    <i class="fa-solid fa-fw" [class]="indicator().icon" aria-hidden="true"></i>
+  } @else {
+    <span aria-hidden="true">{{ indicator().glyph }}</span>
+  }
+  {{ text() }}
+</span>

@@ -1,0 +1,8 @@
+<ul class="list-inline small mb-0" [attr.aria-label]="ariaLabel()">
+  <li class="list-inline-item text-secondary">Skala</li>
+  @for (item of items(); track item.level) {
+    <li class="list-inline-item">
+      <tba3-scale-pill [level]="item.level" [text]="item.text" />
+    </li>
+  }
+</ul>

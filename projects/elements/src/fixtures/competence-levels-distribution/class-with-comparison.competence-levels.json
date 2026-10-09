@@ -1,0 +1,148 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 24,
+          "mean": 0.0417,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 24,
+          "mean": 0.0833,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 24,
+          "mean": 0.1667,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 24,
+          "mean": 0.375,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 24,
+          "mean": 0.25,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 24,
+          "mean": 0.0833,
+          "frequency": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2400,
+          "mean": 0.075,
+          "frequency": 180
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2400,
+          "mean": 0.1,
+          "frequency": 240
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2400,
+          "mean": 0.175,
+          "frequency": 420
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 2400,
+          "mean": 0.3,
+          "frequency": 720
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 2400,
+          "mean": 0.225,
+          "frequency": 540
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 2400,
+          "mean": 0.125,
+          "frequency": 300
+        }
+      }
+    ]
+  }
+]

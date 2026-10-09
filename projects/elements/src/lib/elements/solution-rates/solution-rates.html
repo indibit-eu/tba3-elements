@@ -1,0 +1,91 @@
+<ng-content select="[tba3Header]" />
+
+@if (sections().length > 0) {
+  @if (hasControls()) {
+    <tba3-control-panel class="d-block mb-3" filterLabel="Testheft">
+      @if (hasBookletSwitch()) {
+        <tba3-booklet-switch
+          tba3Filter
+          [booklets]="bookletList()"
+          [active]="activeBooklet()"
+          [valueLabels]="valueLabels()"
+          (activeChange)="setBooklet($event)"
+        />
+      }
+      @if (availableComparisons().length > 0) {
+        <tba3-comparison-picker
+          tba3Comparisons
+          [groups]="availableComparisons()"
+          [selected]="selectedKeys()"
+          (selectedChange)="selectedKeys.set($event)"
+        />
+      }
+    </tba3-control-panel>
+  }
+
+  @for (section of sections(); track section.key; let last = $last) {
+    <section>
+      @if (section.labelParts.length > 0) {
+        <h4 class="h5 fw-semibold mb-3">
+          @for (part of section.labelParts; track part; let first = $first) {
+            @if (!first) {
+              <span class="text-secondary fw-normal" aria-hidden="true">·</span>
+            }
+            {{ part }}
+          }
+        </h4>
+      }
+
+      <ul class="list-unstyled mb-0">
+        @for (value of section.values; track value.key) {
+          <li class="mb-3">
+            <div class="mb-1 d-flex flex-wrap align-items-baseline column-gap-2">
+              <tba3-aggregation-value [code]="value.code" [name]="value.name" />
+              @if (value.link) {
+                <a class="small text-nowrap" [href]="value.link" target="_blank" rel="noopener">
+                  Aufgabe öffnen
+                  <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i>
+                </a>
+              }
+            </div>
+
+            @for (bar of value.bars; track bar.name; let first = $first) {
+              <div class="d-flex align-items-center gap-2" [class.mt-1]="!first">
+                @if (section.hasComparisons) {
+                  <span class="small text-secondary tba3-bar-label">{{ bar.name }}</span>
+                }
+                <div class="progress tba3-bar flex-grow-1" aria-hidden="true">
+                  <div
+                    class="progress-bar"
+                    [style.width.%]="bar.percent"
+                    [style.background-color]="
+                      bar.main ? 'var(--tba3-bar)' : 'var(--tba3-bar-comparison)'
+                    "
+                  ></div>
+                </div>
+                @if (bar.title) {
+                  <span class="visually-hidden">{{ bar.title }}</span>
+                }
+                <span class="text-end flex-shrink-0 tba3-col-narrow">
+                  @if (bar.main) {
+                    <span class="fw-semibold tba3-num">{{ bar.percent }} %</span>
+                  } @else {
+                    <tba3-delta [delta]="bar.delta" [threshold]="deviationThreshold()" />
+                    <span class="visually-hidden">{{ bar.percent }} %</span>
+                  }
+                </span>
+              </div>
+            }
+          </li>
+        }
+      </ul>
+    </section>
+    @if (!last) {
+      <hr class="my-4" />
+    }
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

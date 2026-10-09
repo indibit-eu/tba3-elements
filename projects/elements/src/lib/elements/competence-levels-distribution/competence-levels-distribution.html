@@ -1,0 +1,120 @@
+<ng-content select="[tba3Header]" />
+
+@for (block of blocks(); track block.key; let last = $last) {
+  <article>
+    @if (block.labelParts.length > 0) {
+      <h4 class="h5 fw-semibold mb-3">
+        @for (part of block.labelParts; track part; let first = $first) {
+          @if (!first) {
+            <span class="text-secondary fw-normal" aria-hidden="true">·</span>
+          }
+          {{ part }}
+        }
+      </h4>
+    }
+
+    @if (block.total > 0) {
+      <p class="small text-secondary mb-3">n = {{ block.total }}</p>
+    }
+
+    <div class="row align-items-stretch">
+      <div class="col-12 col-md-7">
+        @if (block.chartOptions) {
+          <figure
+            class="m-0"
+            role="figure"
+            aria-roledescription="Diagramm"
+            [attr.aria-label]="block.ariaLabel"
+          >
+            <div echarts [options]="block.chartOptions" class="tba3-chart" aria-hidden="true"></div>
+          </figure>
+
+          @if (block.mode === 'level' && block.legend.length > 0) {
+            <tba3-legend class="d-block mt-2" [items]="block.legend" />
+          }
+
+          <div class="visually-hidden">
+            <table>
+              <caption>
+                {{
+                  block.tableCaption
+                }}
+              </caption>
+              <thead>
+                <tr>
+                  @if (block.mode === 'level') {
+                    <th scope="col">Stufe</th>
+                  }
+                  <th scope="col">Einordnung</th>
+                  <th scope="col">Teilnehmende</th>
+                </tr>
+              </thead>
+              <tbody>
+                @for (bar of block.bars; track $index) {
+                  <tr>
+                    @if (block.mode === 'level') {
+                      <th scope="row">{{ bar.name }}</th>
+                      <td>{{ bar.classification }}</td>
+                    } @else {
+                      <th scope="row">{{ bar.name }}</th>
+                    }
+                    <td>{{ bar.value }}</td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        } @else {
+          <p class="text-secondary mb-0">Keine Verteilung in der Antwort.</p>
+        }
+      </div>
+
+      @if (block.metrics; as metrics) {
+        <div class="col-12 col-md-5 d-flex flex-column justify-content-center gap-3">
+          <div>
+            <div class="small text-secondary">Teilnehmende mit Optimalstandard</div>
+            <div class="fs-5 fw-semibold tba3-num">
+              @if (metrics.optimalCount > 0) {
+                <i
+                  class="fa-solid fa-crown me-1"
+                  [style.color]="'var(--tba3-mark-top)'"
+                  title="Optimalstandard"
+                  aria-hidden="true"
+                ></i>
+              }
+              {{ metrics.optimalCount }}
+            </div>
+          </div>
+
+          <div>
+            <div class="small text-secondary">Mindeststandard erreicht</div>
+            <div class="fs-5 fw-semibold tba3-num">{{ metrics.minimumReachedPercent }} %</div>
+          </div>
+
+          <div>
+            <div class="small text-secondary">Teilnehmende unter Mindeststandard</div>
+            <div class="fs-5 fw-semibold tba3-num">
+              @if (metrics.belowCount > 0) {
+                <i
+                  class="fa-solid fa-triangle-exclamation me-1"
+                  [style.color]="'var(--tba3-mark-alert)'"
+                  title="Unter Mindeststandard"
+                  aria-hidden="true"
+                ></i>
+              }
+              {{ metrics.belowCount }}
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </article>
+
+  @if (!last) {
+    <hr class="my-4" />
+  }
+} @empty {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

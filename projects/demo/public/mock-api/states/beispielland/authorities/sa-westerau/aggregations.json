@@ -1,0 +1,4123 @@
+[
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 248,
+          "mean": 0.9118,
+          "standardDeviation": 0.284
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 140,
+          "mean": 0.5147,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 128,
+          "mean": 0.4706,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 4,
+          "mean": 0.0147,
+          "standardDeviation": 0.12
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 190,
+          "mean": 0.6985,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 82,
+          "mean": 0.3015,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 13,
+          "mean": 0.0478,
+          "standardDeviation": 0.213
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 54,
+          "mean": 0.1985,
+          "standardDeviation": 0.399
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 88,
+          "mean": 0.3235,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 75,
+          "mean": 0.2757,
+          "standardDeviation": 0.447
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 42,
+          "mean": 0.1544,
+          "standardDeviation": 0.361
+        }
+      },
+      {
+        "type": "schools-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 3,
+          "frequency": 3,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 39,
+          "mean": 0.1573,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 64,
+          "mean": 0.2581,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 60,
+          "mean": 0.2419,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 51,
+          "mean": 0.2056,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 34,
+          "mean": 0.1371,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 29,
+          "mean": 0.1169,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 45,
+          "mean": 0.1815,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 62,
+          "mean": 0.25,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 56,
+          "mean": 0.2258,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 248,
+          "frequency": 56,
+          "mean": 0.2258,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Englisch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 157,
+          "frequency": 14,
+          "mean": 0.0892,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 157,
+          "frequency": 36,
+          "mean": 0.2293,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 157,
+          "frequency": 29,
+          "mean": 0.1847,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 157,
+          "frequency": 25,
+          "mean": 0.1592,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 157,
+          "frequency": 53,
+          "mean": 0.3376,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 248,
+          "mean": 0.9118,
+          "standardDeviation": 0.284
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 140,
+          "mean": 0.5147,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 128,
+          "mean": 0.4706,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 4,
+          "mean": 0.0147,
+          "standardDeviation": 0.12
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 190,
+          "mean": 0.6985,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 82,
+          "mean": 0.3015,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 13,
+          "mean": 0.0478,
+          "standardDeviation": 0.213
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 54,
+          "mean": 0.1985,
+          "standardDeviation": 0.399
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 88,
+          "mean": 0.3235,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 75,
+          "mean": 0.2757,
+          "standardDeviation": 0.447
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 42,
+          "mean": 0.1544,
+          "standardDeviation": 0.361
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 248,
+          "mean": 0.9118,
+          "standardDeviation": 0.284
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 140,
+          "mean": 0.5147,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 128,
+          "mean": 0.4706,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 4,
+          "mean": 0.0147,
+          "standardDeviation": 0.12
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 190,
+          "mean": 0.6985,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 82,
+          "mean": 0.3015,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 13,
+          "mean": 0.0478,
+          "standardDeviation": 0.213
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 54,
+          "mean": 0.1985,
+          "standardDeviation": 0.399
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 88,
+          "mean": 0.3235,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 75,
+          "mean": 0.2757,
+          "standardDeviation": 0.447
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 272,
+          "frequency": 42,
+          "mean": 0.1544,
+          "standardDeviation": 0.361
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Englisch"
+    },
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 157,
+          "mean": 0.9128,
+          "standardDeviation": 0.282
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 89,
+          "mean": 0.5174,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 81,
+          "mean": 0.4709,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 2,
+          "mean": 0.0116,
+          "standardDeviation": 0.107
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 120,
+          "mean": 0.6977,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 52,
+          "mean": 0.3023,
+          "standardDeviation": 0.459
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 6,
+          "mean": 0.0349,
+          "standardDeviation": 0.184
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 30,
+          "mean": 0.1744,
+          "standardDeviation": 0.379
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 51,
+          "mean": 0.2965,
+          "standardDeviation": 0.457
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 48,
+          "mean": 0.2791,
+          "standardDeviation": 0.449
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 172,
+          "frequency": 37,
+          "mean": 0.2151,
+          "standardDeviation": 0.411
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.2.4",
+        "description": "Textschemata erfassen: z.B. Textsorte, Aufbau des Textes",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 784,
+          "mean": 0.6323,
+          "standardDeviation": 0.482
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.4",
+        "description": "zentrale Inhalte erschließen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 749,
+          "mean": 0.604,
+          "standardDeviation": 0.489
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.5",
+        "description": "wesentliche Elemente eines Textes erfassen: z. B. Figuren, Raum- und Zeitdarstellung, Konfliktverlauf",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 863,
+          "mean": 0.696,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.6",
+        "description": "wesentliche Fachbegriffe zur Erschließung von Literatur kennen und anwenden, insbesondere Erzähler, Erzählperspektive, Monolog, Dialog, sprachliche Bilder, Metapher, Reim, lyrisches Ich",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 882,
+          "mean": 0.7113,
+          "standardDeviation": 0.453
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Grundlegende Gestaltungsmittel erkennen und ihre Wirkung (HSA) bzw. sprachliche Gestaltungsmittel erkennen und ihre Wirkungszusammenhänge und historische Bedingtheit einschätzen (MSA-G), z. B. Wortwahl, Wiederholung, Satz- & Gedankenfiguren",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 715,
+          "mean": 0.5766,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.8",
+        "description": "eigene Deutungen der Texte entwickeln und am Text belegen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 779,
+          "mean": 0.6282,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.3",
+        "description": "Informationen zielgerichtet entnehmen, ordnen, vergleichen, prüfen und ergänzen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 717,
+          "mean": 0.5782,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.5",
+        "description": "Intention(en) eines Textes erkennen, insbesondere Zusammenhang zwischen Autorintention(en), Textmerkmalen, Leseerwartungen und Wirkungen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 827,
+          "mean": 0.6669,
+          "standardDeviation": 0.471
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.6",
+        "description": "aus Sach- und Gebrauchstexten begründete Schlussfolgerungen ziehen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 882,
+          "mean": 0.7113,
+          "standardDeviation": 0.453
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.7",
+        "description": "Information und Wertung in Texten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 657,
+          "mean": 0.5298,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.5.2",
+        "description": "medienspezifische Formen kennen (Print- und Online-Zeitungen, Infotainment, Hypertexte, Werbekommunikation, Film, soziale Medien)",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 664,
+          "mean": 0.5355,
+          "standardDeviation": 0.499
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-westerau",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.5.1",
+        "description": "Grundregeln der Rechtschreibung und Zeichensetzung sicher beherrschen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 834,
+          "mean": 0.6726,
+          "standardDeviation": 0.469
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.2",
+        "description": "häufig vorkommende Wörter, Fachbegriffe und Fremdwörter richtig schreiben",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 645,
+          "mean": 0.5202,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.3",
+        "description": "individuelle Fehlerschwerpunkte erkennen und mit Hilfe von Rechtschreibstrategienabbauen, insbesondere Nachschlagen, Ableiten, Wortverwandtschaften suchen, grammatisches Wissen anwenden",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 664,
+          "mean": 0.5355,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.3.1",
+        "description": "Satzstrukturen kennen und funktional verwenden",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 773,
+          "mean": 0.6234,
+          "standardDeviation": 0.485
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gesamtschule"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 74,
+          "mean": 0.925,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 40,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 38,
+          "mean": 0.475,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 2,
+          "mean": 0.025,
+          "standardDeviation": 0.156
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 56,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 24,
+          "mean": 0.3,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 6,
+          "mean": 0.075,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 25,
+          "mean": 0.3125,
+          "standardDeviation": 0.464
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 26,
+          "mean": 0.325,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 14,
+          "mean": 0.175,
+          "standardDeviation": 0.38
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 9,
+          "mean": 0.1125,
+          "standardDeviation": 0.316
+        }
+      },
+      {
+        "type": "groups-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 4,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 15,
+          "mean": 0.2027,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 24,
+          "mean": 0.3243,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 15,
+          "mean": 0.2027,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 14,
+          "mean": 0.1892,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 6,
+          "mean": 0.0811,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 12,
+          "mean": 0.1622,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 17,
+          "mean": 0.2297,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 18,
+          "mean": 0.2432,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 16,
+          "mean": 0.2162,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 11,
+          "mean": 0.1486,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Englisch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 13,
+          "mean": 0.1757,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 19,
+          "mean": 0.2568,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 15,
+          "mean": 0.2027,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 13,
+          "mean": 0.1757,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "frequency": 14,
+          "mean": 0.1892,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gesamtschule"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 74,
+          "mean": 0.925,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 40,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 38,
+          "mean": 0.475,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 2,
+          "mean": 0.025,
+          "standardDeviation": 0.156
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 56,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 24,
+          "mean": 0.3,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 6,
+          "mean": 0.075,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 25,
+          "mean": 0.3125,
+          "standardDeviation": 0.464
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 26,
+          "mean": 0.325,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 14,
+          "mean": 0.175,
+          "standardDeviation": 0.38
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 9,
+          "mean": 0.1125,
+          "standardDeviation": 0.316
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gesamtschule"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 74,
+          "mean": 0.925,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 40,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 38,
+          "mean": 0.475,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 2,
+          "mean": 0.025,
+          "standardDeviation": 0.156
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 56,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 24,
+          "mean": 0.3,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 6,
+          "mean": 0.075,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 25,
+          "mean": 0.3125,
+          "standardDeviation": 0.464
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 26,
+          "mean": 0.325,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 14,
+          "mean": 0.175,
+          "standardDeviation": 0.38
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 9,
+          "mean": 0.1125,
+          "standardDeviation": 0.316
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Englisch"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gesamtschule"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 74,
+          "mean": 0.925,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 40,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 38,
+          "mean": 0.475,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 2,
+          "mean": 0.025,
+          "standardDeviation": 0.156
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 56,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 24,
+          "mean": 0.3,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 6,
+          "mean": 0.075,
+          "standardDeviation": 0.263
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 25,
+          "mean": 0.3125,
+          "standardDeviation": 0.464
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 26,
+          "mean": 0.325,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 14,
+          "mean": 0.175,
+          "standardDeviation": 0.38
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 9,
+          "mean": 0.1125,
+          "standardDeviation": 0.316
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.2.4",
+        "description": "Textschemata erfassen: z.B. Textsorte, Aufbau des Textes",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 249,
+          "mean": 0.673,
+          "standardDeviation": 0.469
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.4",
+        "description": "zentrale Inhalte erschließen",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 230,
+          "mean": 0.6216,
+          "standardDeviation": 0.485
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.5",
+        "description": "wesentliche Elemente eines Textes erfassen: z. B. Figuren, Raum- und Zeitdarstellung, Konfliktverlauf",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 231,
+          "mean": 0.6243,
+          "standardDeviation": 0.484
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.6",
+        "description": "wesentliche Fachbegriffe zur Erschließung von Literatur kennen und anwenden, insbesondere Erzähler, Erzählperspektive, Monolog, Dialog, sprachliche Bilder, Metapher, Reim, lyrisches Ich",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 232,
+          "mean": 0.627,
+          "standardDeviation": 0.484
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Grundlegende Gestaltungsmittel erkennen und ihre Wirkung (HSA) bzw. sprachliche Gestaltungsmittel erkennen und ihre Wirkungszusammenhänge und historische Bedingtheit einschätzen (MSA-G), z. B. Wortwahl, Wiederholung, Satz- & Gedankenfiguren",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 178,
+          "mean": 0.4811,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.8",
+        "description": "eigene Deutungen der Texte entwickeln und am Text belegen",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 204,
+          "mean": 0.5514,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.3",
+        "description": "Informationen zielgerichtet entnehmen, ordnen, vergleichen, prüfen und ergänzen",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 203,
+          "mean": 0.5486,
+          "standardDeviation": 0.498
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.5",
+        "description": "Intention(en) eines Textes erkennen, insbesondere Zusammenhang zwischen Autorintention(en), Textmerkmalen, Leseerwartungen und Wirkungen",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 245,
+          "mean": 0.6622,
+          "standardDeviation": 0.473
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.6",
+        "description": "aus Sach- und Gebrauchstexten begründete Schlussfolgerungen ziehen",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 266,
+          "mean": 0.7189,
+          "standardDeviation": 0.45
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.7",
+        "description": "Information und Wertung in Texten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 180,
+          "mean": 0.4865,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.5.2",
+        "description": "medienspezifische Formen kennen (Print- und Online-Zeitungen, Infotainment, Hypertexte, Werbekommunikation, Film, soziale Medien)",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 202,
+          "mean": 0.5459,
+          "standardDeviation": 0.498
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-sonnenfeld",
+    "type": "school",
+    "name": "Gesamtschule Sonnenfeld",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.5.1",
+        "description": "Grundregeln der Rechtschreibung und Zeichensetzung sicher beherrschen",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 249,
+          "mean": 0.673,
+          "standardDeviation": 0.469
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.2",
+        "description": "häufig vorkommende Wörter, Fachbegriffe und Fremdwörter richtig schreiben",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 195,
+          "mean": 0.527,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.3",
+        "description": "individuelle Fehlerschwerpunkte erkennen und mit Hilfe von Rechtschreibstrategienabbauen, insbesondere Nachschlagen, Ableiten, Wortverwandtschaften suchen, grammatisches Wissen anwenden",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 196,
+          "mean": 0.5297,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.3.1",
+        "description": "Satzstrukturen kennen und funktional verwenden",
+        "descriptiveStatistics": {
+          "total": 370,
+          "frequency": 226,
+          "mean": 0.6108,
+          "standardDeviation": 0.488
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gymnasium"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 83,
+          "mean": 0.9022,
+          "standardDeviation": 0.297
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 49,
+          "mean": 0.5326,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 43,
+          "mean": 0.4674,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 64,
+          "mean": 0.6957,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 5,
+          "mean": 0.0543,
+          "standardDeviation": 0.227
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 25,
+          "mean": 0.2717,
+          "standardDeviation": 0.445
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 34,
+          "mean": 0.3696,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "groups-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 4,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 2,
+          "mean": 0.0241,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 16,
+          "mean": 0.1928,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 20,
+          "mean": 0.241,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 20,
+          "mean": 0.241,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 25,
+          "mean": 0.3012,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 3,
+          "mean": 0.0361,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 10,
+          "mean": 0.1205,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 16,
+          "mean": 0.1928,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 18,
+          "mean": 0.2169,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 36,
+          "mean": 0.4337,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Englisch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 1,
+          "mean": 0.012,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 17,
+          "mean": 0.2048,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 14,
+          "mean": 0.1687,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 12,
+          "mean": 0.1446,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 83,
+          "frequency": 39,
+          "mean": 0.4699,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gymnasium"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 83,
+          "mean": 0.9022,
+          "standardDeviation": 0.297
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 49,
+          "mean": 0.5326,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 43,
+          "mean": 0.4674,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 64,
+          "mean": 0.6957,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 5,
+          "mean": 0.0543,
+          "standardDeviation": 0.227
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 25,
+          "mean": 0.2717,
+          "standardDeviation": 0.445
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 34,
+          "mean": 0.3696,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gymnasium"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 83,
+          "mean": 0.9022,
+          "standardDeviation": 0.297
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 49,
+          "mean": 0.5326,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 43,
+          "mean": 0.4674,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 64,
+          "mean": 0.6957,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 5,
+          "mean": 0.0543,
+          "standardDeviation": 0.227
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 25,
+          "mean": 0.2717,
+          "standardDeviation": 0.445
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 34,
+          "mean": 0.3696,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Englisch"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Gymnasium"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 83,
+          "mean": 0.9022,
+          "standardDeviation": 0.297
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 49,
+          "mean": 0.5326,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 43,
+          "mean": 0.4674,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 64,
+          "mean": 0.6957,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 0,
+          "mean": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 5,
+          "mean": 0.0543,
+          "standardDeviation": 0.227
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 25,
+          "mean": 0.2717,
+          "standardDeviation": 0.445
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 34,
+          "mean": 0.3696,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 28,
+          "mean": 0.3043,
+          "standardDeviation": 0.46
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.2.4",
+        "description": "Textschemata erfassen: z.B. Textsorte, Aufbau des Textes",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 282,
+          "mean": 0.6795,
+          "standardDeviation": 0.467
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.4",
+        "description": "zentrale Inhalte erschließen",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 307,
+          "mean": 0.7398,
+          "standardDeviation": 0.439
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.5",
+        "description": "wesentliche Elemente eines Textes erfassen: z. B. Figuren, Raum- und Zeitdarstellung, Konfliktverlauf",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 275,
+          "mean": 0.6627,
+          "standardDeviation": 0.473
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.6",
+        "description": "wesentliche Fachbegriffe zur Erschließung von Literatur kennen und anwenden, insbesondere Erzähler, Erzählperspektive, Monolog, Dialog, sprachliche Bilder, Metapher, Reim, lyrisches Ich",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 311,
+          "mean": 0.7494,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Grundlegende Gestaltungsmittel erkennen und ihre Wirkung (HSA) bzw. sprachliche Gestaltungsmittel erkennen und ihre Wirkungszusammenhänge und historische Bedingtheit einschätzen (MSA-G), z. B. Wortwahl, Wiederholung, Satz- & Gedankenfiguren",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 272,
+          "mean": 0.6554,
+          "standardDeviation": 0.475
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.8",
+        "description": "eigene Deutungen der Texte entwickeln und am Text belegen",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 256,
+          "mean": 0.6169,
+          "standardDeviation": 0.486
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.3",
+        "description": "Informationen zielgerichtet entnehmen, ordnen, vergleichen, prüfen und ergänzen",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 263,
+          "mean": 0.6337,
+          "standardDeviation": 0.482
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.5",
+        "description": "Intention(en) eines Textes erkennen, insbesondere Zusammenhang zwischen Autorintention(en), Textmerkmalen, Leseerwartungen und Wirkungen",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 280,
+          "mean": 0.6747,
+          "standardDeviation": 0.468
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.6",
+        "description": "aus Sach- und Gebrauchstexten begründete Schlussfolgerungen ziehen",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 324,
+          "mean": 0.7807,
+          "standardDeviation": 0.414
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.7",
+        "description": "Information und Wertung in Texten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 264,
+          "mean": 0.6361,
+          "standardDeviation": 0.481
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.5.2",
+        "description": "medienspezifische Formen kennen (Print- und Online-Zeitungen, Infotainment, Hypertexte, Werbekommunikation, Film, soziale Medien)",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 248,
+          "mean": 0.5976,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-tannenhof",
+    "type": "school",
+    "name": "Gymnasium Tannenhof",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.5.1",
+        "description": "Grundregeln der Rechtschreibung und Zeichensetzung sicher beherrschen",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 294,
+          "mean": 0.7084,
+          "standardDeviation": 0.454
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.2",
+        "description": "häufig vorkommende Wörter, Fachbegriffe und Fremdwörter richtig schreiben",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 268,
+          "mean": 0.6458,
+          "standardDeviation": 0.478
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.3",
+        "description": "individuelle Fehlerschwerpunkte erkennen und mit Hilfe von Rechtschreibstrategienabbauen, insbesondere Nachschlagen, Ableiten, Wortverwandtschaften suchen, grammatisches Wissen anwenden",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 236,
+          "mean": 0.5687,
+          "standardDeviation": 0.495
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.3.1",
+        "description": "Satzstrukturen kennen und funktional verwenden",
+        "descriptiveStatistics": {
+          "total": 415,
+          "frequency": 314,
+          "mean": 0.7566,
+          "standardDeviation": 0.429
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ulmenberg",
+    "type": "school",
+    "name": "Realschule Ulmenberg",
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Realschule"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 91,
+          "mean": 0.91,
+          "standardDeviation": 0.286
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 51,
+          "mean": 0.51,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 47,
+          "mean": 0.47,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 2,
+          "mean": 0.02,
+          "standardDeviation": 0.14
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 70,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 30,
+          "mean": 0.3,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 7,
+          "mean": 0.07,
+          "standardDeviation": 0.255
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 24,
+          "mean": 0.24,
+          "standardDeviation": 0.427
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 37,
+          "mean": 0.37,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 27,
+          "mean": 0.27,
+          "standardDeviation": 0.444
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 5,
+          "mean": 0.05,
+          "standardDeviation": 0.218
+        }
+      },
+      {
+        "type": "groups-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 4,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ulmenberg",
+    "type": "school",
+    "name": "Realschule Ulmenberg",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 22,
+          "mean": 0.2418,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 24,
+          "mean": 0.2637,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 25,
+          "mean": 0.2747,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 17,
+          "mean": 0.1868,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 3,
+          "mean": 0.033,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ulmenberg",
+    "type": "school",
+    "name": "Realschule Ulmenberg",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 14,
+          "mean": 0.1538,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 18,
+          "mean": 0.1978,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 28,
+          "mean": 0.3077,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 22,
+          "mean": 0.2418,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 91,
+          "frequency": 9,
+          "mean": 0.0989,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ulmenberg",
+    "type": "school",
+    "name": "Realschule Ulmenberg",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Realschule"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 91,
+          "mean": 0.91,
+          "standardDeviation": 0.286
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 51,
+          "mean": 0.51,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 47,
+          "mean": 0.47,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 2,
+          "mean": 0.02,
+          "standardDeviation": 0.14
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 70,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 30,
+          "mean": 0.3,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 7,
+          "mean": 0.07,
+          "standardDeviation": 0.255
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 24,
+          "mean": 0.24,
+          "standardDeviation": 0.427
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 37,
+          "mean": 0.37,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 27,
+          "mean": 0.27,
+          "standardDeviation": 0.444
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 5,
+          "mean": 0.05,
+          "standardDeviation": 0.218
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ulmenberg",
+    "type": "school",
+    "name": "Realschule Ulmenberg",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "properties": [
+      {
+        "key": "schoolType",
+        "value": "Realschule"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 91,
+          "mean": 0.91,
+          "standardDeviation": 0.286
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 51,
+          "mean": 0.51,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 47,
+          "mean": 0.47,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 2,
+          "mean": 0.02,
+          "standardDeviation": 0.14
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 70,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 30,
+          "mean": 0.3,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 7,
+          "mean": 0.07,
+          "standardDeviation": 0.255
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 24,
+          "mean": 0.24,
+          "standardDeviation": 0.427
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 37,
+          "mean": 0.37,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 27,
+          "mean": 0.27,
+          "standardDeviation": 0.444
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 5,
+          "mean": 0.05,
+          "standardDeviation": 0.218
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ulmenberg",
+    "type": "school",
+    "name": "Realschule Ulmenberg",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.2.4",
+        "description": "Textschemata erfassen: z.B. Textsorte, Aufbau des Textes",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 278,
+          "mean": 0.611,
+          "standardDeviation": 0.488
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.4",
+        "description": "zentrale Inhalte erschließen",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 296,
+          "mean": 0.6505,
+          "standardDeviation": 0.477
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.5",
+        "description": "wesentliche Elemente eines Textes erfassen: z. B. Figuren, Raum- und Zeitdarstellung, Konfliktverlauf",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 263,
+          "mean": 0.578,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.6",
+        "description": "wesentliche Fachbegriffe zur Erschließung von Literatur kennen und anwenden, insbesondere Erzähler, Erzählperspektive, Monolog, Dialog, sprachliche Bilder, Metapher, Reim, lyrisches Ich",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 288,
+          "mean": 0.633,
+          "standardDeviation": 0.482
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Grundlegende Gestaltungsmittel erkennen und ihre Wirkung (HSA) bzw. sprachliche Gestaltungsmittel erkennen und ihre Wirkungszusammenhänge und historische Bedingtheit einschätzen (MSA-G), z. B. Wortwahl, Wiederholung, Satz- & Gedankenfiguren",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 244,
+          "mean": 0.5363,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.8",
+        "description": "eigene Deutungen der Texte entwickeln und am Text belegen",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 269,
+          "mean": 0.5912,
+          "standardDeviation": 0.492
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.3",
+        "description": "Informationen zielgerichtet entnehmen, ordnen, vergleichen, prüfen und ergänzen",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 261,
+          "mean": 0.5736,
+          "standardDeviation": 0.495
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.5",
+        "description": "Intention(en) eines Textes erkennen, insbesondere Zusammenhang zwischen Autorintention(en), Textmerkmalen, Leseerwartungen und Wirkungen",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 297,
+          "mean": 0.6527,
+          "standardDeviation": 0.476
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.6",
+        "description": "aus Sach- und Gebrauchstexten begründete Schlussfolgerungen ziehen",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 300,
+          "mean": 0.6593,
+          "standardDeviation": 0.474
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.7",
+        "description": "Information und Wertung in Texten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 234,
+          "mean": 0.5143,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.5.2",
+        "description": "medienspezifische Formen kennen (Print- und Online-Zeitungen, Infotainment, Hypertexte, Werbekommunikation, Film, soziale Medien)",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 245,
+          "mean": 0.5385,
+          "standardDeviation": 0.499
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ulmenberg",
+    "type": "school",
+    "name": "Realschule Ulmenberg",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.5.1",
+        "description": "Grundregeln der Rechtschreibung und Zeichensetzung sicher beherrschen",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 298,
+          "mean": 0.6549,
+          "standardDeviation": 0.475
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.2",
+        "description": "häufig vorkommende Wörter, Fachbegriffe und Fremdwörter richtig schreiben",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 219,
+          "mean": 0.4813,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.3",
+        "description": "individuelle Fehlerschwerpunkte erkennen und mit Hilfe von Rechtschreibstrategienabbauen, insbesondere Nachschlagen, Ableiten, Wortverwandtschaften suchen, grammatisches Wissen anwenden",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 221,
+          "mean": 0.4857,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.3.1",
+        "description": "Satzstrukturen kennen und funktional verwenden",
+        "descriptiveStatistics": {
+          "total": 455,
+          "frequency": 292,
+          "mean": 0.6418,
+          "standardDeviation": 0.479
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.2.4",
+        "description": "Textschemata erfassen: z.B. Textsorte, Aufbau des Textes",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3583,
+          "mean": 0.5942,
+          "standardDeviation": 0.491
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.4",
+        "description": "zentrale Inhalte erschließen",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3496,
+          "mean": 0.5798,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.5",
+        "description": "wesentliche Elemente eines Textes erfassen: z. B. Figuren, Raum- und Zeitdarstellung, Konfliktverlauf",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3638,
+          "mean": 0.6033,
+          "standardDeviation": 0.489
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.6",
+        "description": "wesentliche Fachbegriffe zur Erschließung von Literatur kennen und anwenden, insbesondere Erzähler, Erzählperspektive, Monolog, Dialog, sprachliche Bilder, Metapher, Reim, lyrisches Ich",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3938,
+          "mean": 0.6531,
+          "standardDeviation": 0.476
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Grundlegende Gestaltungsmittel erkennen und ihre Wirkung (HSA) bzw. sprachliche Gestaltungsmittel erkennen und ihre Wirkungszusammenhänge und historische Bedingtheit einschätzen (MSA-G), z. B. Wortwahl, Wiederholung, Satz- & Gedankenfiguren",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3174,
+          "mean": 0.5264,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.8",
+        "description": "eigene Deutungen der Texte entwickeln und am Text belegen",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3375,
+          "mean": 0.5597,
+          "standardDeviation": 0.496
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.3",
+        "description": "Informationen zielgerichtet entnehmen, ordnen, vergleichen, prüfen und ergänzen",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3357,
+          "mean": 0.5567,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.5",
+        "description": "Intention(en) eines Textes erkennen, insbesondere Zusammenhang zwischen Autorintention(en), Textmerkmalen, Leseerwartungen und Wirkungen",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3639,
+          "mean": 0.6035,
+          "standardDeviation": 0.489
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.6",
+        "description": "aus Sach- und Gebrauchstexten begründete Schlussfolgerungen ziehen",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3909,
+          "mean": 0.6483,
+          "standardDeviation": 0.478
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.7",
+        "description": "Information und Wertung in Texten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3225,
+          "mean": 0.5348,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.5.2",
+        "description": "medienspezifische Formen kennen (Print- und Online-Zeitungen, Infotainment, Hypertexte, Werbekommunikation, Film, soziale Medien)",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3220,
+          "mean": 0.534,
+          "standardDeviation": 0.499
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "frequency": 349,
+          "mean": 0.2894,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "frequency": 285,
+          "mean": 0.2363,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "frequency": 238,
+          "mean": 0.1973,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "frequency": 201,
+          "mean": 0.1667,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "frequency": 133,
+          "mean": 0.1103,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "frequency": 134,
+          "mean": 0.1455,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "frequency": 193,
+          "mean": 0.2096,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "frequency": 199,
+          "mean": 0.2161,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 921,
+          "frequency": 197,
+          "mean": 0.2139,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "frequency": 198,
+          "mean": 0.215,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Englisch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "frequency": 217,
+          "mean": 0.2627,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "frequency": 190,
+          "mean": 0.23,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "frequency": 111,
+          "mean": 0.1344,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 826,
+          "frequency": 106,
+          "mean": 0.1283,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "frequency": 202,
+          "mean": 0.2446,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.5.1",
+        "description": "Grundregeln der Rechtschreibung und Zeichensetzung sicher beherrschen",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3752,
+          "mean": 0.6222,
+          "standardDeviation": 0.485
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.2",
+        "description": "häufig vorkommende Wörter, Fachbegriffe und Fremdwörter richtig schreiben",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 2989,
+          "mean": 0.4957,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.3",
+        "description": "individuelle Fehlerschwerpunkte erkennen und mit Hilfe von Rechtschreibstrategienabbauen, insbesondere Nachschlagen, Ableiten, Wortverwandtschaften suchen, grammatisches Wissen anwenden",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3130,
+          "mean": 0.5191,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.3.1",
+        "description": "Satzstrukturen kennen und funktional verwenden",
+        "descriptiveStatistics": {
+          "total": 6030,
+          "frequency": 3732,
+          "mean": 0.6189,
+          "standardDeviation": 0.486
+        }
+      }
+    ]
+  },
+  {
+    "id": "year-2025",
+    "type": "authority",
+    "name": "Durchgang 2025",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.2.4",
+        "description": "Textschemata erfassen: z.B. Textsorte, Aufbau des Textes",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 747,
+          "mean": 0.6024,
+          "standardDeviation": 0.489
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.4",
+        "description": "zentrale Inhalte erschließen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 712,
+          "mean": 0.5742,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.5",
+        "description": "wesentliche Elemente eines Textes erfassen: z. B. Figuren, Raum- und Zeitdarstellung, Konfliktverlauf",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 825,
+          "mean": 0.6653,
+          "standardDeviation": 0.472
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.6",
+        "description": "wesentliche Fachbegriffe zur Erschließung von Literatur kennen und anwenden, insbesondere Erzähler, Erzählperspektive, Monolog, Dialog, sprachliche Bilder, Metapher, Reim, lyrisches Ich",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 845,
+          "mean": 0.6815,
+          "standardDeviation": 0.466
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Grundlegende Gestaltungsmittel erkennen und ihre Wirkung (HSA) bzw. sprachliche Gestaltungsmittel erkennen und ihre Wirkungszusammenhänge und historische Bedingtheit einschätzen (MSA-G), z. B. Wortwahl, Wiederholung, Satz- & Gedankenfiguren",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 678,
+          "mean": 0.5468,
+          "standardDeviation": 0.498
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.3.8",
+        "description": "eigene Deutungen der Texte entwickeln und am Text belegen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 742,
+          "mean": 0.5984,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.3",
+        "description": "Informationen zielgerichtet entnehmen, ordnen, vergleichen, prüfen und ergänzen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 680,
+          "mean": 0.5484,
+          "standardDeviation": 0.498
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.5",
+        "description": "Intention(en) eines Textes erkennen, insbesondere Zusammenhang zwischen Autorintention(en), Textmerkmalen, Leseerwartungen und Wirkungen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 790,
+          "mean": 0.6371,
+          "standardDeviation": 0.481
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.6",
+        "description": "aus Sach- und Gebrauchstexten begründete Schlussfolgerungen ziehen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 845,
+          "mean": 0.6815,
+          "standardDeviation": 0.466
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.7",
+        "description": "Information und Wertung in Texten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 620,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.5.2",
+        "description": "medienspezifische Formen kennen (Print- und Online-Zeitungen, Infotainment, Hypertexte, Werbekommunikation, Film, soziale Medien)",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 626,
+          "mean": 0.5048,
+          "standardDeviation": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "year-2025",
+    "type": "authority",
+    "name": "Durchgang 2025",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA-NG"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.5.1",
+        "description": "Grundregeln der Rechtschreibung und Zeichensetzung sicher beherrschen",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 797,
+          "mean": 0.6427,
+          "standardDeviation": 0.479
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.2",
+        "description": "häufig vorkommende Wörter, Fachbegriffe und Fremdwörter richtig schreiben",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 608,
+          "mean": 0.4903,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.5.3",
+        "description": "individuelle Fehlerschwerpunkte erkennen und mit Hilfe von Rechtschreibstrategienabbauen, insbesondere Nachschlagen, Ableiten, Wortverwandtschaften suchen, grammatisches Wissen anwenden",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 627,
+          "mean": 0.5056,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.3.1",
+        "description": "Satzstrukturen kennen und funktional verwenden",
+        "descriptiveStatistics": {
+          "total": 1240,
+          "frequency": 736,
+          "mean": 0.5935,
+          "standardDeviation": 0.491
+        }
+      }
+    ]
+  }
+]

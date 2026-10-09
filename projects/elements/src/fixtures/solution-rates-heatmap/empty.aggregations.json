@@ -1,0 +1,17 @@
+[
+  {
+    "id": "group-7c",
+    "type": "group",
+    "name": "Klasse 7c",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V7-2026-MA-HSA"
+      }
+    ],
+    "aggregations": []
+  }
+]

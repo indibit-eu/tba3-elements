@@ -1,0 +1,187 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 23,
+          "mean": 0.92,
+          "standardDeviation": 0.271
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 12,
+          "mean": 0.48,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 11,
+          "mean": 0.44,
+          "standardDeviation": 0.496
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 2,
+          "mean": 0.08,
+          "standardDeviation": 0.271
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 16,
+          "mean": 0.64,
+          "standardDeviation": 0.48
+        }
+      },
+      {
+        "type": "students-by-languageAtHome",
+        "value": "other",
+        "description": "andere",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 9,
+          "mean": 0.36,
+          "standardDeviation": 0.48
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 3,
+          "mean": 0.12,
+          "standardDeviation": 0.325
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 6,
+          "mean": 0.24,
+          "standardDeviation": 0.427
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 7,
+          "mean": 0.28,
+          "standardDeviation": 0.449
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 6,
+          "mean": 0.24,
+          "standardDeviation": 0.427
+        }
+      },
+      {
+        "type": "students-by-ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 25,
+          "frequency": 3,
+          "mean": 0.12,
+          "standardDeviation": 0.325
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 48250,
+          "frequency": 46320,
+          "mean": 0.96,
+          "standardDeviation": 0.196
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 48250,
+          "frequency": 24608,
+          "mean": 0.51,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 48250,
+          "frequency": 23160,
+          "mean": 0.48,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 48250,
+          "frequency": 482,
+          "mean": 0.01,
+          "standardDeviation": 0.1
+        }
+      }
+    ]
+  }
+]

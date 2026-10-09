@@ -1,0 +1,62 @@
+// Alle Farben der Elemente als CSS-Variablen, damit ein Host sie ohne Neubau überschreiben kann.
+
+:root {
+  // Classifications der Kompetenzstufen, von schwach nach stark
+  --tba3-classification-below-minimum: #df7020;
+  --tba3-classification-minimum: #c2185b;
+  --tba3-classification-regular: #666dcc;
+  --tba3-classification-regular-plus: #209cdf;
+  --tba3-classification-optimal: #e6c44c;
+  --tba3-classification-unknown: #b8bcc4;
+
+  // Vierstufige Skala der Wertpillen, je Stufe Hintergrund und Text
+  --tba3-solution-rate-low-bg: #fdebe9;
+  --tba3-solution-rate-low: #842029;
+  --tba3-solution-rate-mid-low-bg: #fef3e6;
+  --tba3-solution-rate-mid-low: #8a4a14;
+  --tba3-solution-rate-mid-bg: #f8f9fa;
+  --tba3-solution-rate-mid: #495057;
+  --tba3-solution-rate-high-bg: #e6f4ec;
+  --tba3-solution-rate-high: #1d6a3a;
+
+  // Heatmap-Zellen tragen keine Zahl, darum kräftigere Farben als die Pillen
+  --tba3-heat-low: #d6453f;
+  --tba3-heat-mid-low: #e08a3a;
+  --tba3-heat-mid: #c6ccd2;
+  --tba3-heat-high: #33a165;
+
+  // Hauptgruppe und Vergleichsgruppen in Charts
+  --tba3-focus: #2c6fbb;
+  --tba3-comparison-1: #8a8f98;
+  --tba3-comparison-2: #b8bcc4;
+  --tba3-comparison-3: #d9dbe0;
+  --tba3-comparison-4: #6c757d;
+
+  // Kategorien ohne fachliche Ordnung. Das Grün ist dunkler als `--tba3-deviation-better`, damit
+  // ein Merkmalsdonut nicht wertend wirkt.
+  --tba3-category-1: #3498db;
+  --tba3-category-2: #9b59b6;
+  --tba3-category-3: #f1c40f;
+  --tba3-category-4: #1e8449;
+  --tba3-category-5: #e67e22;
+  --tba3-category-6: #e74c3c;
+  --tba3-category-7: #2980b9;
+  --tba3-category-8: #95a5a6;
+  // Restkategorie (ohne Teilnahme, keine Angabe)
+  --tba3-category-none: #bdc3c7;
+  // Teilnahmequote; Teal statt Grün, damit sie nicht wie eine Wertung aussieht
+  --tba3-participation: #16a085;
+
+  // Abweichungen zur Hauptgruppe (Δ in Prozentpunkten)
+  --tba3-deviation-better: #27ae60;
+  --tba3-deviation-worse: #e74c3c;
+  --tba3-deviation-neutral: #8a8f98;
+
+  // Balken ohne Wertung; die Abweichung steht in der Δ-Pille
+  --tba3-bar: #6c757d;
+  --tba3-bar-comparison: #b8bcc4;
+
+  // Marker „mit Optimalstandard" und „unter Mindeststandard"
+  --tba3-mark-top: #27ae60;
+  --tba3-mark-alert: #e74c3c;
+}

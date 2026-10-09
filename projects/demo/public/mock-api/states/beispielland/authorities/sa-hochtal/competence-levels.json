@@ -1,0 +1,2273 @@
+[
+  {
+    "id": "sa-hochtal",
+    "type": "authority",
+    "name": "Schulamt Hochtal",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.1139,
+          "frequency": 36
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.1013,
+          "frequency": 32
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.2057,
+          "frequency": 65
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.193,
+          "frequency": 61
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.2025,
+          "frequency": 64
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.1835,
+          "frequency": 58
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-hochtal",
+    "type": "authority",
+    "name": "Schulamt Hochtal",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.1741,
+          "frequency": 55
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.1203,
+          "frequency": 38
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.212,
+          "frequency": 67
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.193,
+          "frequency": 61
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.2057,
+          "frequency": 65
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 316,
+          "mean": 0.0949,
+          "frequency": 30
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-hochtal",
+    "type": "authority",
+    "name": "Schulamt Hochtal",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 232,
+          "mean": 0.056,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 232,
+          "mean": 0.1034,
+          "frequency": 24
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 232,
+          "mean": 0.194,
+          "frequency": 45
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 232,
+          "mean": 0.1897,
+          "frequency": 44
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 232,
+          "mean": 0.2716,
+          "frequency": 63
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 232,
+          "mean": 0.1853,
+          "frequency": 43
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-hochtal",
+    "type": "authority",
+    "name": "Schulamt Hochtal",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0833,
+          "frequency": 20
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0667,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0833,
+          "frequency": 20
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1208,
+          "frequency": 29
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1125,
+          "frequency": 27
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0917,
+          "frequency": 22
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1417,
+          "frequency": 34
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1208,
+          "frequency": 29
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1792,
+          "frequency": 43
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-hochtal",
+    "type": "authority",
+    "name": "Schulamt Hochtal",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1167,
+          "frequency": 28
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0583,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0917,
+          "frequency": 22
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1,
+          "frequency": 24
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1542,
+          "frequency": 37
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1208,
+          "frequency": 29
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1292,
+          "frequency": 31
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.0958,
+          "frequency": 23
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 240,
+          "mean": 0.1333,
+          "frequency": 32
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-erlenbrook",
+    "type": "school",
+    "name": "Gesamtschule Erlenbrook",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0854,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0976,
+          "frequency": 8
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.3171,
+          "frequency": 26
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.2195,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1951,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0854,
+          "frequency": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-erlenbrook",
+    "type": "school",
+    "name": "Gesamtschule Erlenbrook",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1098,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.2073,
+          "frequency": 17
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.3049,
+          "frequency": 25
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1829,
+          "frequency": 15
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1585,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0366,
+          "frequency": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-erlenbrook",
+    "type": "school",
+    "name": "Gesamtschule Erlenbrook",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.061,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1585,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.2683,
+          "frequency": 22
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.2561,
+          "frequency": 21
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1951,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.061,
+          "frequency": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-erlenbrook",
+    "type": "school",
+    "name": "Gesamtschule Erlenbrook",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0488,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.122,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0732,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1341,
+          "frequency": 11
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1707,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1098,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1341,
+          "frequency": 11
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1098,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0976,
+          "frequency": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-erlenbrook",
+    "type": "school",
+    "name": "Gesamtschule Erlenbrook",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0732,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.061,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.122,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0976,
+          "frequency": 8
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.2195,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.1951,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0976,
+          "frequency": 8
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.061,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 82,
+          "mean": 0.0732,
+          "frequency": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-haselwiek",
+    "type": "school",
+    "name": "Gymnasium Haselwiek",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.027,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.027,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0811,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0811,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.3378,
+          "frequency": 25
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.4459,
+          "frequency": 33
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-haselwiek",
+    "type": "school",
+    "name": "Gymnasium Haselwiek",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.027,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0405,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0946,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.1892,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.3378,
+          "frequency": 25
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.3108,
+          "frequency": 23
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-haselwiek",
+    "type": "school",
+    "name": "Gymnasium Haselwiek",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0135,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.027,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0676,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.1351,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.3919,
+          "frequency": 29
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.3649,
+          "frequency": 27
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-haselwiek",
+    "type": "school",
+    "name": "Gymnasium Haselwiek",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0135,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0135,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0541,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.027,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0811,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.1892,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.1757,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.4459,
+          "frequency": 33
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-haselwiek",
+    "type": "school",
+    "name": "Gymnasium Haselwiek",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0135,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0135,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0676,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.0676,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.1081,
+          "frequency": 8
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.1892,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.1892,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 74,
+          "mean": 0.3514,
+          "frequency": 26
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-muehlenrade",
+    "type": "school",
+    "name": "Realschule Mühlenrade",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.0526,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1316,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1842,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.2763,
+          "frequency": 21
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1711,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1842,
+          "frequency": 14
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-muehlenrade",
+    "type": "school",
+    "name": "Realschule Mühlenrade",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1316,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1053,
+          "frequency": 8
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.2368,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.2368,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.2368,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.0526,
+          "frequency": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-muehlenrade",
+    "type": "school",
+    "name": "Realschule Mühlenrade",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.0921,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1184,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.2368,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1711,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.2368,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 76,
+          "mean": 0.1447,
+          "frequency": 11
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-rehwinkel",
+    "type": "school",
+    "name": "Oberschule Rehwinkel",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.2738,
+          "frequency": 23
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1429,
+          "frequency": 12
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.2262,
+          "frequency": 19
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1905,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.119,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0476,
+          "frequency": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-rehwinkel",
+    "type": "school",
+    "name": "Oberschule Rehwinkel",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.4048,
+          "frequency": 34
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.119,
+          "frequency": 10
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.2024,
+          "frequency": 17
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1667,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1071,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0,
+          "frequency": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-rehwinkel",
+    "type": "school",
+    "name": "Oberschule Rehwinkel",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1786,
+          "frequency": 15
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0714,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1548,
+          "frequency": 13
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1667,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.131,
+          "frequency": 11
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0833,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1071,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0833,
+          "frequency": 7
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0238,
+          "frequency": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-rehwinkel",
+    "type": "school",
+    "name": "Oberschule Rehwinkel",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.2619,
+          "frequency": 22
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0952,
+          "frequency": 8
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.131,
+          "frequency": 11
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.131,
+          "frequency": 11
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1667,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0595,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.1071,
+          "frequency": 9
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0.0476,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 84,
+          "mean": 0,
+          "frequency": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen - mit Texten und Medien umgehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.0887,
+          "frequency": 107
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.1028,
+          "frequency": 124
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.1866,
+          "frequency": 225
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.2181,
+          "frequency": 263
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.2073,
+          "frequency": 250
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.1965,
+          "frequency": 237
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.1302,
+          "frequency": 157
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.1418,
+          "frequency": 171
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.2297,
+          "frequency": 277
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.2056,
+          "frequency": 248
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.1725,
+          "frequency": 208
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 1206,
+          "mean": 0.1202,
+          "frequency": 145
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Mathematik"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "mean": 0.0499,
+          "frequency": 46
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "mean": 0.0955,
+          "frequency": 88
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "mean": 0.2096,
+          "frequency": 193
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "mean": 0.2161,
+          "frequency": 199
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 921,
+          "mean": 0.2139,
+          "frequency": 197
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 921,
+          "mean": 0.215,
+          "frequency": 198
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Hörverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0654,
+          "frequency": 54
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0569,
+          "frequency": 47
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0787,
+          "frequency": 65
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0908,
+          "frequency": 75
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.1247,
+          "frequency": 103
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.1283,
+          "frequency": 106
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.1368,
+          "frequency": 113
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0981,
+          "frequency": 81
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.2203,
+          "frequency": 182
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Englisch"
+    },
+    "domain": {
+      "name": "Leseverstehen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0956,
+          "frequency": 79
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A1.2",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0521,
+          "frequency": 43
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "A2.1",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0811,
+          "frequency": 67
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "A2.2",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0932,
+          "frequency": 77
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "B1.1",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.1235,
+          "frequency": 102
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "B1.2",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.1489,
+          "frequency": 123
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "B2.1",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.1308,
+          "frequency": 108
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "B2.2",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.0944,
+          "frequency": 78
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "C1",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 826,
+          "mean": 0.1804,
+          "frequency": 149
+        }
+      }
+    ]
+  }
+]

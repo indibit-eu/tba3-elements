@@ -1,0 +1,87 @@
+<ng-content select="[tba3Header]" />
+
+@if (hasContent()) {
+  @if (hasControls()) {
+    <tba3-control-panel class="d-block mb-3" filterLabel="Testheft">
+      @if (hasBookletSwitch()) {
+        <tba3-booklet-switch
+          tba3Filter
+          [booklets]="bookletList()"
+          [active]="activeBooklet()"
+          [valueLabels]="valueLabels()"
+          (activeChange)="setBooklet($event)"
+        />
+      }
+      @if (comparisonOptions().length > 0) {
+        <div
+          tba3Comparisons
+          class="btn-group btn-group-sm"
+          role="group"
+          aria-label="Vergleichsgruppe wählen"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            [class.active]="selectedComparisonKey() === undefined"
+            [attr.aria-pressed]="selectedComparisonKey() === undefined"
+            (click)="selectComparison(undefined)"
+          >
+            Ohne Vergleich
+          </button>
+          @for (option of comparisonOptions(); track option.key) {
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              [class.active]="selectedComparisonKey() === option.key"
+              [attr.aria-pressed]="selectedComparisonKey() === option.key"
+              (click)="selectComparison(option.key)"
+            >
+              {{ option.name }}
+            </button>
+          }
+        </div>
+      }
+    </tba3-control-panel>
+  }
+
+  <div class="row g-3">
+    @for (card of ranking().cards; track card.title) {
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title h6">{{ card.title }}</h4>
+            @if (card.subtitle) {
+              <p class="card-subtitle small mb-2 text-body-secondary">{{ card.subtitle }}</p>
+            }
+            @if (card.items.length > 0) {
+              <ul class="list-unstyled mb-0">
+                @for (item of card.items; track item.key) {
+                  <li class="d-flex justify-content-between align-items-center gap-3 mb-2">
+                    <tba3-aggregation-value
+                      [code]="item.code"
+                      [name]="item.name"
+                      [domain]="ranking().showBlock ? item.block : undefined"
+                    />
+                    <span class="d-flex align-items-center gap-2 text-nowrap flex-shrink-0">
+                      <span class="fw-semibold tba3-num">{{ item.focusPercent }} %</span>
+                      @if (ranking().hasComparison && item.deviation) {
+                        <span class="small text-secondary tba3-num"
+                          >gegenüber {{ item.comparisonPercent }} %</span
+                        >
+                        <tba3-delta [delta]="item.deviation" [threshold]="deviationThreshold()" />
+                      }
+                    </span>
+                  </li>
+                }
+              </ul>
+            }
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

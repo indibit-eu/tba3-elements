@@ -1,0 +1,432 @@
+[
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 73,
+          "mean": 0.73,
+          "standardDeviation": 0.444
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 67,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 75,
+          "mean": 0.75,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 66,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "type": "authority",
+    "name": "Schulamt Nordmark",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 63,
+          "mean": 0.63,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 54,
+          "mean": 0.54,
+          "standardDeviation": 0.498
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 69,
+          "mean": 0.69,
+          "standardDeviation": 0.462
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 57,
+          "mean": 0.57,
+          "standardDeviation": 0.495
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 78,
+          "mean": 0.78,
+          "standardDeviation": 0.414
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 67,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 68,
+          "mean": 0.68,
+          "standardDeviation": 0.466
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 63,
+          "mean": 0.63,
+          "standardDeviation": 0.483
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 60,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 55,
+          "mean": 0.55,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 66,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 60,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "year-2025",
+    "type": "authority",
+    "name": "Durchgang 2025",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 70,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 64,
+          "mean": 0.64,
+          "standardDeviation": 0.48
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 75,
+          "mean": 0.75,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 60,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "year-2025",
+    "type": "authority",
+    "name": "Durchgang 2025",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 58,
+          "mean": 0.58,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 54,
+          "mean": 0.54,
+          "standardDeviation": 0.498
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 66,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 73,
+          "mean": 0.73,
+          "standardDeviation": 0.444
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 67,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 75,
+          "mean": 0.75,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 100,
+          "frequency": 66,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      }
+    ]
+  }
+]

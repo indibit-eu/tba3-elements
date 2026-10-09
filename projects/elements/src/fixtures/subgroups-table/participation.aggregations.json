@@ -1,0 +1,346 @@
+[
+  {
+    "id": "sa-nordmark",
+    "name": "Schulamt Nordmark",
+    "type": "authority",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 172,
+          "mean": 0.2,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 267,
+          "mean": 0.31046511627906975,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 206,
+          "mean": 0.23953488372093024,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 172,
+          "mean": 0.2,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 43,
+          "mean": 0.05,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "name": "Schulamt Nordmark",
+    "type": "authority",
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 820,
+          "mean": 0.9318181818181818,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 820,
+          "frequency": 410,
+          "mean": 0.5,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 820,
+          "frequency": 400,
+          "mean": 0.4878048780487805,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 820,
+          "frequency": 10,
+          "mean": 0.012195121951219513,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "name": "Gesamtschule Birkenmoor",
+    "type": "school",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 29,
+          "mean": 0.14795918367346939,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 59,
+          "mean": 0.3010204081632653,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 49,
+          "mean": 0.25,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 47,
+          "mean": 0.23979591836734693,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 12,
+          "mean": 0.061224489795918366,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "name": "Gesamtschule Birkenmoor",
+    "type": "school",
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 192,
+          "mean": 0.96,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 192,
+          "frequency": 94,
+          "mean": 0.4895833333333333,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 192,
+          "frequency": 92,
+          "mean": 0.4791666666666667,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 192,
+          "frequency": 6,
+          "mean": 0.03125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "groups-by-participation",
+        "value": "participated",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 6,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ahornbach",
+    "name": "Realschule Ahornbach",
+    "type": "school",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 17,
+          "mean": 0.08292682926829269,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 51,
+          "mean": 0.24878048780487805,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 49,
+          "mean": 0.23902439024390243,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 72,
+          "mean": 0.35121951219512193,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 16,
+          "mean": 0.07804878048780488,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ahornbach",
+    "name": "Realschule Ahornbach",
+    "type": "school",
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 205,
+          "mean": 0.9761904761904762,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 100,
+          "mean": 0.4878048780487805,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 100,
+          "mean": 0.4878048780487805,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 5,
+          "mean": 0.024390243902439025,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "groups-by-participation",
+        "value": "participated",
+        "descriptiveStatistics": {
+          "total": 7,
+          "frequency": 7,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

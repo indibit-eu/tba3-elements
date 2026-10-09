@@ -1,0 +1,298 @@
+[
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 18,
+          "frequency": 259,
+          "mean": 0.48,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 26,
+          "frequency": 429,
+          "mean": 0.55,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 34,
+          "frequency": 622,
+          "mean": 0.61,
+          "standardDeviation": 0.488
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 22,
+          "frequency": 436,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 12,
+          "frequency": 256,
+          "mean": 0.71,
+          "standardDeviation": 0.454
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 18,
+          "frequency": 227,
+          "mean": 0.42,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 26,
+          "frequency": 382,
+          "mean": 0.49,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 34,
+          "frequency": 561,
+          "mean": 0.55,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 22,
+          "frequency": 396,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 12,
+          "frequency": 238,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 82680,
+          "mean": 0.53,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 7000,
+          "frequency": 121800,
+          "mean": 0.58,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "frequency": 148800,
+          "mean": 0.62,
+          "standardDeviation": 0.485
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 6000,
+          "frequency": 117000,
+          "mean": 0.65,
+          "standardDeviation": 0.477
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 3800,
+          "frequency": 78660,
+          "mean": 0.69,
+          "standardDeviation": 0.462
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 73320,
+          "mean": 0.47,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 7000,
+          "frequency": 109200,
+          "mean": 0.52,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "frequency": 136800,
+          "mean": 0.57,
+          "standardDeviation": 0.495
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 6000,
+          "frequency": 108000,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 3800,
+          "frequency": 73340,
+          "mean": 0.64,
+          "standardDeviation": 0.48
+        }
+      }
+    ]
+  }
+]

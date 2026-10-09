@@ -1,0 +1,813 @@
+[
+  {
+    "name": "Beispielland",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.49,
+          "frequency": 1323,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.48,
+          "frequency": 1296,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.01,
+          "frequency": 27,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.02,
+          "frequency": 54,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.12,
+          "frequency": 324,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.24,
+          "frequency": 648,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.3,
+          "frequency": 810,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.18,
+          "frequency": 486,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.1,
+          "frequency": 270,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.06,
+          "frequency": 162,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.72,
+          "frequency": 1944,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.03,
+          "frequency": 81,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.02,
+          "frequency": 54,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 2700,
+          "mean": 0.23,
+          "frequency": 621,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 118,
+          "mean": 1.0,
+          "frequency": 118,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "state"
+  },
+  {
+    "name": "Schulamt Nordmark",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.4906,
+          "frequency": 341,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.4806,
+          "frequency": 334,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.0101,
+          "frequency": 7,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.0187,
+          "frequency": 13,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.1194,
+          "frequency": 83,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.2403,
+          "frequency": 167,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.2993,
+          "frequency": 208,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.1799,
+          "frequency": 125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.1007,
+          "frequency": 70,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.0604,
+          "frequency": 42,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.7194,
+          "frequency": 500,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.0302,
+          "frequency": 21,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.0201,
+          "frequency": 14,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 695,
+          "mean": 0.2302,
+          "frequency": 160,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 31,
+          "mean": 1.0,
+          "frequency": 31,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "authority"
+  },
+  {
+    "name": "Schulamt Seeland",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.49,
+          "frequency": 984,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.4801,
+          "frequency": 964,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.01,
+          "frequency": 20,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.0199,
+          "frequency": 40,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 2007,
+          "mean": 0.1201,
+          "frequency": 241,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 2007,
+          "mean": 0.2402,
+          "frequency": 482,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 2007,
+          "mean": 0.3,
+          "frequency": 602,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 2007,
+          "mean": 0.1799,
+          "frequency": 361,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 2007,
+          "mean": 0.1001,
+          "frequency": 201,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 2007,
+          "mean": 0.0598,
+          "frequency": 120,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.7201,
+          "frequency": 1446,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.0299,
+          "frequency": 60,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.0199,
+          "frequency": 40,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 2008,
+          "mean": 0.2301,
+          "frequency": 462,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 87,
+          "mean": 1.0,
+          "frequency": 87,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "12",
+    "type": "authority"
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.4889,
+          "frequency": 22,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.4889,
+          "frequency": 22,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0,
+          "frequency": 0,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0222,
+          "frequency": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.1111,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.2444,
+          "frequency": 11,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.3111,
+          "frequency": 14,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.1778,
+          "frequency": 8,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0889,
+          "frequency": 4,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0667,
+          "frequency": 3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.7111,
+          "frequency": 32,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0222,
+          "frequency": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0222,
+          "frequency": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.2444,
+          "frequency": 11,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 3,
+          "mean": 1.0,
+          "frequency": 3,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      }
+    ]
+  },
+  {
+    "name": "Realschule Ahornbach",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.4828,
+          "frequency": 28,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.4828,
+          "frequency": 28,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.0172,
+          "frequency": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.0172,
+          "frequency": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.1228,
+          "frequency": 7,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.2456,
+          "frequency": 14,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.2982,
+          "frequency": 17,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.1754,
+          "frequency": 10,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.1053,
+          "frequency": 6,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.0526,
+          "frequency": 3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.7241,
+          "frequency": 42,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.0345,
+          "frequency": 2,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.0172,
+          "frequency": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.2241,
+          "frequency": 13,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 4,
+          "mean": 1.0,
+          "frequency": 4,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4712",
+    "type": "school",
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "RS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0816"
+      }
+    ]
+  }
+]

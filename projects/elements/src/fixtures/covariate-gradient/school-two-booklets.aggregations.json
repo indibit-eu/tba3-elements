@@ -1,0 +1,286 @@
+[
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 18,
+          "frequency": 259,
+          "mean": 0.48,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 26,
+          "frequency": 429,
+          "mean": 0.55,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 34,
+          "frequency": 622,
+          "mean": 0.61,
+          "standardDeviation": 0.488
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 22,
+          "frequency": 436,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 12,
+          "frequency": 256,
+          "mean": 0.71,
+          "standardDeviation": 0.454
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-MSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 10,
+          "frequency": 132,
+          "mean": 0.44,
+          "standardDeviation": 0.496
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 16,
+          "frequency": 240,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 24,
+          "frequency": 403,
+          "mean": 0.56,
+          "standardDeviation": 0.496
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 20,
+          "frequency": 372,
+          "mean": 0.62,
+          "standardDeviation": 0.485
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 14,
+          "frequency": 286,
+          "mean": 0.68,
+          "standardDeviation": 0.466
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 82680,
+          "mean": 0.53,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 7000,
+          "frequency": 121800,
+          "mean": 0.58,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "frequency": 148800,
+          "mean": 0.62,
+          "standardDeviation": 0.485
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 6000,
+          "frequency": 117000,
+          "mean": 0.65,
+          "standardDeviation": 0.477
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 3800,
+          "frequency": 78660,
+          "mean": 0.69,
+          "standardDeviation": 0.462
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-MSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "ses",
+        "value": "A",
+        "description": "sehr niedrig",
+        "descriptiveStatistics": {
+          "total": 4000,
+          "frequency": 57600,
+          "mean": 0.48,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "ses",
+        "value": "B",
+        "description": "niedrig",
+        "descriptiveStatistics": {
+          "total": 6000,
+          "frequency": 95400,
+          "mean": 0.53,
+          "standardDeviation": 0.499
+        }
+      },
+      {
+        "type": "ses",
+        "value": "C",
+        "description": "mittel",
+        "descriptiveStatistics": {
+          "total": 7000,
+          "frequency": 121800,
+          "mean": 0.58,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "ses",
+        "value": "D",
+        "description": "hoch",
+        "descriptiveStatistics": {
+          "total": 5500,
+          "frequency": 103950,
+          "mean": 0.63,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "ses",
+        "value": "E",
+        "description": "sehr hoch",
+        "descriptiveStatistics": {
+          "total": 3500,
+          "frequency": 71400,
+          "mean": 0.68,
+          "standardDeviation": 0.466
+        }
+      }
+    ]
+  }
+]

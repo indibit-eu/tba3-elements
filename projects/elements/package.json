@@ -1,0 +1,26 @@
+{
+  "name": "@indibit/tba3-elements",
+  "version": "0.1.0",
+  "peerDependencies": {
+    "@angular/common": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "bootstrap": "^5.3.8",
+    "echarts": "^6.0.0",
+    "ngx-echarts": "^21.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "description": "Berichtselemente für TBA-III-konforme Auswertungsdaten",
+  "license": "MIT",
+  "exports": {
+    "./styles/*": {
+      "sass": "./src/styles/_*.scss"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indibit-eu/tba3-elements.git"
+  }
+}

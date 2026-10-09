@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test -- --watch=false
+      - run: npm run build:lib
+      - name: Version gegen Tag prüfen
+        run: |
+          version=$(node -p "require('./dist/tba3-elements/package.json').version")
+          test "v$version" = "$GITHUB_REF_NAME" || { echo "Tag $GITHUB_REF_NAME passt nicht zu Version $version"; exit 1; }
+      - run: cp LICENSE dist/tba3-elements/
+      - run: npm pack ./dist/tba3-elements
+      - run: gh release create "$GITHUB_REF_NAME" indibit-tba3-elements-*.tgz --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,193 @@
+<ng-content select="[tba3Header]" />
+
+@if (hasData()) {
+  <tba3-control-panel
+    class="d-block mb-3"
+    filterLabel="Klassenmittel"
+    comparisonsLabel="Vergleich"
+    viewLabel="Zahlen anzeigen"
+  >
+    @if (hasComparisonSwitch()) {
+      <div tba3Comparisons class="btn-group btn-group-sm" role="group" aria-label="Vergleich">
+        @for (option of comparisonOptions(); track option.key) {
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            [class.active]="isComparisonSelected(option.key)"
+            [attr.aria-pressed]="isComparisonSelected(option.key)"
+            (click)="setComparison(option.key)"
+          >
+            {{ option.name }}
+          </button>
+        }
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          [class.active]="isComparisonSelected(undefined)"
+          [attr.aria-pressed]="isComparisonSelected(undefined)"
+          (click)="setComparison(undefined)"
+        >
+          keine
+        </button>
+      </div>
+    }
+    <div tba3View class="btn-group btn-group-sm" role="group" aria-label="Zahlen anzeigen">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        [class.active]="activeCellValues() === 'none'"
+        [attr.aria-pressed]="activeCellValues() === 'none'"
+        (click)="setCellValues('none')"
+      >
+        Keine
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        [class.active]="activeCellValues() === 'reference'"
+        [attr.aria-pressed]="activeCellValues() === 'reference'"
+        (click)="setCellValues('reference')"
+      >
+        Vergleich und Klassenmittel
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        [class.active]="activeCellValues() === 'all'"
+        [attr.aria-pressed]="activeCellValues() === 'all'"
+        (click)="setCellValues('all')"
+      >
+        Alle
+      </button>
+    </div>
+    <tba3-pill-filter
+      tba3Filter
+      [options]="filterOptions()"
+      [selected]="selectedLevelValues()"
+      (selectedChange)="onFilterChange($event)"
+    />
+  </tba3-control-panel>
+
+  <tba3-legend [items]="legend()" class="mb-3" />
+
+  <table class="table table-sm align-middle mb-0 tba3-heatmap">
+    <caption class="visually-hidden">
+      Lösungsquoten je Person und Teilkompetenz, eingefärbt nach Kategorie; Klassenmittel in der
+      ersten Zeile.
+    </caption>
+    <thead>
+      <tr class="small text-secondary align-bottom">
+        @if (hasStudentSelection()) {
+          <th scope="col"><span class="visually-hidden">Auswahl</span></th>
+        }
+        <th scope="col" class="text-start tba3-heatmap-label">Person</th>
+        @for (column of columns(); track column.value) {
+          <th
+            scope="col"
+            class="text-center tba3-heatmap-col"
+            [title]="column.code ? column.code + ' ' + column.name : column.name"
+          >
+            @if (hasColumnSelection()) {
+              <button
+                type="button"
+                class="btn btn-link p-0 small text-reset text-decoration-none text-truncate d-block w-100"
+                [attr.aria-label]="columnAriaLabel(column)"
+                (click)="columnSelected.emit(column.value)"
+              >
+                {{ column.code ?? column.name }}
+              </button>
+            } @else if (column.link) {
+              <a
+                class="small text-truncate d-block"
+                [href]="column.link"
+                target="_blank"
+                rel="noopener"
+                [attr.aria-label]="columnAriaLabel(column)"
+                >{{ column.code ?? column.name }}</a
+              >
+            } @else {
+              <span class="small text-truncate d-block">{{ column.code ?? column.name }}</span>
+            }
+          </th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @if (referenceRow(); as reference) {
+        <tr>
+          @if (hasStudentSelection()) {
+            <td></td>
+          }
+          <th scope="row" class="small text-secondary fw-normal tba3-heatmap-label">
+            {{ reference.name }}
+          </th>
+          @for (cell of reference.cells; track cell.key) {
+            <td class="tba3-heatmap-cell" [title]="cell.text">
+              @if (showReferenceValues() && cell.value !== undefined) {
+                <span aria-hidden="true">{{ cell.value }} %</span>
+              }
+              <span class="visually-hidden">{{ cell.text }}</span>
+            </td>
+          }
+        </tr>
+      }
+      <tr>
+        @if (hasStudentSelection()) {
+          <td></td>
+        }
+        <th scope="row" class="small text-secondary fw-normal tba3-heatmap-label">Klassenmittel</th>
+        @for (column of columns(); track column.value) {
+          <td
+            class="tba3-heatmap-cell"
+            [style.background-color]="background(column.level)"
+            [title]="column.meanText"
+          >
+            @if (showReferenceValues() && column.meanValueText !== undefined) {
+              <span aria-hidden="true">{{ column.meanValueText }}</span>
+            }
+            <span class="visually-hidden">{{ column.meanText }}</span>
+          </td>
+        }
+      </tr>
+      @for (row of rows(); track row.key) {
+        <tr>
+          @if (hasStudentSelection()) {
+            <td>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                [id]="idPrefix + '-student-' + row.key"
+                [checked]="isStudentSelected(row.key)"
+                [attr.aria-label]="'auswählen: ' + row.name"
+                (change)="toggleStudent(row.key)"
+              />
+            </td>
+          }
+          <th scope="row" class="small text-nowrap fw-normal tba3-heatmap-label">
+            @if (hasStudentSelection()) {
+              <label [for]="idPrefix + '-student-' + row.key">{{ row.name }}</label>
+            } @else {
+              {{ row.name }}
+            }
+          </th>
+          @for (cell of row.cells; track cell.key) {
+            <td
+              class="tba3-heatmap-cell"
+              [style.background-color]="background(cell.level)"
+              [title]="cell.text"
+            >
+              @if (showAllValues() && cell.valueText !== undefined) {
+                <span aria-hidden="true">{{ cell.valueText }}</span>
+              }
+              <span class="visually-hidden">{{ cell.text }}</span>
+            </td>
+          }
+        </tr>
+      }
+    </tbody>
+  </table>
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

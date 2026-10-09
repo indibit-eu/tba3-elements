@@ -1,0 +1,393 @@
+[
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.1778,
+          "frequency": 8,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.4222,
+          "frequency": 19,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.3556,
+          "frequency": 16,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0444,
+          "frequency": 2,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2609,
+          "frequency": 6,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      }
+    ]
+  },
+  {
+    "name": "Vergleichsschulen",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 400,
+          "mean": 0.1225,
+          "frequency": 49,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 400,
+          "mean": 0.3825,
+          "frequency": 153,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 400,
+          "mean": 0.4125,
+          "frequency": 165,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 400,
+          "mean": 0.0775,
+          "frequency": 31,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 400,
+          "mean": 0.005,
+          "frequency": 2,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "type": "comparisonSchool",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    }
+  },
+  {
+    "name": "Vergleichsschulen",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.0842,
+          "frequency": 16,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.3368,
+          "frequency": 64,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.3895,
+          "frequency": 74,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.1789,
+          "frequency": 34,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 190,
+          "mean": 0.0105,
+          "frequency": 2,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "type": "comparisonSchool",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    }
+  },
+  {
+    "name": "8a Deutsch",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.1739,
+          "frequency": 4,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3913,
+          "frequency": 9,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3478,
+          "frequency": 8,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.087,
+          "frequency": 2,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "101",
+    "type": "group",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    }
+  },
+  {
+    "name": "8b Deutsch",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.1818,
+          "frequency": 4,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.4545,
+          "frequency": 10,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 22,
+          "mean": 0.3636,
+          "frequency": 8,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "102",
+    "type": "group",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    }
+  },
+  {
+    "name": "8a Mathematik",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2609,
+          "frequency": 6,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "103",
+    "type": "group",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    }
+  }
+]

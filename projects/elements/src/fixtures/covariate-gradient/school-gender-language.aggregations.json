@@ -1,0 +1,144 @@
+[
+  {
+    "id": "school-birkenmoor",
+    "type": "school",
+    "name": "Gesamtschule Birkenmoor",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 54,
+          "frequency": 940,
+          "mean": 0.58,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 52,
+          "frequency": 998,
+          "mean": 0.64,
+          "standardDeviation": 0.48
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 72,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 78,
+          "frequency": 1521,
+          "mean": 0.65,
+          "standardDeviation": 0.477
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "description": "andere Sprache",
+        "descriptiveStatistics": {
+          "total": 32,
+          "frequency": 518,
+          "mean": 0.54,
+          "standardDeviation": 0.498
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 15200,
+          "frequency": 273600,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 14600,
+          "frequency": 284700,
+          "mean": 0.65,
+          "standardDeviation": 0.477
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "description": "divers",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 3660,
+          "mean": 0.61,
+          "standardDeviation": 0.488
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "description": "Deutsch",
+        "descriptiveStatistics": {
+          "total": 22000,
+          "frequency": 422400,
+          "mean": 0.64,
+          "standardDeviation": 0.48
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "description": "andere Sprache",
+        "descriptiveStatistics": {
+          "total": 8000,
+          "frequency": 132000,
+          "mean": 0.55,
+          "standardDeviation": 0.497
+        }
+      }
+    ]
+  }
+]

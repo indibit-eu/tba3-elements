@@ -1,0 +1,27 @@
+// Gleich breite Wertspalten; bei vielen Spalten scrollt die Seite, kein eigener Container.
+.tba3-heatmap {
+  table-layout: fixed;
+  width: auto;
+}
+
+.tba3-heatmap-label {
+  width: 11rem;
+  max-width: 11rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tba3-heatmap-col {
+  width: 3.5rem;
+}
+
+// Das Padding bleibt ungefärbt und trennt benachbarte Farbflächen.
+.tba3-heatmap-cell {
+  width: 3.5rem;
+  height: 1.75rem;
+  padding: 2px;
+  text-align: center;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  background-clip: content-box;
+}

@@ -1,0 +1,78 @@
+<header class="mb-4">
+  <p class="text-body-secondary mb-1">Lerngruppe · Klassenleitung</p>
+  <h2 class="h3 mb-0">Klasse 8a · Deutsch</h2>
+</header>
+
+<section class="mb-5">
+  <tba3-competence-levels-distribution [competenceLevels]="distribution()">
+    <h3 tba3Header class="h5">Kompetenzstufen der Klasse</h3>
+  </tba3-competence-levels-distribution>
+</section>
+
+<section class="mb-5">
+  <tba3-composition-summary
+    [aggregations]="composition()"
+    [subject]="subject"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Zusammensetzung</h3>
+  </tba3-composition-summary>
+</section>
+
+<section class="mb-5">
+  <tba3-group-results-table
+    [competenceLevels]="tableLevels()"
+    [aggregations]="tableRates()"
+    [valueLabels]="labels"
+    (personSelected)="openPerson($event)"
+  >
+    <h3 tba3Header class="h5">Ergebnisse der Klasse</h3>
+    <p tba3Header class="text-secondary">Klick auf eine Zeile öffnet die Personenseite.</p>
+  </tba3-group-results-table>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates
+    [aggregations]="solutionRates()"
+    [comparisons]="stateComparison"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Lösungsquoten je Teilkompetenz</h3>
+  </tba3-solution-rates>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates-ranking
+    [aggregations]="solutionRates()"
+    [comparison]="stateComparison[0]"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Stärken und Schwächen</h3>
+  </tba3-solution-rates-ranking>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates-heatmap
+    [aggregations]="heatmap()"
+    [valueLabels]="labels"
+    (columnSelected)="onHeatmapColumn($event)"
+    (studentsSelected)="onHeatmapStudents($event)"
+  >
+    <h3 tba3Header class="h5">Profile aller Schüler:innen</h3>
+    @if (heatmapColumn()) {
+      <p tba3Footer class="text-secondary small">
+        Gewählte Teilkompetenz: {{ heatmapColumn() }}. Markiert: {{ heatmapStudents().length }}
+        Personen.
+      </p>
+    }
+  </tba3-solution-rates-heatmap>
+</section>
+
+<section class="mb-5">
+  <tba3-competence-levels-comparison
+    [competenceLevels]="comparison()"
+    [comparisons]="['school:school-average', 'state:state-average']"
+  >
+    <h3 tba3Header class="h5">Vergleich mit Schule und Land</h3>
+  </tba3-competence-levels-comparison>
+</section>

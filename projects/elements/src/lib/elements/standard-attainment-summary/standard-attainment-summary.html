@@ -1,0 +1,41 @@
+<ng-content select="[tba3Header]" />
+
+@if (blocks().length > 0) {
+  @for (block of blocks(); track block.key; let last = $last) {
+    <section>
+      @if (block.labelParts.length > 0) {
+        <h4 class="h5 fw-semibold mb-3">
+          @for (part of block.labelParts; track part; let first = $first) {
+            @if (!first) {
+              <span class="text-secondary fw-normal" aria-hidden="true">·</span>
+            }
+            {{ part }}
+          }
+        </h4>
+      }
+
+      <div class="row g-3">
+        @for (card of block.cards; track card.title) {
+          <div class="col-12 col-lg-4">
+            <tba3-stat-card
+              [title]="card.title"
+              [subtitle]="card.subtitle"
+              [value]="card.value"
+              [comparisons]="card.comparisons"
+              [higherIsBetter]="card.higherIsBetter"
+              [deviationThreshold]="deviationThreshold()"
+            />
+          </div>
+        }
+      </div>
+    </section>
+
+    @if (!last) {
+      <hr class="my-4" />
+    }
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

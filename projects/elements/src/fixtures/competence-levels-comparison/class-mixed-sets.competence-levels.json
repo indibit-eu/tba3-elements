@@ -1,0 +1,227 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "HSA"
+      },
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 14,
+          "mean": 0.0714,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 14,
+          "mean": 0.1429,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 14,
+          "mean": 0.2143,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 14,
+          "mean": 0.2857,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 14,
+          "mean": 0.2143,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 14,
+          "mean": 0.0714,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "MSA"
+      },
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-MSA"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "I",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 10,
+          "mean": 0.1,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 10,
+          "mean": 0.2,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 10,
+          "mean": 0.3,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 10,
+          "mean": 0.3,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 10,
+          "mean": 0.1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "competenceLevelSet",
+        "value": "MSA"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "I",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2000,
+          "mean": 0.1,
+          "frequency": 200
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2000,
+          "mean": 0.18,
+          "frequency": 360
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 2000,
+          "mean": 0.32,
+          "frequency": 640
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 2000,
+          "mean": 0.25,
+          "frequency": 500
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 2000,
+          "mean": 0.15,
+          "frequency": 300
+        }
+      }
+    ]
+  }
+]

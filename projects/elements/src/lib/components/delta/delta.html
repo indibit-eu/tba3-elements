@@ -1,0 +1,11 @@
+@if (delta(); as value) {
+  <span
+    class="badge rounded-pill d-inline-flex align-items-baseline gap-1 fw-semibold text-nowrap"
+    [style.color]="color()"
+    [style.background]="background()"
+    [attr.aria-label]="value.ariaLabel"
+  >
+    <i [class]="iconClass()" aria-hidden="true"></i>
+    <span class="tba3-num">{{ value.label }}</span>
+  </span>
+}

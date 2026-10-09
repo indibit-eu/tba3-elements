@@ -1,0 +1,85 @@
+<ng-content select="[tba3Header]" />
+
+@if (blocks().length > 0) {
+  @if (hasBookletSwitch()) {
+    <tba3-control-panel class="d-block mb-3" filterLabel="Testheft">
+      <tba3-booklet-switch
+        tba3Filter
+        [booklets]="availableBooklets()"
+        [active]="activeBooklet()"
+        [valueLabels]="valueLabels()"
+        (activeChange)="setBooklet($event)"
+      />
+    </tba3-control-panel>
+  }
+
+  @for (block of blocks(); track block.key; let last = $last) {
+    <section>
+      @if (block.labelParts.length > 0) {
+        <h4 class="h5 fw-semibold mb-3">
+          @for (part of block.labelParts; track part; let first = $first) {
+            @if (!first) {
+              <span class="text-secondary fw-normal" aria-hidden="true">·</span>
+            }
+            {{ part }}
+          }
+        </h4>
+      }
+
+      <figure
+        class="m-0"
+        role="figure"
+        aria-roledescription="Diagramm"
+        [attr.aria-label]="block.ariaLabel"
+      >
+        <div echarts [options]="block.option" class="tba3-chart" aria-hidden="true"></div>
+      </figure>
+
+      <tba3-legend class="d-block mt-2" [items]="block.legend" />
+
+      @if (block.spread; as spread) {
+        <p class="small mt-2 mb-0 d-flex flex-wrap align-items-center gap-2">
+          <span class="badge bg-light text-dark border">Spannweite {{ spread.range }} Pp</span>
+          <span class="text-secondary">
+            {{ block.focusName }}: {{ spread.min }} % bis {{ spread.max }} %
+          </span>
+        </p>
+      }
+
+      <div class="visually-hidden">
+        <table>
+          <caption>
+            {{
+              block.tableCaption
+            }}
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Ausprägung</th>
+              @for (series of block.series; track series.name) {
+                <th scope="col">{{ series.name }}</th>
+              }
+            </tr>
+          </thead>
+          <tbody>
+            @for (category of block.categories; track category.value; let row = $index) {
+              <tr>
+                <th scope="row">{{ category.label }}</th>
+                @for (series of block.series; track series.name) {
+                  <td>{{ cellText(series, row) }}</td>
+                }
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+    @if (!last) {
+      <hr class="my-4" />
+    }
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

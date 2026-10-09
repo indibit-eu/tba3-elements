@@ -1,0 +1,128 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 26,
+          "frequency": 24,
+          "mean": 0.923,
+          "standardDeviation": 0.266
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 26,
+          "frequency": 13,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 26,
+          "frequency": 13,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 24,
+          "frequency": 22,
+          "mean": 0.917,
+          "standardDeviation": 0.276
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 24,
+          "frequency": 12,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 24,
+          "frequency": 12,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "students-by-participation",
+        "value": "participated",
+        "description": "teilgenommen",
+        "descriptiveStatistics": {
+          "total": 22,
+          "frequency": 20,
+          "mean": 0.909,
+          "standardDeviation": 0.288
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "male",
+        "description": "männlich",
+        "descriptiveStatistics": {
+          "total": 22,
+          "frequency": 11,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "students-by-gender",
+        "value": "female",
+        "description": "weiblich",
+        "descriptiveStatistics": {
+          "total": 22,
+          "frequency": 11,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      }
+    ]
+  }
+]

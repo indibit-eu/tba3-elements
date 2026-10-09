@@ -1,0 +1,57 @@
+<header class="mb-4">
+  <p class="text-body-secondary mb-1">Land · Schulaufsicht</p>
+  <h2 class="h3 mb-0">Beispielland</h2>
+</header>
+
+<section class="mb-5">
+  <tba3-composition-summary [aggregations]="composition()" [valueLabels]="labels">
+    <h3 tba3Header class="h5">Zusammensetzung</h3>
+  </tba3-composition-summary>
+</section>
+
+<section class="mb-5">
+  <tba3-subgroups-table [aggregations]="overviewAggregations()" [valueLabels]="labels">
+    <h3 tba3Header class="h5">Schulämter im Überblick (Deutsch)</h3>
+  </tba3-subgroups-table>
+</section>
+
+<section class="mb-5">
+  <tba3-standard-attainment-summary [aggregations]="attainment()">
+    <h3 tba3Header class="h5">Standortbestimmung</h3>
+  </tba3-standard-attainment-summary>
+</section>
+
+<section class="mb-5">
+  <tba3-standard-attainment-by-domain
+    [competenceLevels]="byDomain()"
+    [aggregations]="byDomainTotals()"
+  >
+    <h3 tba3Header class="h5">Standard je Domäne</h3>
+  </tba3-standard-attainment-by-domain>
+</section>
+
+<section class="mb-5">
+  <tba3-competence-levels-comparison [competenceLevels]="comparison()" [comparisons]="authorityIds">
+    <h3 tba3Header class="h5">Vergleich der Schulämter</h3>
+  </tba3-competence-levels-comparison>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates
+    [aggregations]="solutionRates()"
+    [comparisons]="authorityIds"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Lösungsquoten je Teilkompetenz</h3>
+  </tba3-solution-rates>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates-comparison-table
+    [aggregations]="comparisonTable()"
+    [deltas]="comparisonDeltas"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Teilkompetenzen-Vergleich</h3>
+  </tba3-solution-rates-comparison-table>
+</section>

@@ -1,0 +1,115 @@
+<ng-content select="[tba3Header]" />
+
+@if (sections().length > 0) {
+  <tba3-control-panel class="d-block mb-3">
+    <div tba3View class="btn-group btn-group-sm" role="group" aria-label="Ansicht">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        [class.active]="activeGroupBy() === 'group'"
+        [attr.aria-pressed]="activeGroupBy() === 'group'"
+        (click)="setGroupBy('group')"
+      >
+        Lerngruppe
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        [class.active]="activeGroupBy() === 'subject'"
+        [attr.aria-pressed]="activeGroupBy() === 'subject'"
+        (click)="setGroupBy('subject')"
+      >
+        Fach
+      </button>
+    </div>
+  </tba3-control-panel>
+
+  @for (section of sections(); track section.heading; let last = $last) {
+    <section>
+      <h4 class="h5 fw-semibold mb-3">
+        @if (section.emitId; as id) {
+          <button
+            type="button"
+            class="btn btn-link p-0 align-baseline fs-5 fw-semibold text-start link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+            [attr.aria-label]="'Details zu ' + section.heading + ' öffnen'"
+            (click)="groupSelected.emit(id)"
+          >
+            {{ section.heading }}
+          </button>
+        } @else {
+          {{ section.heading }}
+        }
+      </h4>
+
+      <ul class="list-group">
+        @for (row of section.rows; track row.label) {
+          <li class="list-group-item">
+            <div class="row g-3 align-items-center">
+              <div class="col-12 col-md-2">
+                @if (row.emitId; as id) {
+                  <button
+                    type="button"
+                    class="btn btn-link p-0 align-baseline text-start link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    [attr.aria-label]="'Details zu ' + row.label + ' öffnen'"
+                    (click)="groupSelected.emit(id)"
+                  >
+                    {{ row.label }}
+                  </button>
+                } @else {
+                  {{ row.label }}
+                }
+              </div>
+
+              @if (section.hasGender) {
+                <div class="col-6 col-md-2 text-center">
+                  @if (row.genderDonut; as donut) {
+                    <tba3-donut-chart
+                      [segments]="donut.segments"
+                      [title]="donut.title"
+                      size="small"
+                    />
+                    <div class="small text-secondary text-center">{{ genderLabel() }}</div>
+                  } @else {
+                    <span class="text-secondary">–</span>
+                  }
+                </div>
+              }
+
+              @if (section.hasParticipation) {
+                <div class="col-6 col-md-2 text-center">
+                  @if (row.participationDonut; as donut) {
+                    <tba3-donut-chart
+                      [segments]="donut.segments"
+                      [centerLabel]="donut.centerLabel"
+                      [title]="donut.title"
+                      size="small"
+                    />
+                    <div class="small text-secondary text-center">{{ participationLabel() }}</div>
+                  } @else {
+                    <span class="text-secondary">–</span>
+                  }
+                </div>
+              }
+
+              @for (chart of row.domainSlots; track $index) {
+                <div class="col-6 col-md-3 text-center">
+                  @if (chart) {
+                    <tba3-mini-bar-chart [bars]="chart.bars" [title]="chart.title" />
+                  }
+                </div>
+              }
+            </div>
+          </li>
+        }
+      </ul>
+    </section>
+
+    @if (!last) {
+      <hr class="my-4" />
+    }
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

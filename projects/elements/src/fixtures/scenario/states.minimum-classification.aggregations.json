@@ -1,0 +1,614 @@
+[
+  {
+    "name": "Beispielland",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2503,
+          "mean": 0.1474,
+          "frequency": 369,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2503,
+          "mean": 0.3927,
+          "frequency": 983,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 2503,
+          "mean": 0.3763,
+          "frequency": 942,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 2503,
+          "mean": 0.0799,
+          "frequency": 200,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 2503,
+          "mean": 0.0036,
+          "frequency": 9,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "state",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    }
+  },
+  {
+    "name": "Beispielland",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2280,
+          "mean": 0.086,
+          "frequency": 196,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2280,
+          "mean": 0.3066,
+          "frequency": 699,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 2280,
+          "mean": 0.3711,
+          "frequency": 846,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 2280,
+          "mean": 0.2013,
+          "frequency": 459,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 2280,
+          "mean": 0.0351,
+          "frequency": 80,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "state",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    }
+  },
+  {
+    "name": "Schulamt Nordmark",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1345,
+          "mean": 0.1227,
+          "frequency": 165,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1345,
+          "mean": 0.368,
+          "frequency": 495,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1345,
+          "mean": 0.4074,
+          "frequency": 548,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1345,
+          "mean": 0.0952,
+          "frequency": 128,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 1345,
+          "mean": 0.0067,
+          "frequency": 9,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "authority",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    }
+  },
+  {
+    "name": "Schulamt Nordmark",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2609,
+          "frequency": 6,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "authority",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    }
+  },
+  {
+    "name": "Schulamt Seeland",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1158,
+          "mean": 0.1762,
+          "frequency": 204,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1158,
+          "mean": 0.4214,
+          "frequency": 488,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1158,
+          "mean": 0.3402,
+          "frequency": 394,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1158,
+          "mean": 0.0622,
+          "frequency": 72,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "12",
+    "type": "authority",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    }
+  },
+  {
+    "name": "Schulamt Seeland",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2257,
+          "mean": 0.0846,
+          "frequency": 191,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 2257,
+          "mean": 0.3066,
+          "frequency": 692,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 2257,
+          "mean": 0.3722,
+          "frequency": 840,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 2257,
+          "mean": 0.2012,
+          "frequency": 454,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 2257,
+          "mean": 0.0354,
+          "frequency": 80,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "12",
+    "type": "authority",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    }
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.1778,
+          "frequency": 8,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.4222,
+          "frequency": 19,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.3556,
+          "frequency": 16,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 45,
+          "mean": 0.0444,
+          "frequency": 2,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.3043,
+          "frequency": 7,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2609,
+          "frequency": 6,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 23,
+          "mean": 0.2174,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      }
+    ]
+  },
+  {
+    "name": "Realschule Ahornbach",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.1379,
+          "frequency": 8,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.3276,
+          "frequency": 19,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.4655,
+          "frequency": 27,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 58,
+          "mean": 0.069,
+          "frequency": 4,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4712",
+    "type": "school",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "RS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0816"
+      }
+    ]
+  },
+  {
+    "name": "Realschule Ahornbach",
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.0877,
+          "frequency": 5,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.2982,
+          "frequency": 17,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.386,
+          "frequency": 22,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.193,
+          "frequency": 11,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 57,
+          "mean": 0.0351,
+          "frequency": 2,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4712",
+    "type": "school",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "RS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0816"
+      }
+    ]
+  }
+]

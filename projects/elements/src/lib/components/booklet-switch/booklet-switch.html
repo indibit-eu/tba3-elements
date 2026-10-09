@@ -1,0 +1,15 @@
+@if (booklets().length > 1) {
+  <div class="btn-group btn-group-sm">
+    @for (booklet of booklets(); track booklet) {
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        [class.active]="booklet === active()"
+        [attr.aria-pressed]="booklet === active()"
+        (click)="select(booklet)"
+      >
+        {{ label(booklet) }}
+      </button>
+    }
+  </div>
+}

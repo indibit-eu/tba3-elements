@@ -1,0 +1,5 @@
+# Generiert aus tba3-spec.yml (npm run generate:model)
+projects/elements/src/lib/model/tba3-spec.ts
+# Build-Ausgaben
+dist/
+ng-doc/

@@ -1,0 +1,76 @@
+<header class="mb-4">
+  <p class="text-body-secondary mb-1">Schulamt · Schulaufsicht</p>
+  <h2 class="h3 mb-0">Schulamt Nordmark</h2>
+</header>
+
+<section class="mb-5">
+  <tba3-composition-summary [aggregations]="composition()" [valueLabels]="labels">
+    <h3 tba3Header class="h5">Zusammensetzung</h3>
+  </tba3-composition-summary>
+</section>
+
+<section class="mb-5">
+  <tba3-subgroups-table [aggregations]="overviewAggregations()" [valueLabels]="labels">
+    <h3 tba3Header class="h5">Schulen im Überblick (Deutsch)</h3>
+  </tba3-subgroups-table>
+</section>
+
+<section class="mb-5">
+  <tba3-standard-attainment-summary [aggregations]="attainment()">
+    <h3 tba3Header class="h5">Standortbestimmung</h3>
+  </tba3-standard-attainment-summary>
+</section>
+
+<section class="mb-5">
+  <tba3-standard-attainment-by-domain
+    [competenceLevels]="byDomain()"
+    [aggregations]="byDomainTotals()"
+  >
+    <h3 tba3Header class="h5">Standard je Domäne</h3>
+  </tba3-standard-attainment-by-domain>
+</section>
+
+<section class="mb-5">
+  <tba3-competence-levels-comparison
+    [competenceLevels]="comparison()"
+    [comparisons]="stateComparison"
+  >
+    <h3 tba3Header class="h5">Vergleich mit dem Land</h3>
+  </tba3-competence-levels-comparison>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates
+    [aggregations]="solutionRates()"
+    [comparisons]="stateComparison"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Lösungsquoten je Teilkompetenz</h3>
+  </tba3-solution-rates>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates-comparison-table
+    [aggregations]="comparisonTable()"
+    [deltas]="comparisonDeltas"
+    [valueLabels]="labels"
+    view="flat"
+  >
+    <h3 tba3Header class="h5">Teilkompetenzen-Vergleich</h3>
+  </tba3-solution-rates-comparison-table>
+</section>
+
+<section class="mb-5">
+  <h3 class="h5">Handlungsfelder</h3>
+  <p class="text-body-secondary small">
+    Empfehlungen des Berichts, kein TBA-III-Datenpunkt. Frei erfundene Beispiele.
+  </p>
+  <div class="list-group">
+    @for (feld of handlungsfelder; track feld.title) {
+      <div class="list-group-item">
+        <h4 class="h6 mb-1">{{ feld.title }}</h4>
+        <p class="mb-0 text-body-secondary">{{ feld.text }}</p>
+      </div>
+    }
+  </div>
+</section>

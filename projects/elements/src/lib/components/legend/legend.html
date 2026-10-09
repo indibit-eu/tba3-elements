@@ -1,0 +1,23 @@
+@if (items().length > 0) {
+  <ul class="list-inline small text-secondary mb-0" aria-hidden="true">
+    @for (item of items(); track $index) {
+      <li class="list-inline-item">
+        @if (item.color; as color) {
+          <i class="fa-solid fa-square me-1" [style.color]="color" aria-hidden="true"></i>
+        }
+        @if (item.marker; as marker) {
+          <i
+            class="fa-solid fa-fw {{ marker.icon }} me-1"
+            [style.color]="marker.color"
+            [title]="marker.title"
+            aria-hidden="true"
+          ></i>
+        }
+        {{ item.text }}
+        @if (item.value !== undefined) {
+          <span class="ms-1">{{ item.value }}</span>
+        }
+      </li>
+    }
+  </ul>
+}

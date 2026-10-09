@@ -1,0 +1,789 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "description": "Deutlich unter den Anforderungen des Mindeststandards.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 8,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "description": "Anforderungen des Mindeststandards noch nicht erreicht.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 8,
+          "mean": 0.125,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "description": "Mindeststandard erreicht.",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 8,
+          "mean": 0.25,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "description": "Regelstandard erreicht.",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 8,
+          "mean": 0.375,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "description": "Regelstandard plus erreicht.",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 8,
+          "mean": 0.125,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "description": "Optimalstandard erreicht.",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 8,
+          "mean": 0.125,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "description": "Deutlich unter den Anforderungen des Mindeststandards.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 7,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "description": "Anforderungen des Mindeststandards noch nicht erreicht.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 7,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "description": "Mindeststandard erreicht.",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 7,
+          "mean": 0.2857,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "description": "Regelstandard erreicht.",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 7,
+          "mean": 0.4286,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "description": "Regelstandard plus erreicht.",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 7,
+          "mean": 0.1429,
+          "frequency": 1
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "description": "Optimalstandard erreicht.",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 7,
+          "mean": 0.1429,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-1",
+    "type": "student",
+    "name": "Mira Brandhauer",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "C"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-1",
+    "type": "student",
+    "name": "Mira Brandhauer",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "C"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-2",
+    "type": "student",
+    "name": "Jonas Wellmann",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "male"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "B"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-2",
+    "type": "student",
+    "name": "Jonas Wellmann",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "male"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "B"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-3",
+    "type": "student",
+    "name": "Lea Steinfurth",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "other"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "D"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-3",
+    "type": "student",
+    "name": "Lea Steinfurth",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "other"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "D"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-4",
+    "type": "student",
+    "name": "Elias Kranich",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "male"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "A"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-4",
+    "type": "student",
+    "name": "Elias Kranich",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "male"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "A"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-5",
+    "type": "student",
+    "name": "Nora Nesselrode",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "E"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-5",
+    "type": "student",
+    "name": "Nora Nesselrode",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "E"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-6",
+    "type": "student",
+    "name": "Finn Falkenau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "male"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "other"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "C"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-6",
+    "type": "student",
+    "name": "Finn Falkenau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "male"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "other"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "C"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-7",
+    "type": "student",
+    "name": "Ida Haselbeck",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "B"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-7",
+    "type": "student",
+    "name": "Ida Haselbeck",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "female"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "B"
+      }
+    ],
+    "competenceLevels": []
+  },
+  {
+    "id": "student-8",
+    "type": "student",
+    "name": "Levi Mühlenrath",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "diverse"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "D"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-8",
+    "type": "student",
+    "name": "Levi Mühlenrath",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      {
+        "type": "gender",
+        "label": "Geschlecht",
+        "value": "diverse"
+      },
+      {
+        "type": "languageAtHome",
+        "label": "Sprache zu Hause",
+        "value": "german"
+      },
+      {
+        "type": "ses",
+        "label": "Sozioökonomischer Status",
+        "value": "D"
+      }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  }
+]

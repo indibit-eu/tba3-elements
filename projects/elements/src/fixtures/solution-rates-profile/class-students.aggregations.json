@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 30,
+          "frequency": 22,
+          "mean": 0.73,
+          "standardDeviation": 0.444
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 24,
+          "frequency": 16,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 36,
+          "frequency": 27,
+          "mean": 0.75,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 30,
+          "frequency": 20,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 30,
+          "frequency": 19,
+          "mean": 0.63,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 24,
+          "frequency": 13,
+          "mean": 0.54,
+          "standardDeviation": 0.498
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 36,
+          "frequency": 25,
+          "mean": 0.69,
+          "standardDeviation": 0.462
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 30,
+          "frequency": 17,
+          "mean": 0.57,
+          "standardDeviation": 0.495
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-1",
+    "type": "student",
+    "name": "Mira Brandhauer",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 3,
+          "mean": 0.75,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 6,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 4,
+          "mean": 0.8,
+          "standardDeviation": 0.4
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-1",
+    "type": "student",
+    "name": "Mira Brandhauer",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 3,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 2,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 4,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 3,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-2",
+    "type": "student",
+    "name": "Jonas Wellmann",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 4,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 6,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-2",
+    "type": "student",
+    "name": "Jonas Wellmann",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 3,
+          "mean": 0.75,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 6,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 4,
+          "mean": 0.8,
+          "standardDeviation": 0.4
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-3",
+    "type": "student",
+    "name": "Lea Steinfurth",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 3,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 2,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 4,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 3,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-3",
+    "type": "student",
+    "name": "Lea Steinfurth",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 3,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 2,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 4,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 3,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-4",
+    "type": "student",
+    "name": "Elias Kranich",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 1,
+          "mean": 0.2,
+          "standardDeviation": 0.4
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 1,
+          "mean": 0.25,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 2,
+          "mean": 0.33,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 1,
+          "mean": 0.2,
+          "standardDeviation": 0.4
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-4",
+    "type": "student",
+    "name": "Elias Kranich",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 1,
+          "mean": 0.2,
+          "standardDeviation": 0.4
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 1,
+          "mean": 0.25,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 2,
+          "mean": 0.33,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 1,
+          "mean": 0.2,
+          "standardDeviation": 0.4
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-5",
+    "type": "student",
+    "name": "Nora Nesselrode",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 4,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 5,
+          "mean": 0.83,
+          "standardDeviation": 0.376
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-5",
+    "type": "student",
+    "name": "Nora Nesselrode",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 4,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 6,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 4,
+          "mean": 0.8,
+          "standardDeviation": 0.4
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-6",
+    "type": "student",
+    "name": "Finn Falkenau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 3,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 2,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 4,
+          "mean": 0.67,
+          "standardDeviation": 0.47
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 2,
+          "mean": 0.4,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-6",
+    "type": "student",
+    "name": "Finn Falkenau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 2,
+          "mean": 0.4,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 4,
+          "frequency": 1,
+          "mean": 0.25,
+          "standardDeviation": 0.433
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 3,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 2,
+          "mean": 0.4,
+          "standardDeviation": 0.49
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 33600,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 29760,
+          "mean": 0.62,
+          "standardDeviation": 0.485
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 36960,
+          "mean": 0.77,
+          "standardDeviation": 0.421
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 33120,
+          "mean": 0.69,
+          "standardDeviation": 0.462
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "3.3.7",
+        "description": "Rechtschreibstrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 28800,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "competence",
+        "value": "3.4.1",
+        "description": "Satzzeichen richtig setzen",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 26400,
+          "mean": 0.55,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.1.2",
+        "description": "Wortarten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 31680,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      },
+      {
+        "type": "competence",
+        "value": "4.2.3",
+        "description": "Satzglieder bestimmen",
+        "descriptiveStatistics": {
+          "total": 48000,
+          "frequency": 25440,
+          "mean": 0.53,
+          "standardDeviation": 0.499
+        }
+      }
+    ]
+  }
+]

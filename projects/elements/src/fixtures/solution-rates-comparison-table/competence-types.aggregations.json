@@ -1,0 +1,142 @@
+[
+  {
+    "id": "9",
+    "type": "authority",
+    "name": "Schulamt Westerau",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "500"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 500,
+          "frequency": 350,
+          "mean": 0.7,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 500,
+          "frequency": 310,
+          "mean": 0.62,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 500,
+          "frequency": 290,
+          "mean": 0.58,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "frequency": 640,
+          "mean": 0.64,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 1000,
+          "frequency": 600,
+          "mean": 0.6,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "5000"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 5000,
+          "frequency": 3300,
+          "mean": 0.66,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 5000,
+          "frequency": 3150,
+          "mean": 0.63,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 5000,
+          "frequency": 3000,
+          "mean": 0.6,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 10000,
+          "frequency": 6300,
+          "mean": 0.63,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 10000,
+          "frequency": 6100,
+          "mean": 0.61,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

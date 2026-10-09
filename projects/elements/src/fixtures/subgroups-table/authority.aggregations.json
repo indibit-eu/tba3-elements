@@ -1,0 +1,1427 @@
+[
+  {
+    "id": "sa-nordmark",
+    "name": "Schulamt Nordmark",
+    "type": "authority",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 172,
+          "mean": 0.2,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 267,
+          "mean": 0.31046511627906975,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 206,
+          "mean": 0.23953488372093024,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 172,
+          "mean": 0.2,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 860,
+          "frequency": 43,
+          "mean": 0.05,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "sa-nordmark",
+    "name": "Schulamt Nordmark",
+    "type": "authority",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 414,
+          "mean": 0.47045454545454546,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 414,
+          "mean": 0.47045454545454546,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 26,
+          "mean": 0.029545454545454545,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 26,
+          "mean": 0.029545454545454545,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 106,
+          "mean": 0.12045454545454545,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 211,
+          "mean": 0.23977272727272728,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 264,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 158,
+          "mean": 0.17954545454545454,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 88,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 53,
+          "mean": 0.060227272727272727,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 634,
+          "mean": 0.7204545454545455,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 26,
+          "mean": 0.029545454545454545,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 18,
+          "mean": 0.020454545454545454,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 880,
+          "frequency": 202,
+          "mean": 0.22954545454545455,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 31,
+          "frequency": 31,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "name": "Beispielland",
+    "type": "state",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 5100,
+          "frequency": 969,
+          "mean": 0.19,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 5100,
+          "frequency": 1530,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 5100,
+          "frequency": 1275,
+          "mean": 0.25,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 5100,
+          "frequency": 1020,
+          "mean": 0.2,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 5100,
+          "frequency": 306,
+          "mean": 0.06,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "beispielland",
+    "name": "Beispielland",
+    "type": "state",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 2444,
+          "mean": 0.47,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 2444,
+          "mean": 0.47,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 156,
+          "mean": 0.03,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 156,
+          "mean": 0.03,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 624,
+          "mean": 0.12,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 1248,
+          "mean": 0.24,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 1560,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 936,
+          "mean": 0.18,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 520,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 312,
+          "mean": 0.06,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 3744,
+          "mean": 0.72,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 156,
+          "mean": 0.03,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 104,
+          "mean": 0.02,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 5200,
+          "frequency": 1196,
+          "mean": 0.23,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 160,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "name": "Gesamtschule Birkenmoor",
+    "type": "school",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 29,
+          "mean": 0.14795918367346939,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 59,
+          "mean": 0.3010204081632653,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 49,
+          "mean": 0.25,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 47,
+          "mean": 0.23979591836734693,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 196,
+          "frequency": 12,
+          "mean": 0.061224489795918366,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-birkenmoor",
+    "name": "Gesamtschule Birkenmoor",
+    "type": "school",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 94,
+          "mean": 0.47,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 94,
+          "mean": 0.47,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 6,
+          "mean": 0.03,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 6,
+          "mean": 0.03,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 24,
+          "mean": 0.12,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 48,
+          "mean": 0.24,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 60,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 36,
+          "mean": 0.18,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 20,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 12,
+          "mean": 0.06,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 144,
+          "mean": 0.72,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 6,
+          "mean": 0.03,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 4,
+          "mean": 0.02,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 200,
+          "frequency": 46,
+          "mean": 0.23,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 6,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ahornbach",
+    "name": "Realschule Ahornbach",
+    "type": "school",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 17,
+          "mean": 0.08292682926829269,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 51,
+          "mean": 0.24878048780487805,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 49,
+          "mean": 0.23902439024390243,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 72,
+          "mean": 0.35121951219512193,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 205,
+          "frequency": 16,
+          "mean": 0.07804878048780488,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-ahornbach",
+    "name": "Realschule Ahornbach",
+    "type": "school",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 99,
+          "mean": 0.4714285714285714,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 99,
+          "mean": 0.4714285714285714,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 6,
+          "mean": 0.02857142857142857,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 6,
+          "mean": 0.02857142857142857,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 25,
+          "mean": 0.11904761904761904,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 50,
+          "mean": 0.23809523809523808,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 63,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 38,
+          "mean": 0.18095238095238095,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 21,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 13,
+          "mean": 0.06190476190476191,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 151,
+          "mean": 0.719047619047619,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 6,
+          "mean": 0.02857142857142857,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 4,
+          "mean": 0.01904761904761905,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 210,
+          "frequency": 49,
+          "mean": 0.23333333333333334,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 7,
+          "frequency": 7,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-steinfurth",
+    "name": "Grundschule Steinfurth",
+    "type": "school",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 150,
+          "frequency": 48,
+          "mean": 0.32,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 150,
+          "frequency": 45,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 150,
+          "frequency": 33,
+          "mean": 0.22,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 150,
+          "frequency": 18,
+          "mean": 0.12,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 150,
+          "frequency": 6,
+          "mean": 0.04,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-steinfurth",
+    "name": "Grundschule Steinfurth",
+    "type": "school",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 75,
+          "mean": 0.46875,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 75,
+          "mean": 0.46875,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 5,
+          "mean": 0.03125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 5,
+          "mean": 0.03125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 19,
+          "mean": 0.11875,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 38,
+          "mean": 0.2375,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 48,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 29,
+          "mean": 0.18125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 16,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 10,
+          "mean": 0.0625,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 115,
+          "mean": 0.71875,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 5,
+          "mean": 0.03125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 3,
+          "mean": 0.01875,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 160,
+          "frequency": 37,
+          "mean": 0.23125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-wellinghusen",
+    "name": "Oberschule Wellinghusen",
+    "type": "school",
+    "subject": {
+      "id": "1",
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 126,
+          "frequency": 55,
+          "mean": 0.4365079365079365,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 126,
+          "frequency": 38,
+          "mean": 0.30158730158730157,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 126,
+          "frequency": 21,
+          "mean": 0.16666666666666666,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 126,
+          "frequency": 9,
+          "mean": 0.07142857142857142,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 126,
+          "frequency": 3,
+          "mean": 0.023809523809523808,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-wellinghusen",
+    "name": "Oberschule Wellinghusen",
+    "type": "school",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 66,
+          "mean": 0.4714285714285714,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 66,
+          "mean": 0.4714285714285714,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 4,
+          "mean": 0.02857142857142857,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 4,
+          "mean": 0.02857142857142857,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 17,
+          "mean": 0.12142857142857143,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 34,
+          "mean": 0.24285714285714285,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 42,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 25,
+          "mean": 0.17857142857142858,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 14,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 140,
+          "frequency": 8,
+          "mean": 0.05714285714285714,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 5,
+          "frequency": 5,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-lindenhain",
+    "name": "Gesamtschule Lindenhain",
+    "type": "school",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 89,
+          "mean": 0.46842105263157896,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 89,
+          "mean": 0.46842105263157896,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 6,
+          "mean": 0.031578947368421054,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 6,
+          "mean": 0.031578947368421054,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 23,
+          "mean": 0.12105263157894737,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 46,
+          "mean": 0.24210526315789474,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 57,
+          "mean": 0.3,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 34,
+          "mean": 0.17894736842105263,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 19,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 11,
+          "mean": 0.05789473684210526,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 137,
+          "mean": 0.7210526315789474,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 5,
+          "mean": 0.02631578947368421,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 4,
+          "mean": 0.021052631578947368,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 190,
+          "frequency": 44,
+          "mean": 0.23157894736842105,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": {
+          "total": 6,
+          "frequency": 6,
+          "mean": 1,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

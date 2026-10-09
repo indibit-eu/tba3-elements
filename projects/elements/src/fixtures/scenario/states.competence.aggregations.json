@@ -1,0 +1,600 @@
+[
+  {
+    "name": "Beispielland",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 5538,
+          "mean": 0.5699,
+          "frequency": 3156,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 5538,
+          "mean": 0.5547,
+          "frequency": 3072,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 5538,
+          "mean": 0.5451,
+          "frequency": 3019,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 11076,
+          "mean": 0.5619,
+          "frequency": 6224,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 11076,
+          "mean": 0.5611,
+          "frequency": 6215,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "state",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "923"
+      }
+    ]
+  },
+  {
+    "name": "Beispielland",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "mean": 0.5938,
+          "frequency": 5629,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "mean": 0.6004,
+          "frequency": 5692,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "mean": 0.5921,
+          "frequency": 5613,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D4",
+        "descriptiveStatistics": {
+          "total": 9480,
+          "mean": 0.5983,
+          "frequency": 5672,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 18960,
+          "mean": 0.5918,
+          "frequency": 11221,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 18960,
+          "mean": 0.596,
+          "frequency": 11301,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "state",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "1580"
+      }
+    ]
+  },
+  {
+    "name": "Beispielland",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "K1",
+        "descriptiveStatistics": {
+          "total": 13680,
+          "mean": 0.5882,
+          "frequency": 8047,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "K2",
+        "descriptiveStatistics": {
+          "total": 13680,
+          "mean": 0.5938,
+          "frequency": 8123,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L1",
+        "descriptiveStatistics": {
+          "total": 11400,
+          "mean": 0.5989,
+          "frequency": 6827,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L2",
+        "descriptiveStatistics": {
+          "total": 11400,
+          "mean": 0.5866,
+          "frequency": 6687,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L3",
+        "descriptiveStatistics": {
+          "total": 11400,
+          "mean": 0.5918,
+          "frequency": 6746,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "state",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "MA-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "2280"
+      }
+    ]
+  },
+  {
+    "name": "Schulamt Nordmark",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 5538,
+          "mean": 0.5699,
+          "frequency": 3156,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 5538,
+          "mean": 0.5547,
+          "frequency": 3072,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 5538,
+          "mean": 0.5451,
+          "frequency": 3019,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 11076,
+          "mean": 0.5619,
+          "frequency": 6224,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 11076,
+          "mean": 0.5611,
+          "frequency": 6215,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "authority",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "923"
+      }
+    ]
+  },
+  {
+    "name": "Schulamt Nordmark",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 2532,
+          "mean": 0.5845,
+          "frequency": 1480,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 2532,
+          "mean": 0.5995,
+          "frequency": 1518,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 2532,
+          "mean": 0.581,
+          "frequency": 1471,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D4",
+        "descriptiveStatistics": {
+          "total": 2532,
+          "mean": 0.5944,
+          "frequency": 1505,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 5064,
+          "mean": 0.6033,
+          "frequency": 3055,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 5064,
+          "mean": 0.6015,
+          "frequency": 3046,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "authority",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "422"
+      }
+    ]
+  },
+  {
+    "name": "Schulamt Nordmark",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "K1",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.5362,
+          "frequency": 74,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "K2",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.6232,
+          "frequency": 86,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L1",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.5565,
+          "frequency": 64,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L2",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.5391,
+          "frequency": 62,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L3",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.487,
+          "frequency": 56,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "7",
+    "type": "authority",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "MA-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "23"
+      }
+    ]
+  },
+  {
+    "name": "Schulamt Seeland",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 6948,
+          "mean": 0.5972,
+          "frequency": 4149,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 6948,
+          "mean": 0.6007,
+          "frequency": 4174,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 6948,
+          "mean": 0.5961,
+          "frequency": 4142,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D4",
+        "descriptiveStatistics": {
+          "total": 6948,
+          "mean": 0.5997,
+          "frequency": 4167,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 13896,
+          "mean": 0.5877,
+          "frequency": 8166,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 13896,
+          "mean": 0.5941,
+          "frequency": 8255,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "12",
+    "type": "authority",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "1158"
+      }
+    ]
+  },
+  {
+    "name": "Schulamt Seeland",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "K1",
+        "descriptiveStatistics": {
+          "total": 13542,
+          "mean": 0.5888,
+          "frequency": 7973,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "K2",
+        "descriptiveStatistics": {
+          "total": 13542,
+          "mean": 0.5935,
+          "frequency": 8037,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L1",
+        "descriptiveStatistics": {
+          "total": 11285,
+          "mean": 0.5993,
+          "frequency": 6763,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L2",
+        "descriptiveStatistics": {
+          "total": 11285,
+          "mean": 0.5871,
+          "frequency": 6625,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L3",
+        "descriptiveStatistics": {
+          "total": 11285,
+          "mean": 0.5928,
+          "frequency": 6690,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "12",
+    "type": "authority",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "MA-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "2257"
+      }
+    ]
+  }
+]

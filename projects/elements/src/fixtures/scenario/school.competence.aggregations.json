@@ -1,0 +1,481 @@
+[
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.5507,
+          "frequency": 76,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.4928,
+          "frequency": 68,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.5507,
+          "frequency": 76,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 276,
+          "mean": 0.5688,
+          "frequency": 157,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 276,
+          "mean": 0.5688,
+          "frequency": 157,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "booklet",
+        "value": "DE-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "23"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.5227,
+          "frequency": 69,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.553,
+          "frequency": 73,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.5379,
+          "frequency": 71,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D4",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.5455,
+          "frequency": 72,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 264,
+          "mean": 0.5947,
+          "frequency": 157,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 264,
+          "mean": 0.5303,
+          "frequency": 140,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "booklet",
+        "value": "DE-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "22"
+      }
+    ]
+  },
+  {
+    "name": "Gesamtschule Birkenmoor",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "K1",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.5362,
+          "frequency": 74,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "K2",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.6232,
+          "frequency": 86,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L1",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.5565,
+          "frequency": 64,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L2",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.5391,
+          "frequency": 62,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L3",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.487,
+          "frequency": 56,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "4711",
+    "type": "school",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "covariates": [
+      {
+        "type": "schoolType",
+        "value": "IGS",
+        "label": "Schulart"
+      }
+    ],
+    "properties": [
+      {
+        "key": "institutionCode",
+        "value": "0815"
+      },
+      {
+        "key": "booklet",
+        "value": "MA-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "23"
+      }
+    ]
+  },
+  {
+    "name": "8a Deutsch",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.5507,
+          "frequency": 76,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.4928,
+          "frequency": 68,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.5507,
+          "frequency": 76,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 276,
+          "mean": 0.5688,
+          "frequency": 157,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 276,
+          "mean": 0.5688,
+          "frequency": 157,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "101",
+    "type": "group",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "23"
+      }
+    ]
+  },
+  {
+    "name": "8b Deutsch",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "D1",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.5227,
+          "frequency": 69,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D2",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.553,
+          "frequency": 73,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D3",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.5379,
+          "frequency": 71,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "D4",
+        "descriptiveStatistics": {
+          "total": 132,
+          "mean": 0.5455,
+          "frequency": 72,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Lesen",
+        "descriptiveStatistics": {
+          "total": 264,
+          "mean": 0.5947,
+          "frequency": 157,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Domäne",
+        "value": "Orthografie",
+        "descriptiveStatistics": {
+          "total": 264,
+          "mean": 0.5303,
+          "frequency": 140,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "102",
+    "type": "group",
+    "subject": {
+      "name": "Deutsch",
+      "id": "1"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "DE-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "22"
+      }
+    ]
+  },
+  {
+    "name": "8a Mathematik",
+    "aggregations": [
+      {
+        "type": "Kompetenz",
+        "value": "K1",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.5362,
+          "frequency": 74,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Kompetenz",
+        "value": "K2",
+        "descriptiveStatistics": {
+          "total": 138,
+          "mean": 0.6232,
+          "frequency": 86,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L1",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.5565,
+          "frequency": 64,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L2",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.5391,
+          "frequency": 62,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Leitidee",
+        "value": "L3",
+        "descriptiveStatistics": {
+          "total": 115,
+          "mean": 0.487,
+          "frequency": 56,
+          "standardDeviation": 0
+        }
+      }
+    ],
+    "id": "103",
+    "type": "group",
+    "subject": {
+      "name": "Mathematik",
+      "id": "2"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "MA-MSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "23"
+      }
+    ]
+  }
+]

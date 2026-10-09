@@ -1,0 +1,122 @@
+[
+  {
+    "id": "school-gymnasium-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0938,
+          "frequency": 9,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.2083,
+          "frequency": 20,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.3958,
+          "frequency": 38,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.2083,
+          "frequency": 20,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0938,
+          "frequency": 9,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-gymnasium-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1354,
+          "frequency": 13,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.25,
+          "frequency": 24,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.3542,
+          "frequency": 34,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1875,
+          "frequency": 18,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0729,
+          "frequency": 7,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

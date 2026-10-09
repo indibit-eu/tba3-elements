@@ -1,0 +1,28 @@
+<div class="card h-100">
+  <div class="card-body d-flex flex-column">
+    <h4 class="card-title h6">{{ title() }}</h4>
+    @if (subtitle()) {
+      <p class="card-subtitle small mb-2 text-body-secondary">{{ subtitle() }}</p>
+    }
+
+    @if (value() !== undefined) {
+      <div class="fs-3 fw-semibold mb-2">{{ value() }} %</div>
+    } @else {
+      <div class="fs-3 fw-semibold mb-2 text-secondary">–</div>
+    }
+
+    @if (rows().length > 0) {
+      <div class="mt-auto">
+        @for (row of rows(); track row.label) {
+          <div class="d-flex justify-content-between align-items-center small py-1">
+            <span class="text-secondary">{{ row.label }}</span>
+            <span class="d-flex align-items-center gap-2 text-nowrap flex-shrink-0 ms-3">
+              <span class="fw-medium tba3-num">{{ row.value }} %</span>
+              <tba3-delta [delta]="row.delta" [threshold]="deviationThreshold()" />
+            </span>
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>

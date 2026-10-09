@@ -1,0 +1,122 @@
+[
+  {
+    "id": "10",
+    "type": "authority",
+    "name": "Schulamt Hochtal",
+    "subject": {
+      "name": "Englisch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "EN-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "400"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "Lesestil",
+        "value": "detailliert",
+        "descriptiveStatistics": {
+          "total": 400,
+          "frequency": 248,
+          "mean": 0.62,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Lesestil",
+        "value": "suchend",
+        "descriptiveStatistics": {
+          "total": 400,
+          "frequency": 284,
+          "mean": 0.71,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Hörstil",
+        "value": "detailliert",
+        "descriptiveStatistics": {
+          "total": 400,
+          "frequency": 220,
+          "mean": 0.55,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Hörstil",
+        "value": "selektiv",
+        "descriptiveStatistics": {
+          "total": 400,
+          "frequency": 256,
+          "mean": 0.64,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "type": "state",
+    "name": "Beispielland",
+    "subject": {
+      "name": "Englisch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "EN-HSA"
+      },
+      {
+        "key": "studentCount",
+        "value": "4000"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "Lesestil",
+        "value": "detailliert",
+        "descriptiveStatistics": {
+          "total": 4000,
+          "frequency": 2400,
+          "mean": 0.6,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Lesestil",
+        "value": "suchend",
+        "descriptiveStatistics": {
+          "total": 4000,
+          "frequency": 2720,
+          "mean": 0.68,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Hörstil",
+        "value": "detailliert",
+        "descriptiveStatistics": {
+          "total": 4000,
+          "frequency": 2320,
+          "mean": 0.58,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "Hörstil",
+        "value": "selektiv",
+        "descriptiveStatistics": {
+          "total": 4000,
+          "frequency": 2400,
+          "mean": 0.6,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

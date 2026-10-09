@@ -1,0 +1,160 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "description": "Deutlich unter den Anforderungen des Mindeststandards.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "description": "Anforderungen des Mindeststandards noch nicht erreicht.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "description": "Mindeststandard erreicht.",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "description": "Regelstandard erreicht.",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "description": "Regelstandard plus erreicht.",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "description": "Optimalstandard erreicht.",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "description": "Deutlich unter den Anforderungen des Mindeststandards.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "description": "Anforderungen des Mindeststandards noch nicht erreicht.",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "description": "Mindeststandard erreicht.",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "description": "Regelstandard erreicht.",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "description": "Regelstandard plus erreicht.",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "description": "Optimalstandard erreicht.",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0
+        }
+      }
+    ]
+  }
+]

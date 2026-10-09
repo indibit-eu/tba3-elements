@@ -1,0 +1,30 @@
+<div class="d-flex flex-column gap-2">
+  @if (hasFilter()) {
+    <div class="row g-2 align-items-center">
+      <div class="col-12 col-sm-2 small text-secondary" [id]="filterLabelId">
+        {{ filterLabel() }}
+      </div>
+      <div class="col d-flex flex-wrap gap-2">
+        <ng-content select="[tba3Filter]" />
+      </div>
+    </div>
+  }
+  @if (hasComparisons()) {
+    <div class="row g-2 align-items-center">
+      <div class="col-12 col-sm-2 small text-secondary" [id]="comparisonsLabelId">
+        {{ comparisonsLabel() }}
+      </div>
+      <div class="col d-flex flex-wrap gap-2">
+        <ng-content select="[tba3Comparisons]" />
+      </div>
+    </div>
+  }
+  @if (hasView()) {
+    <div class="row g-2 align-items-center">
+      <div class="col-12 col-sm-2 small text-secondary" [id]="viewLabelId">{{ viewLabel() }}</div>
+      <div class="col d-flex flex-wrap gap-2">
+        <ng-content select="[tba3View]" />
+      </div>
+    </div>
+  }
+</div>

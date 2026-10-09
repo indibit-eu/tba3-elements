@@ -1,0 +1,46 @@
+<header class="mb-4">
+  <p class="text-body-secondary mb-1">Person · Klassenleitung</p>
+  <h2 class="h3 mb-3">Einzelbericht</h2>
+
+  <div class="row g-2 align-items-center">
+    <div class="col-auto">
+      <label class="col-form-label" for="person-select">Person</label>
+    </div>
+    <div class="col-auto">
+      <select
+        id="person-select"
+        class="form-select"
+        [value]="selected() ?? ''"
+        (change)="select($any($event.target).value)"
+      >
+        @for (option of options(); track option.id) {
+          <option [value]="option.id">{{ option.name }}</option>
+        }
+      </select>
+    </div>
+  </div>
+</header>
+
+@if (options().length === 0) {
+  <p class="text-body-secondary">Keine Personendaten verfügbar.</p>
+}
+
+<section class="mb-5">
+  <tba3-student-competence-levels
+    [competenceLevels]="levels()"
+    [levelCatalog]="levelCatalog"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Kompetenzstufen</h3>
+  </tba3-student-competence-levels>
+</section>
+
+<section class="mb-5">
+  <tba3-solution-rates
+    [aggregations]="rates()"
+    [comparisons]="rateComparisons"
+    [valueLabels]="labels"
+  >
+    <h3 tba3Header class="h5">Lösungsquoten je Teilkompetenz</h3>
+  </tba3-solution-rates>
+</section>

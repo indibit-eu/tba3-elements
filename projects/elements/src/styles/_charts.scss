@@ -1,0 +1,4 @@
+// ECharts braucht eine Höhe am Container, sonst zeichnet es in einen 0 px hohen Bereich.
+.tba3-chart {
+  height: var(--tba3-chart-height, 220px);
+}

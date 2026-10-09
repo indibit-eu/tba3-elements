@@ -1,0 +1,134 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "exercise",
+        "value": "Der Sommer am See",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 68,
+          "mean": 0.74,
+          "standardDeviation": 0.439
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Ein Brief an die Zukunft",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 61,
+          "mean": 0.66,
+          "standardDeviation": 0.474
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Die Werkstatt",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 53,
+          "mean": 0.58,
+          "standardDeviation": 0.494
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Der lange Weg",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 65,
+          "mean": 0.71,
+          "standardDeviation": 0.454
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Sturm über der Stadt",
+        "descriptiveStatistics": {
+          "total": 92,
+          "frequency": 45,
+          "mean": 0.49,
+          "standardDeviation": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "exercise",
+        "value": "Der Sommer am See",
+        "descriptiveStatistics": {
+          "total": 40000,
+          "frequency": 28000,
+          "mean": 0.7,
+          "standardDeviation": 0.458
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Ein Brief an die Zukunft",
+        "descriptiveStatistics": {
+          "total": 40000,
+          "frequency": 25200,
+          "mean": 0.63,
+          "standardDeviation": 0.483
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Die Werkstatt",
+        "descriptiveStatistics": {
+          "total": 40000,
+          "frequency": 24000,
+          "mean": 0.6,
+          "standardDeviation": 0.49
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Der lange Weg",
+        "descriptiveStatistics": {
+          "total": 40000,
+          "frequency": 27200,
+          "mean": 0.68,
+          "standardDeviation": 0.466
+        }
+      },
+      {
+        "type": "exercise",
+        "value": "Sturm über der Stadt",
+        "descriptiveStatistics": {
+          "total": 40000,
+          "frequency": 20800,
+          "mean": 0.52,
+          "standardDeviation": 0.5
+        }
+      }
+    ]
+  }
+]

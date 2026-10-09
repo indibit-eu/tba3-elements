@@ -1,0 +1,265 @@
+[
+  {
+    "id": "school-lindenhain",
+    "type": "school",
+    "name": "Gesamtschule Lindenhain",
+    "aggregations": [
+      {
+        "type": "gender",
+        "value": "male",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 41,
+          "mean": 0.5125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "female",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 38,
+          "mean": 0.475,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "gender",
+        "value": "diverse",
+        "descriptiveStatistics": { "total": 80, "frequency": 0, "mean": 0, "standardDeviation": 0 }
+      },
+      {
+        "type": "gender",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 1,
+          "mean": 0.0125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "german",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 57,
+          "mean": 0.7125,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "english",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 3,
+          "mean": 0.0375,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "french",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 2,
+          "mean": 0.025,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "languageAtHome",
+        "value": "other",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 18,
+          "mean": 0.225,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "A",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 8,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "B",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 18,
+          "mean": 0.225,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "C",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 26,
+          "mean": 0.325,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "D",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 16,
+          "mean": 0.2,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "E",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 8,
+          "mean": 0.1,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "SES",
+        "value": "unknown",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 4,
+          "mean": 0.05,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "classCount",
+        "value": "classCount",
+        "descriptiveStatistics": { "total": 4, "frequency": 4, "mean": 1.0, "standardDeviation": 0 }
+      }
+    ]
+  },
+  {
+    "id": "school-lindenhain",
+    "type": "school",
+    "name": "Gesamtschule Lindenhain",
+    "subject": { "name": "Deutsch", "id": "1" },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 14,
+          "mean": 0.175,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 30,
+          "mean": 0.375,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 28,
+          "mean": 0.35,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 7,
+          "mean": 0.0875,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 1,
+          "mean": 0.0125,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-lindenhain",
+    "type": "school",
+    "name": "Gesamtschule Lindenhain",
+    "subject": { "name": "Mathematik", "id": "2" },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 19,
+          "mean": 0.2375,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 31,
+          "mean": 0.3875,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 22,
+          "mean": 0.275,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 6,
+          "mean": 0.075,
+          "standardDeviation": 0
+        }
+      },
+      {
+        "type": "minimumClassification",
+        "value": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 80,
+          "frequency": 2,
+          "mean": 0.025,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

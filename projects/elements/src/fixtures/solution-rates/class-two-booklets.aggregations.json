@@ -1,0 +1,210 @@
+[
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 75,
+          "frequency": 54,
+          "mean": 0.72,
+          "standardDeviation": 0.449
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 75,
+          "frequency": 48,
+          "mean": 0.64,
+          "standardDeviation": 0.48
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 75,
+          "frequency": 61,
+          "mean": 0.81,
+          "standardDeviation": 0.392
+        }
+      }
+    ]
+  },
+  {
+    "id": "group-8a",
+    "type": "group",
+    "name": "Klasse 8a",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-MSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 40,
+          "frequency": 26,
+          "mean": 0.65,
+          "standardDeviation": 0.477
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 40,
+          "frequency": 22,
+          "mean": 0.55,
+          "standardDeviation": 0.497
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 40,
+          "frequency": 20,
+          "mean": 0.5,
+          "standardDeviation": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-HSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 30000,
+          "frequency": 20400,
+          "mean": 0.68,
+          "standardDeviation": 0.466
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 30000,
+          "frequency": 18300,
+          "mean": 0.61,
+          "standardDeviation": 0.488
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.3",
+        "description": "Verschiedene Hörabsichten unterscheiden",
+        "descriptiveStatistics": {
+          "total": 30000,
+          "frequency": 23100,
+          "mean": 0.77,
+          "standardDeviation": 0.421
+        }
+      }
+    ]
+  },
+  {
+    "id": "state-average",
+    "type": "state",
+    "name": "Landesmittelwert",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "properties": [
+      {
+        "key": "booklet",
+        "value": "V8-2026-DE-MSA"
+      }
+    ],
+    "aggregations": [
+      {
+        "type": "competence",
+        "value": "2.2.1",
+        "description": "Lesetechniken und Lesestrategien anwenden",
+        "descriptiveStatistics": {
+          "total": 30000,
+          "frequency": 21300,
+          "mean": 0.71,
+          "standardDeviation": 0.454
+        }
+      },
+      {
+        "type": "competence",
+        "value": "2.3.4",
+        "description": "Textaussagen mit eigenen Erfahrungen verknüpfen",
+        "descriptiveStatistics": {
+          "total": 30000,
+          "frequency": 19200,
+          "mean": 0.64,
+          "standardDeviation": 0.48
+        }
+      },
+      {
+        "type": "competence",
+        "value": "1.4.2",
+        "description": "Gesprächsregeln einhalten",
+        "descriptiveStatistics": {
+          "total": 30000,
+          "frequency": 17400,
+          "mean": 0.58,
+          "standardDeviation": 0.494
+        }
+      }
+    ]
+  }
+]

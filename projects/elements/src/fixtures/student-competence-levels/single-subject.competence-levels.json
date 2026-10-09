@@ -1,0 +1,60 @@
+[
+  {
+    "id": "student-3",
+    "type": "student",
+    "name": "Lea Brandhauer",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "covariates": [
+      { "type": "gender", "label": "Geschlecht", "value": "female" },
+      { "type": "languageAtHome", "label": "Sprache zu Hause", "value": "other" },
+      { "type": "ses", "label": "Sozioökonomischer Status", "value": "C" }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "description": "Kann zentrale Aussagen eines Textes selbstständig zusammenfassen.",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "student-3",
+    "type": "student",
+    "name": "Lea Brandhauer",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "covariates": [
+      { "type": "gender", "label": "Geschlecht", "value": "female" },
+      { "type": "languageAtHome", "label": "Sprache zu Hause", "value": "other" },
+      { "type": "ses", "label": "Sozioökonomischer Status", "value": "C" }
+    ],
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "description": "Schreibt häufige Wörter und lautgetreue Formen weitgehend normgerecht.",
+        "descriptiveStatistics": {
+          "total": 1,
+          "mean": 1,
+          "frequency": 1
+        }
+      }
+    ]
+  }
+]

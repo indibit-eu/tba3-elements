@@ -1,0 +1,34 @@
+<figure
+  class="d-inline-flex flex-column align-items-center m-0"
+  role="figure"
+  aria-roledescription="Diagramm"
+  [attr.aria-label]="description()"
+>
+  <div echarts [options]="chartOptions()" class="tba3-mini-bar" aria-hidden="true"></div>
+  @if (title()) {
+    <figcaption class="small text-secondary text-center mt-1">{{ title() }}</figcaption>
+  }
+  <div class="visually-hidden">
+    <table>
+      <caption>
+        {{
+          title() || 'Kompetenzstufen'
+        }}, Anzahl je Stufe.
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Stufe</th>
+          <th scope="col">Anzahl</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (bar of bars(); track bar.label) {
+          <tr>
+            <th scope="row">{{ bar.label }}</th>
+            <td>{{ bar.value }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</figure>

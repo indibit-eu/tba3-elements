@@ -1,0 +1,22 @@
+[
+  {
+    "id": "school-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "aggregations": [
+      {
+        "type": "minimumClassification",
+        "value": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 0,
+          "mean": 0,
+          "frequency": 0,
+          "standardDeviation": 0
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "id": "school-gymnasium-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Lesen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0208,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0417,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.125,
+          "frequency": 12
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.3542,
+          "frequency": 34
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.2917,
+          "frequency": 28
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1667,
+          "frequency": 16
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-gymnasium-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Deutsch"
+    },
+    "domain": {
+      "name": "Orthografie"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0313,
+          "frequency": 3
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0521,
+          "frequency": 5
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1667,
+          "frequency": 16
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.3333,
+          "frequency": 32
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.25,
+          "frequency": 24
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1667,
+          "frequency": 16
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-gymnasium-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Zahlen und Operationen"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0208,
+          "frequency": 2
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0625,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1458,
+          "frequency": 14
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.3125,
+          "frequency": 30
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.2708,
+          "frequency": 26
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1875,
+          "frequency": 18
+        }
+      }
+    ]
+  },
+  {
+    "id": "school-gymnasium-ahornbach",
+    "type": "school",
+    "name": "Gymnasium Ahornbach",
+    "subject": {
+      "name": "Mathematik"
+    },
+    "domain": {
+      "name": "Raum und Form"
+    },
+    "competenceLevels": [
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ia",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0417,
+          "frequency": 4
+        }
+      },
+      {
+        "name": "Mindeststandard noch nicht erreicht",
+        "nameShort": "Ib",
+        "classification": "unter Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.0625,
+          "frequency": 6
+        }
+      },
+      {
+        "name": "Mindeststandard",
+        "nameShort": "II",
+        "classification": "Mindeststandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1875,
+          "frequency": 18
+        }
+      },
+      {
+        "name": "Regelstandard",
+        "nameShort": "III",
+        "classification": "Regelstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.3125,
+          "frequency": 30
+        }
+      },
+      {
+        "name": "Regelstandard plus",
+        "nameShort": "IV",
+        "classification": "Regelstandard plus",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.2292,
+          "frequency": 22
+        }
+      },
+      {
+        "name": "Optimalstandard",
+        "nameShort": "V",
+        "classification": "Optimalstandard",
+        "descriptiveStatistics": {
+          "total": 96,
+          "mean": 0.1667,
+          "frequency": 16
+        }
+      }
+    ]
+  }
+]

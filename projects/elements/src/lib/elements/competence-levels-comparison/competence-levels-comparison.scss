@@ -1,0 +1,3 @@
+// Kein elementeigenes CSS. Die Diagrammhöhe (`.tba3-chart`) kommt aus der geteilten Datei
+// `styles/_charts.scss`; dieses Element setzt nur die Höhenreserve `--tba3-chart-height: 400px`
+// über das `host`-Metadatum der Komponente (statt einer lokalen `.tba3-chart`-Regel).

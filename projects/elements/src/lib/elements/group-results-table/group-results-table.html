@@ -1,0 +1,173 @@
+<ng-content select="[tba3Header]" />
+
+@if (competenceLevels().length > 0) {
+  @if (sortedRows().length > 0) {
+    <tba3-control-panel class="d-block mb-3">
+      <button
+        tba3View
+        type="button"
+        class="btn btn-sm btn-outline-secondary"
+        [disabled]="!isSorted()"
+        (click)="clearSort()"
+      >
+        <i class="fa-solid fa-xmark me-1" aria-hidden="true"></i>
+        Sortierung zurücksetzen
+      </button>
+    </tba3-control-panel>
+
+    <div class="table-responsive">
+      <table class="table table-sm table-striped align-middle">
+        <caption class="visually-hidden">
+          @if (hasAggregations()) {
+            Ergebnisse der Personen der Lerngruppe: je Domäne Kompetenzstufe und mittlere
+            Lösungsquote, sortierbar nach Name, Merkmalen, Stufe und Lösungsquote.
+          } @else {
+            Ergebnisse der Personen der Lerngruppe: je Domäne Kompetenzstufe, sortierbar nach Name,
+            Merkmalen und Stufe.
+          }
+        </caption>
+        <thead>
+          <tr class="small text-secondary align-bottom">
+            <th scope="col" rowspan="2" class="text-center">
+              <span class="visually-hidden">Status</span>
+            </th>
+            <th scope="col" rowspan="2" [attr.aria-sort]="ariaSort(nameColumn)">
+              <tba3-sort-header
+                label="Name"
+                [direction]="sortDirection(nameColumn)"
+                [priority]="sortPriority(nameColumn)"
+                (toggle)="sort(nameColumn)"
+              />
+            </th>
+            @for (covariate of covariateColumns(); track covariate.type) {
+              <th
+                scope="col"
+                rowspan="2"
+                class="text-center text-nowrap"
+                [attr.aria-sort]="ariaSort(covariate.sortKey)"
+              >
+                <tba3-sort-header
+                  [label]="covariate.label"
+                  [direction]="sortDirection(covariate.sortKey)"
+                  [priority]="sortPriority(covariate.sortKey)"
+                  (toggle)="sort(covariate.sortKey)"
+                />
+              </th>
+            }
+            @for (domain of domainColumns(); track domain.name) {
+              <th
+                scope="colgroup"
+                [attr.colspan]="hasAggregations() ? 2 : 1"
+                class="text-center border-start"
+              >
+                {{ domain.name }}
+              </th>
+            }
+          </tr>
+          <tr class="small text-secondary align-bottom">
+            @for (domain of domainColumns(); track domain.name) {
+              @if (hasAggregations()) {
+                <th
+                  scope="col"
+                  class="text-end text-nowrap border-start"
+                  [attr.aria-sort]="ariaSort(domain.averageKey)"
+                >
+                  <tba3-sort-header
+                    label="Ø"
+                    [direction]="sortDirection(domain.averageKey)"
+                    [priority]="sortPriority(domain.averageKey)"
+                    (toggle)="sort(domain.averageKey)"
+                  />
+                </th>
+              }
+              <th
+                scope="col"
+                class="text-center"
+                [class.border-start]="!hasAggregations()"
+                [attr.aria-sort]="ariaSort(domain.levelKey)"
+              >
+                <tba3-sort-header
+                  label="Stufe"
+                  [direction]="sortDirection(domain.levelKey)"
+                  [priority]="sortPriority(domain.levelKey)"
+                  (toggle)="sort(domain.levelKey)"
+                />
+              </th>
+            }
+          </tr>
+        </thead>
+
+        <tbody class="table-group-divider">
+          @if (hasAggregations()) {
+            <tr class="fw-bold">
+              <th scope="row" [attr.colspan]="2 + covariateColumns().length">
+                Mittel der Personenwerte
+              </th>
+              @for (domain of footer(); track $index) {
+                <td class="text-end text-nowrap tba3-num border-start">{{ domain.averageText }}</td>
+                <td></td>
+              }
+            </tr>
+          }
+          @for (row of sortedRows(); track row.id) {
+            <tr>
+              <td class="text-center text-nowrap">
+                @for (marker of markers; track marker.key) {
+                  @if (row[marker.key]) {
+                    <i
+                      class="fa-solid me-1"
+                      [class]="marker.icon"
+                      [class.text-secondary]="!marker.color"
+                      [style.color]="marker.color"
+                      [title]="marker.description"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="visually-hidden">{{ marker.description }}</span>
+                  }
+                }
+              </td>
+              <th scope="row" class="fw-normal">
+                <button
+                  type="button"
+                  class="btn btn-link p-0 align-baseline fw-semibold text-start text-nowrap link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                  [attr.aria-label]="'Details zu ' + row.name + ' öffnen'"
+                  (click)="personSelected.emit(row.id)"
+                >
+                  {{ row.name }}
+                </button>
+              </th>
+              @for (cell of row.covariateCells; track $index) {
+                <td class="text-center" [attr.title]="cell.title || null">{{ cell.text }}</td>
+              }
+              @for (cell of row.cells; track $index) {
+                @if (hasAggregations()) {
+                  <td class="text-end text-nowrap tba3-num border-start">{{ cell.averageText }}</td>
+                }
+                <td class="text-center" [class.border-start]="!hasAggregations()">
+                  @if (cell.hasStage) {
+                    <tba3-level-badge
+                      display="text"
+                      [nameShort]="cell.nameShort"
+                      [classification]="cell.classification"
+                      [title]="cell.levelName"
+                    />
+                  } @else {
+                    <span class="text-secondary">–</span>
+                  }
+                </td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <tba3-legend class="d-block mt-2" [items]="legendItems()" />
+  } @else {
+    <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

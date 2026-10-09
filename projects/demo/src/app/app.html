@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/lerngruppe">tba3-elements</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/lerngruppe" routerLinkActive="active">Lerngruppe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/person" routerLinkActive="active">Person</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/schule" routerLinkActive="active">Schule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/schulamt" routerLinkActive="active">Schulamt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/land" routerLinkActive="active">Land</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container py-4">
+  <router-outlet />
+</main>

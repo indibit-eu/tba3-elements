@@ -1,0 +1,37 @@
+<ng-content select="[tba3Header]" />
+
+@if (subjects().length) {
+  @for (subject of subjects(); track subject.name || $index; let last = $last) {
+    @if (subject.showHeading) {
+      <h4 class="h5 fw-semibold mb-3">{{ subject.name }}</h4>
+    }
+    <div class="row g-3">
+      @for (donut of subject.donuts; track donut.label) {
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column align-items-center text-center">
+              @if (subject.showHeading) {
+                <h5 class="card-title h6">{{ donut.label }}</h5>
+              } @else {
+                <h4 class="card-title h6">{{ donut.label }}</h4>
+              }
+              <p class="card-subtitle small mb-2 text-body-secondary">n = {{ donut.total }}</p>
+              <tba3-donut-chart
+                [segments]="donut.segments"
+                [centerLabel]="donut.centerLabel"
+                [title]="donut.title"
+              />
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    @if (!last) {
+      <hr class="my-4" />
+    }
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

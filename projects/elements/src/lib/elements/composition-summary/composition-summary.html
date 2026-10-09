@@ -1,0 +1,78 @@
+<ng-content select="[tba3Header]" />
+
+@if (hasContent()) {
+  <div class="row g-3">
+    @if (registrations().length > 0) {
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <h4 class="card-title h6">Anmeldungen</h4>
+            <div class="d-flex flex-grow-1 flex-column justify-content-center gap-2">
+              @for (row of registrations(); track row.label) {
+                <div class="d-flex align-items-center gap-2">
+                  <i
+                    class="fa-solid fa-fw fs-5 text-body-secondary {{ row.icon }}"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="fs-4 fw-semibold tba3-num">{{ row.count }}</span>
+                  <span class="text-body-secondary">{{ row.label }}</span>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    @for (donut of donuts(); track donut.title) {
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <h4 class="card-title h6">{{ donut.title }}</h4>
+            <tba3-donut-chart
+              [segments]="donut.segments"
+              [centerLabel]="donut.centerLabel"
+              [title]="donut.title"
+              [legendValues]="false"
+            />
+            @if (donut.median; as median) {
+              <div class="mt-2">
+                <span class="small text-body-secondary me-2">Median</span>
+                <tba3-aggregation-value [code]="median.code" [name]="median.name" />
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    }
+
+    @if (subjectMinimums().length > 0) {
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column align-items-center text-center">
+            <h4 class="card-title h6">Mindeststandard erreicht</h4>
+            <div class="w-100 text-start">
+              @for (subject of subjectMinimums(); track $index) {
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="small text-secondary tba3-bar-label">{{ subject.name }}</span>
+                  <div class="progress tba3-bar flex-grow-1" aria-hidden="true">
+                    <div
+                      class="progress-bar"
+                      [style.width.%]="subject.percent"
+                      style="background-color: var(--tba3-bar)"
+                    ></div>
+                  </div>
+                  <span class="fw-semibold tba3-num">{{ subject.percent }} %</span>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />

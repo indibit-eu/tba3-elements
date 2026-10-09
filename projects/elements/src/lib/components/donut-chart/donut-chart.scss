@@ -1,0 +1,10 @@
+// ECharts braucht eine feste Containergröße, sonst rendert es in 0px.
+.tba3-donut {
+  width: 160px;
+  height: 160px;
+}
+
+.tba3-donut-small {
+  width: 110px;
+  height: 110px;
+}

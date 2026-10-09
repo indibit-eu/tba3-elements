@@ -1,0 +1,141 @@
+<ng-content select="[tba3Header]" />
+
+@if (blocks().length > 0) {
+  @if (availableComparisons().length > 0) {
+    <tba3-control-panel class="d-block mb-3">
+      <tba3-comparison-picker
+        tba3Comparisons
+        [groups]="availableComparisons()"
+        [selected]="selectedKeys()"
+        (selectedChange)="selectedKeys.set($event)"
+      />
+      <div tba3View class="btn-group btn-group-sm" role="group" aria-label="Ansicht">
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          [class.active]="!effectiveDifferenceView()"
+          [attr.aria-pressed]="!effectiveDifferenceView()"
+          (click)="showDistribution()"
+        >
+          Verteilung
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          [class.active]="effectiveDifferenceView()"
+          [attr.aria-pressed]="effectiveDifferenceView()"
+          [disabled]="!shownComparisonsExist()"
+          (click)="showDifference()"
+        >
+          Differenz
+        </button>
+      </div>
+    </tba3-control-panel>
+  }
+
+  @for (block of blocks(); track block.key; let last = $last) {
+    <section>
+      @if (block.labelParts.length > 0) {
+        <h4 class="h5 fw-semibold mb-3">
+          @for (part of block.labelParts; track part; let first = $first) {
+            @if (!first) {
+              <span class="text-secondary fw-normal" aria-hidden="true">·</span>
+            }
+            {{ part }}
+          }
+        </h4>
+      }
+
+      @if (effectiveDifferenceView() && block.differenceChart) {
+        <figure
+          class="m-0"
+          role="figure"
+          aria-roledescription="Diagramm"
+          [attr.aria-label]="'Differenz in Prozentpunkten, ' + block.scope"
+        >
+          <div
+            echarts
+            [options]="block.differenceChart"
+            class="tba3-chart"
+            aria-hidden="true"
+          ></div>
+          <div class="visually-hidden">
+            <table>
+              <caption>
+                Differenz der Hauptgruppe je Vergleich in Prozentpunkten.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Vergleich</th>
+                  @for (segment of block.segments; track segment.label) {
+                    <th scope="col">{{ segment.label }}</th>
+                  }
+                </tr>
+              </thead>
+              <tbody>
+                @for (row of block.differenceRows; track row.label) {
+                  <tr>
+                    <th scope="row">{{ row.label }}</th>
+                    @for (cell of row.cells; track $index) {
+                      <td>{{ cell }}</td>
+                    }
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      } @else {
+        <figure
+          class="m-0"
+          role="figure"
+          aria-roledescription="Diagramm"
+          [attr.aria-label]="'Verteilung der Kompetenzstufen, ' + block.scope"
+        >
+          <div echarts [options]="block.stackedChart" class="tba3-chart" aria-hidden="true"></div>
+          <div class="visually-hidden">
+            <table>
+              <caption>
+                Verteilung der Kompetenzstufen je Gruppe in Prozent.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Gruppe</th>
+                  <th scope="col">n</th>
+                  @for (segment of block.segments; track segment.label) {
+                    <th scope="col">{{ segment.label }}</th>
+                  }
+                </tr>
+              </thead>
+              <tbody>
+                @for (bar of block.bars; track bar.name) {
+                  <tr>
+                    <th scope="row">{{ bar.name }}</th>
+                    <td>{{ bar.total }}</td>
+                    @for (pct of bar.percentages; track $index) {
+                      <td>{{ pct }} %</td>
+                    }
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      }
+
+      <div class="d-flex flex-wrap gap-2 mt-1" aria-hidden="true">
+        @for (segment of block.segments; track segment.label) {
+          <tba3-level-badge [nameShort]="segment.label" [classification]="segment.classification" />
+        }
+      </div>
+    </section>
+
+    @if (!last) {
+      <hr class="my-4" />
+    }
+  }
+} @else {
+  <p class="text-secondary mb-0">Keine Daten für diese Darstellung.</p>
+}
+
+<ng-content select="[tba3Footer]" />
