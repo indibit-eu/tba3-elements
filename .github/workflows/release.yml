@@ -25,6 +25,12 @@ jobs:
           test "v$version" = "$GITHUB_REF_NAME" || { echo "Tag $GITHUB_REF_NAME passt nicht zu Version $version"; exit 1; }
       - run: cp LICENSE dist/tba3-elements/
       - run: npm pack ./dist/tba3-elements
-      - run: gh release create "$GITHUB_REF_NAME" indibit-tba3-elements-*.tgz --generate-notes
+      # Ein über die GitHub-Oberfläche angelegtes Release existiert schon, dann nur das Paket anhängen.
+      - run: |
+          if gh release view "$GITHUB_REF_NAME" > /dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" indibit-tba3-elements-*.tgz --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" indibit-tba3-elements-*.tgz --generate-notes
+          fi
         env:
           GH_TOKEN: ${{ github.token }}
